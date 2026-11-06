@@ -17,7 +17,7 @@ class AboutScreen extends StatelessWidget {
         onPressed: () => context.go('/settings'),
         icon: const Icon(Icons.arrow_back_rounded),
       ),
-      title: const Text('A little about FindIt'),
+      title: const Text('About FindIt'),
     ),
     body: PageContent(
       maxWidth: 740,
@@ -46,29 +46,11 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 28),
           const SoftCard(
             child: Text(
-              'A dedicated hidden-object game with 60 offline levels. Start in a sunlit home, a secret garden, and a corner café, then explore the wider collection. The search engine and 57 classic scenes are reused from FindIt; the three featured scenes and scene-first layout are enhanced for this independent app. Daily adventures contain only hidden-object searches. No ads, accounts, or subscriptions. Your progress stays on your device.',
+              'FindIt turns a few quiet moments into a colorful hidden-object adventure. Explore cozy rooms, peaceful gardens, and charming cafés across 60 offline levels.\n\nPlay at your own pace, try a Daily Challenge, and collect stars and rewards. No ads, sign-up, or in-app purchases. Your progress stays on your device.',
             ),
           ),
           const SizedBox(height: 20),
           const SoftCard(padding: EdgeInsets.all(8), child: DeveloperDetails()),
-          const SizedBox(height: 20),
-          Text(
-            'Original little details',
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
-          const SizedBox(height: 12),
-          const Text(
-            'The original FindIt vector glyphs, brand mark, fonts, and synthesized audio are reused with their provenance and license records. Three new layered, colorful featured compositions were created for this hidden-object project. The artwork is illustrated, not photographic. Editable artwork sources and reuse records are included.',
-          ),
-          const SizedBox(height: 22),
-          Text(
-            'Built with a little help',
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
-          const SizedBox(height: 12),
-          const Text(
-            'Built in Flutter, with local SQLite saves through Drift. Outfit and Nunito are bundled under the SIL Open Font License. Licenses for FindIt’s open-source packages are available below. No advertising or consent SDK is included.',
-          ),
           const SizedBox(height: 20),
           OutlinedButton.icon(
             onPressed: () => showLicensePage(
@@ -86,12 +68,12 @@ class AboutScreen extends StatelessWidget {
           const SizedBox(height: 14),
           TextButton(
             onPressed: () => context.push('/privacy'),
-            child: const Text('Privacy & local data'),
+            child: const Text('Privacy policy'),
           ),
           const SizedBox(height: 28),
           Center(
             child: Text(
-              'Version ${AppConfig.version}${AppConfig.production ? '' : ' · development build'}',
+              'Version ${AppConfig.version}',
               style: Theme.of(context).textTheme.bodySmall
                   ?.copyWith(color: FindItColors.muted),
             ),

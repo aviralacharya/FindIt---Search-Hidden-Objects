@@ -1,6 +1,6 @@
 {
   "createdAt": "2026-11-06T08:12:01.930227+00:00",
-  "applicationId": "abiral.mobile.findithiddenobjects",
+  "applicationId": "abiral.mobile.findit",
   "keystore": ".local-signing/findit-hidden-objects-upload.p12",
   "storeType": "PKCS12",
   "keyAlias": "findit-hidden-upload",
@@ -10,5 +10,5 @@
   "keySize": 3072,
   "signatureAlgorithm": "SHA256withRSA",
   "validityDays": 10000,
-  "scope": "New dedicated upload key only. No original key used; no AAB built, uploaded or published."
+  "scope": "Existing dedicated upload key retained for the requested FindIt package identity. Private key, alias and certificate are unchanged. No original key used; no AAB built, uploaded or published."
 }

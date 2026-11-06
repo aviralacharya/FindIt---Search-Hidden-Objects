@@ -1,6 +1,6 @@
 # Maintain the privacy policy on GitHub Pages
 
-The self-contained page is **`privacy-policy.html` in the project root**. It uses no URLs, hyperlinks, scripts, cookies, trackers, external fonts, or image dependencies. The required developer email is plain text. GitHub's hosting infrastructure can still process ordinary website requests as disclosed in the policy; a tracker-free HTML file does not mean the host receives no request data.
+The self-contained page is **`privacy-policy.html` in the project root**. It uses no URLs, hyperlinks, scripts, cookies, trackers, external fonts, or image dependencies. The required developer email is plain text. Hosting/deployment details belong in this maintainer guide, not in the shared player-facing policy. A tracker-free HTML file does not prevent the host from processing ordinary website requests.
 
 - **Repository:** https://github.com/aviralacharya/FindIt-Search-Hidden-Objects
 - **Canonical public policy:** https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy
@@ -19,13 +19,13 @@ python tool/generate_privacy_policy.py --write
 python tool/generate_privacy_policy.py --check --output verification/privacy-policy-parity.json
 ```
 
-Both renderers deliberately reject links and URL text. Provider names and their data practices remain disclosed without outbound links. The live hosting URL is a separate release/Play Console input, not policy content.
+Both renderers deliberately reject links, URL text, and app package identifiers. App-platform and support-email data practices remain disclosed without outbound links. The live hosting URL, hosting/deployment explanation, and Android package identity are separate release information, not policy content. The app-specific internal receiver permission is explained without its package prefix. Regression tests check both policy copies for unwanted hosting and generation explanations.
 
 ## Before publishing
 
 - Review the policy against the release's actual behavior and your legal obligations. It is a prepared disclosure, not legal advice.
 - Confirm **Abiral Acharya** and **abiralacharya80@gmail.com** are the correct public developer/contact details. They match the app's existing configuration.
-- Confirm the new listing is for `abiral.mobile.findithiddenobjects`, launcher name **FindIt Hidden**, version `1.0.0` / code `1`.
+- Confirm the new listing is for `abiral.mobile.findit`, launcher name **FindIt**, version `1.0.0` / code `1`.
 - Keep `PACK_INDEX_URL` empty, with no ads, analytics, purchases, or remote pack server for this release. If those practices change, update the canonical policy and store disclosures, then regenerate the HTML.
 - Update the policy date when approving a later revision.
 

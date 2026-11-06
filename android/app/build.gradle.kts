@@ -28,7 +28,7 @@ val unsignedProductionCandidate = candidateProperty == "true"
 val productionUploadCertificateSha256 = "e4d765e9c1676c9acfa95560b78177754e35fafc77dcb990dbf2e7ac2c999114"
 
 android {
-    namespace = "abiral.mobile.findithiddenobjects"
+    namespace = "abiral.mobile.findit"
     compileSdk = maxOf(36, flutter.compileSdkVersion)
     ndkVersion = "28.2.13676358"
 
@@ -39,7 +39,7 @@ android {
 
     defaultConfig {
         // Separate from the original FindIt app; publisher ownership is a release gate.
-        applicationId = "abiral.mobile.findithiddenobjects"
+        applicationId = "abiral.mobile.findit"
         minSdk = 24
         targetSdk = 36
         // Uses the version code from pubspec.yaml. When using split APKs, 1000 * ABI_VERSION
@@ -56,17 +56,17 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            manifestPlaceholders["appLabel"] = "FindIt Hidden Dev"
+            manifestPlaceholders["appLabel"] = "FindIt Dev"
         }
         create("qa") {
             dimension = "environment"
             applicationIdSuffix = ".qa"
             versionNameSuffix = "-qa"
-            manifestPlaceholders["appLabel"] = "FindIt Hidden QA"
+            manifestPlaceholders["appLabel"] = "FindIt QA"
         }
         create("prod") {
             dimension = "environment"
-            manifestPlaceholders["appLabel"] = "FindIt Hidden"
+            manifestPlaceholders["appLabel"] = "FindIt"
             // Public release evidence comes from the very same Dart defines
             // that the guarded Flutter build uses. No signing secrets go here.
             val config = dartConfiguration()

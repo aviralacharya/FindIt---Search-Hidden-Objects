@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:findit/core/config/app_config.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -33,32 +34,22 @@ void main() {
     'production identity, isolated QA and explicit candidate/signing gates',
     () {
       final gradle = File('android/app/build.gradle.kts').readAsStringSync();
-      expect(
-        gradle,
-        contains('applicationId = "abiral.mobile.findithiddenobjects"'),
-      );
-      expect(
-        gradle,
-        contains('namespace = "abiral.mobile.findithiddenobjects"'),
-      );
+      expect(gradle, contains('applicationId = "abiral.mobile.findit"'));
+      expect(gradle, contains('namespace = "abiral.mobile.findit"'));
       expect(gradle, contains('FINDIT_HIDDEN_'));
       expect(
-        File(
-          'android/app/src/main/kotlin/abiral/mobile/findithiddenobjects/MainActivity.kt',
-        ).readAsStringSync(),
-        contains('package abiral.mobile.findithiddenobjects'),
+        File('android/app/src/main/kotlin/abiral/mobile/findit/MainActivity.kt')
+            .readAsStringSync(),
+        contains('package abiral.mobile.findit'),
       );
       expect(gradle, contains('minSdk = 24'));
       expect(gradle, contains('targetSdk = 36'));
       expect(gradle, contains('applicationIdSuffix = ".qa"'));
       expect(
         gradle,
-        contains('manifestPlaceholders["appLabel"] = "FindIt Hidden QA"'),
+        contains('manifestPlaceholders["appLabel"] = "FindIt QA"'),
       );
-      expect(
-        gradle,
-        contains('manifestPlaceholders["appLabel"] = "FindIt Hidden"'),
-      );
+      expect(gradle, contains('manifestPlaceholders["appLabel"] = "FindIt"'));
       expect(gradle, contains('signingConfig = null'));
       expect(gradle, contains('if (unsignedProductionCandidate) null'));
       expect(gradle, contains('BUILD_STAGE'));
@@ -72,7 +63,7 @@ void main() {
         File('verification/signing/production-upload-certificate.json')
             .readAsStringSync(),
       ) as Map<String, dynamic>;
-      expect(certificate['applicationId'], 'abiral.mobile.findithiddenobjects');
+      expect(certificate['applicationId'], 'abiral.mobile.findit');
       expect(
         gradle,
         contains('certificateSha256 == productionUploadCertificateSha256'),
@@ -98,34 +89,63 @@ void main() {
     },
   );
 
-  test('new private signing files and final config stay excluded', () {
-    final ignored = File('.gitignore').readAsStringSync();
-    for (final pattern in [
-      '*.aab',
-      '*.apk',
-      '*.apks',
-      '**/key.properties',
-      '**/keystore.properties',
-      '**/signing.properties',
-      '*.jks',
-      '*.keystore',
-      '*.p12',
-      '*.pfx',
-      '*.key',
-      '*.pk8',
-      '*.pem',
-      '/.local-signing/',
-      'config/production.json',
-      '.env',
-      '.env.*',
-    ]) {
-      expect(ignored, contains(pattern));
-    }
+  test('FindIt naming and one icon source agree across app and platforms', () {
+    expect(AppConfig.name, 'FindIt');
+    expect(AppConfig.launcherName, 'FindIt');
+    expect(AppConfig.androidPackage, 'abiral.mobile.findit');
+    expect(AppConfig.version, '1.0.0');
+    expect(AppConfig.iconAsset, 'assets/branding/app_icon.png');
     expect(
-      ignored,
-      contains('!/verification/signing/production-upload-certificate.pem'),
+      File('pubspec.yaml').readAsStringSync(),
+      contains('image_path: ${AppConfig.iconAsset}'),
+    );
+    final web = jsonDecode(File('web/manifest.json').readAsStringSync()) as Map;
+    expect(web['name'], AppConfig.name);
+    expect(web['short_name'], AppConfig.launcherName);
+    expect(
+      File('web/index.html').readAsStringSync(),
+      contains('<title>FindIt</title>'),
+    );
+    expect(
+      File(
+        'android/app/src/main/kotlin/abiral/mobile/findithiddenobjects/MainActivity.kt',
+      ).existsSync(),
+      isFalse,
     );
   });
+
+  test(
+    'private signing files, Python tooling and final config stay excluded',
+    () {
+      final ignored = File('.gitignore').readAsStringSync();
+      for (final pattern in [
+        '*.aab',
+        '*.apk',
+        '*.apks',
+        '*.py',
+        '**/key.properties',
+        '**/keystore.properties',
+        '**/signing.properties',
+        '*.jks',
+        '*.keystore',
+        '*.p12',
+        '*.pfx',
+        '*.key',
+        '*.pk8',
+        '*.pem',
+        '/.local-signing/',
+        'config/production.json',
+        '.env',
+        '.env.*',
+      ]) {
+        expect(ignored, contains(pattern));
+      }
+      expect(
+        ignored,
+        contains('!/verification/signing/production-upload-certificate.pem'),
+      );
+    },
+  );
 
   test('no advertising, WebView, or native test-plugin dependency remains', () {
     for (final path in [

@@ -156,12 +156,14 @@ class _PacksScreenState extends ConsumerState<PacksScreen> {
                             style: Theme.of(context).textTheme.bodySmall
                                 ?.copyWith(color: FindItColors.forest),
                           ),
-                          const SizedBox(height: 10),
-                          Text(
-                            pack.license,
-                            style: Theme.of(context).textTheme.bodySmall
-                                ?.copyWith(color: FindItColors.muted),
-                          ),
+                          if (!pack.bundled) ...[
+                            const SizedBox(height: 10),
+                            Text(
+                              pack.license,
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(color: FindItColors.muted),
+                            ),
+                          ],
                         ],
                       ),
                     ),
@@ -181,8 +183,8 @@ class _PacksScreenState extends ConsumerState<PacksScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   if (!publisherConfigured) ...[
-                    const Text(
-                      'No downloadable-pack publisher is configured in this build. The complete original collection is already included.',
+                    Text(
+                      'All ${state.puzzleCount} levels are included and ready to play offline. Additional puzzle packs are not available right now.',
                     ),
                   ] else
                     Form(
@@ -260,15 +262,6 @@ class _PacksScreenState extends ConsumerState<PacksScreen> {
                     ),
                   ],
                 ],
-              ),
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'For publishers: the project includes the versioned pack schema, validator, and an example pack. No live download server is supplied with this development build.',
-              style: TextStyle(
-                color: FindItColors.muted,
-                fontSize: 12,
-                height: 1.5,
               ),
             ),
           ],

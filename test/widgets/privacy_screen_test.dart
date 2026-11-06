@@ -83,6 +83,11 @@ void main() {
             )
             .join('\n');
         expect(text, isNot(matches(RegExp(r'https?://|mailto:|www\.'))));
+        expect(text, isNot(contains('abiral.mobile.')));
+        expect(text, isNot(contains('FindIt Hidden')));
+        expect(text.toLowerCase(), isNot(contains('github')));
+        expect(text.toLowerCase(), isNot(contains('policy source')));
+        expect(text.toLowerCase(), isNot(contains('public policy')));
         expect(find.byIcon(Icons.open_in_new_rounded), findsNothing);
         expect(find.text('Public privacy policy'), findsNothing);
         expect(find.text('Email the developer'), findsNothing);

@@ -181,7 +181,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 leading: const IconBadge(Icons.inventory_2_outlined, size: 38),
                 title: const Text('Puzzle collection'),
                 subtitle: Text(
-                  '${state.puzzleCount} puzzles installed · optional downloadable packs',
+                  AppConfig.packIndexUrl.isEmpty
+                      ? '${state.puzzleCount} levels included · play offline'
+                      : '${state.puzzleCount} levels · additional puzzle packs',
                 ),
                 trailing: const Icon(Icons.chevron_right_rounded),
                 onTap: () => context.push('/packs'),
@@ -225,7 +227,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   ),
                   title: const Text('About FindIt'),
                   subtitle: const Text(
-                    'Original artwork, sounds, and open-source credits.',
+                    'Game information, support, and licenses.',
                   ),
                   trailing: const Icon(Icons.chevron_right_rounded),
                   onTap: () => context.push('/about'),

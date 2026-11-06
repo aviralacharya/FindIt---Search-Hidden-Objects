@@ -1,0 +1,8 @@
+{
+  "source": "assets/legal/privacy-policy.json",
+  "sourceSha256": "fc13d7fc70e5bc98c0217a4319768d499ef7a36d8e5e7c6b83d9cc6119247897",
+  "html": "privacy-policy.html",
+  "htmlSha256": "d1c6feaa46fb313551aa3ff3511940b7fc29cae92691f30d51a1554107578caf",
+  "sections": 11,
+  "status": "passed"
+}

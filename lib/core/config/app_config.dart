@@ -1,7 +1,8 @@
 abstract final class AppConfig {
-  static const name = 'FindIt - Search Hidden Objects';
-  static const launcherName = 'FindIt Hidden';
-  static const androidPackage = 'abiral.mobile.findithiddenobjects';
+  static const name = 'FindIt';
+  static const launcherName = 'FindIt';
+  static const androidPackage = 'abiral.mobile.findit';
+  static const iconAsset = 'assets/branding/app_icon.png';
   static const tagline = 'Little things. Wonderful places. Look closer.';
   static const storageNamespace = 'findit_hidden_objects';
   static const version = '1.0.0';

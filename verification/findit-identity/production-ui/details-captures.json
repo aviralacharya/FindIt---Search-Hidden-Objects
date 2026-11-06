@@ -1,0 +1,88 @@
+{
+  "createdAtUtc": "2026-11-06T15:55:19.087114Z",
+  "scope": "Scrolled production Settings, collection availability, and About support/privacy/licenses/version at all three review sizes. Isolated widget tests only; no installation, existing saves, live hosting, upload or publication.",
+  "appName": "FindIt",
+  "appEnvironment": "production",
+  "buildStage": "final",
+  "productionUi": true,
+  "iconAsset": "assets/branding/app_icon.png",
+  "iconSha256": "a6e701c28a0e7bdceee342a93ed9609b2582377353b88e0bcfb1d29aa29da3f3",
+  "policySourceSha256": "fc13d7fc70e5bc98c0217a4319768d499ef7a36d8e5e7c6b83d9cc6119247897",
+  "policyHtmlSha256": "d1c6feaa46fb313551aa3ff3511940b7fc29cae92691f30d51a1554107578caf",
+  "legalTextMatchesSource": true,
+  "appPackageIdentifiersInPolicy": false,
+  "captures": [
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/phone-settings-collection.png",
+      "sha256": "cb056339f80d76d32d399a96f312645ebab5ad0121ff8f59fa183051dcfe83ed",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/phone-settings-about.png",
+      "sha256": "cb056339f80d76d32d399a96f312645ebab5ad0121ff8f59fa183051dcfe83ed",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/phone-collection-details.png",
+      "sha256": "49ae7e0c07e24815ea143728c975f1f0ff6dc360045f9191e06f136bb7a04e94",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/phone-about-details.png",
+      "sha256": "4ac5535d9b7382c750080c2168966de00b4f6bf787ba276c33354c06c0d6c8a2",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/small-phone-large-text-settings-collection.png",
+      "sha256": "b01db4eb4364720644ccf03028ca5eb5b67c8a0b543d8d95d3e3f77a88cd388b",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/small-phone-large-text-settings-about.png",
+      "sha256": "88f7568dfb34a6624598cf3373a130020d3bdd00b409ef459a51356efd3fc0df",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/small-phone-large-text-collection-details.png",
+      "sha256": "de5a2bc0a25b38b19b2e212058c386d8e12698f4aebaadb7b9a05538dc35b611",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/small-phone-large-text-about-details.png",
+      "sha256": "21d7fe385ec2f61aead090aba6013860ea3bd9c2cb9c7230705f3b10b86ad4dd",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/wide-settings-collection.png",
+      "sha256": "bb719b97640b6df25b39ede79ce66dc69f232b41e44e1136bce035e529e7b5db",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/wide-settings-about.png",
+      "sha256": "bb719b97640b6df25b39ede79ce66dc69f232b41e44e1136bce035e529e7b5db",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/wide-collection-details.png",
+      "sha256": "fe4c6860d144df1148af7f7a965ade63f0f2bc63485837c68b3ed16e502594e6",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/production-ui/screenshots/wide-about-details.png",
+      "sha256": "33cff7997484ecb893ed9fc8e9fb31dd16b303b931a696e35b26c2c64a516c6d",
+      "width": 2880,
+      "height": 1920
+    }
+  ]
+}

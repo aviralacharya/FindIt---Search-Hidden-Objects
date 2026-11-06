@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../config/app_config.dart';
 import '../domain/puzzle.dart';
 import 'object_art.dart';
 
@@ -11,66 +12,13 @@ class FindItMark extends StatelessWidget {
   @override
   Widget build(BuildContext context) => SizedBox.square(
     dimension: size,
-    child: CustomPaint(painter: const BrandMarkPainter()),
+    child: Image.asset(
+      AppConfig.iconAsset,
+      fit: BoxFit.contain,
+      filterQuality: FilterQuality.high,
+      excludeFromSemantics: true,
+    ),
   );
-}
-
-class BrandMarkPainter extends CustomPainter {
-  const BrandMarkPainter({this.onTeal = false, this.monochrome = false});
-  final bool onTeal;
-  final bool monochrome;
-  @override
-  void paint(Canvas canvas, Size size) {
-    canvas.save();
-    canvas.scale(size.width / 100, size.height / 100);
-    final g = ArtBrush(canvas);
-    final ink = monochrome
-        ? Colors.white
-        : onTeal
-        ? artPaper
-        : const Color(0xFF237A68);
-    g.line(63, 65, 88, 90, ink, 15);
-    g.circle(43, 43, 31, null);
-    canvas.drawCircle(
-      const Offset(43, 43),
-      31,
-      Paint()
-        ..color = ink
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 9,
-    );
-    g.poly(
-      [
-        41,
-        25,
-        46,
-        36,
-        58,
-        38,
-        49,
-        46,
-        52,
-        58,
-        41,
-        52,
-        31,
-        58,
-        33,
-        46,
-        25,
-        38,
-        37,
-        36,
-      ],
-      monochrome ? Colors.white : const Color(0xFFEABD66),
-      stroke: false,
-    );
-    canvas.restore();
-  }
-
-  @override
-  bool shouldRepaint(BrandMarkPainter old) =>
-      old.onTeal != onTeal || old.monochrome != monochrome;
 }
 
 class ModeArtwork extends StatelessWidget {
@@ -88,7 +36,18 @@ class ModeArtwork extends StatelessWidget {
     child: SizedBox(
       width: width,
       height: height,
-      child: CustomPaint(painter: ModeArtPainter(mode)),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          CustomPaint(painter: ModeArtPainter(mode)),
+          if (mode == GameMode.hidden)
+            Positioned(
+              left: width * 86 / 160,
+              top: height * 24 / 120,
+              child: FindItMark(size: math.min(width / 160, height / 120) * 66),
+            ),
+        ],
+      ),
     ),
   );
 }
@@ -131,11 +90,6 @@ class ModeArtPainter extends CustomPainter {
         icon('plant', 4, 11, 64, 2);
         icon('cat', 55, 40, 57, 0);
         icon('key', 28, 61, 43, 3);
-        canvas.save();
-        canvas.translate(86, 24);
-        canvas.scale(.66);
-        const BrandMarkPainter().paint(canvas, const Size(100, 100));
-        canvas.restore();
       case GameMode.odd:
         for (var i = 0; i < 6; i++) {
           final x = 13 + i % 3 * 46.0;

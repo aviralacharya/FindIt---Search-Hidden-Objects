@@ -16,6 +16,7 @@ void main() {
     () async {
       final document = await PrivacyPolicyDocument.load();
       expect(document.title, 'Privacy Policy');
+      expect(document.appName, 'FindIt');
       expect(document.sections, hasLength(11));
       expect(
         document.revisionLabel,
@@ -41,7 +42,7 @@ void main() {
     for (final permission in [
       'android.permission.INTERNET',
       'android.permission.VIBRATE',
-      'abiral.mobile.findithiddenobjects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION',
+      'DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION',
     ]) {
       expect(text, contains(permission));
     }
@@ -51,7 +52,51 @@ void main() {
     expect(text, contains('disabled in the Android configuration'));
   });
 
-  test('policy separates local gameplay, clipboard actions, and hosting', () {
+  test(
+    'policy excludes app package identifiers in metadata and legal text',
+    () {
+      final source = _source();
+      expect(source.containsKey('androidPackage'), isFalse);
+      expect(source.containsKey('launcherName'), isFalse);
+      expect(jsonEncode(source), isNot(contains('abiral.mobile.')));
+      for (final package in [
+        'abiral.mobile.findit',
+        'abiral.mobile.findithiddenobjects',
+      ]) {
+        for (final target in [
+          'metadata',
+          'intro',
+          'footer',
+          'heading',
+          'paragraph',
+          'bullet',
+          'badge',
+        ]) {
+          final value = _source();
+          if (target == 'metadata') {
+            value['androidPackage'] = package;
+          } else if (target == 'intro' || target == 'footer') {
+            value[target] = '${value[target]} $package';
+          } else if (target == 'heading') {
+            final section = (value['sections'] as List).first as Map;
+            section['title'] = '${section['title']} $package';
+          } else if (target == 'badge') {
+            (value['summaryBadges'] as List).add(package);
+          } else {
+            final section = (value['sections'] as List).first as Map;
+            (section['${target}s'] as List).add(package);
+          }
+          expect(
+            () => PrivacyPolicyDocument.fromJson(value),
+            throwsFormatException,
+            reason: '$target: $package',
+          );
+        }
+      }
+    },
+  );
+
+  test('policy explains local gameplay, clipboard actions, and services', () {
     final document = PrivacyPolicyDocument.fromJson(_source());
     String textFor(String id) {
       final section = document.sections.firstWhere(
@@ -74,11 +119,25 @@ void main() {
       textFor('network_services'),
       contains('download form is unavailable'),
     );
-    expect(textFor('network_services'), contains('hosted on GitHub Pages'));
     expect(textFor('network_services'), contains('IP address'));
-    expect(textFor('network_services'), contains('does not contact GitHub'));
+    expect(textFor('network_services'), contains('Email service providers'));
     expect(textFor('choices_deletion'), contains('logical deletion'));
     expect(textFor('choices_deletion'), contains('does not delete emails'));
+  });
+
+  test('policy excludes hosting and publishing implementation copy', () {
+    final text = jsonEncode(_source()).toLowerCase();
+    for (final phrase in [
+      'github',
+      'public privacy policy',
+      'public policy',
+      'hosting infrastructure',
+      'policy is hosted',
+      'policy source',
+      'policy html',
+    ]) {
+      expect(text, isNot(contains(phrase)), reason: phrase);
+    }
   });
 
   test(

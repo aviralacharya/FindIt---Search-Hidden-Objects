@@ -1,0 +1,6 @@
+00:00 +0: loading E:/Google Apps/FindIt - Search Hidden Objects/tool/capture_findit_identity_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: capture actual startup and shared hidden-mode icon
+00:00 +1: capture app branding and package-free offline policy
+00:05 +2: (tearDownAll)
+00:05 +2: All tests passed!

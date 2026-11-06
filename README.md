@@ -1,4 +1,4 @@
-# FindIt - Search Hidden Objects
+# FindIt
 
 <img src="assets/branding/app_icon.png" alt="FindIt magnifying-glass, star, and leaf app icon" width="96" height="96" />
 

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "Production-configured widget UI and player-facing copy review; not installed-APK, device QA, live-hosting, or publisher legal approval.",
+  "manifests": [
+    "verification/findit-identity/production-ui/captures.json",
+    "verification/findit-identity/production-ui/details-captures.json"
+  ],
+  "appName": "FindIt",
+  "appEnvironment": "production",
+  "buildStage": "final",
+  "captureFiles": 38,
+  "captureChecksumsAndDimensionsMatch": true,
+  "newOrChangedCaptureFilesReviewed": 4,
+  "byteIdenticalPreviouslyReviewedCaptureFiles": 34,
+  "reviewSizes": [
+    {"width": 390, "height": 844, "textScale": 1.0},
+    {"width": 320, "height": 568, "textScale": 2.0},
+    {"width": 1440, "height": 960, "textScale": 1.0}
+  ],
+  "playerFacingChecks": {
+    "aboutContainsGameDescriptionSupportPrivacyLicensesAndPlainVersion": true,
+    "aboutExcludesPublisherProvenanceAndImplementationNotes": true,
+    "settingsDescribesIncludedOfflineLevels": true,
+    "collectionExcludesInternalPublisherTooling": true,
+    "scrolledSupportLegalAndAvailabilityViewsReviewed": true,
+    "sharedLauncherArtworkRetained": true,
+    "allElevenOfflinePolicySectionsMatchSharedSource": true,
+    "appPackageIdentifiersAbsentFromPolicy": true,
+    "policyHostingAndGenerationExplanationsAbsent": true,
+    "noNetworkRequestsFromCaptureApp": true
+  },
+  "notes": [
+    "Route transitions were painted before capture; scrolled captures also wait for shared-icon decoding.",
+    "After the policy cleanup, three changed policy captures and the phone Home view with its decoded scene preview were reviewed. The other 34 images match the previously reviewed production snapshot.",
+    "Some scrolled views have identical pixels when the complete section already fits the viewport.",
+    "Large-text pages require scrolling; these captures do not replace Android device QA.",
+    "Superseded captures and earlier APKs were preserved locally, not overwritten or rebaselined."
+  ]
+}

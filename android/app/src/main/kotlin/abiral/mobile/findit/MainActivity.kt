@@ -1,4 +1,4 @@
-package abiral.mobile.findithiddenobjects
+package abiral.mobile.findit
 
 import io.flutter.embedding.android.FlutterActivity
 

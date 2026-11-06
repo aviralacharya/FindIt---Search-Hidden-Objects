@@ -10,6 +10,10 @@ final _urlPattern = RegExp(
   r'\b(?:[a-z][a-z0-9+.-]*://|mailto:|www\.)',
   caseSensitive: false,
 );
+final _packagePattern = RegExp(
+  r'\babiral\.mobile(?:\.[a-z0-9_]+)+\b',
+  caseSensitive: false,
+);
 
 String _text(Map<String, dynamic> value, String key) {
   final text = value[key];
@@ -18,6 +22,11 @@ String _text(Map<String, dynamic> value, String key) {
   }
   if (_urlPattern.hasMatch(text)) {
     throw const FormatException('The privacy policy must not contain URLs.');
+  }
+  if (_packagePattern.hasMatch(text)) {
+    throw const FormatException(
+      'The privacy policy must not contain app package identifiers.',
+    );
   }
   return text;
 }
@@ -28,7 +37,8 @@ List<String> _texts(Object? value) {
         (item) =>
             item is! String ||
             item.trim().isEmpty ||
-            _urlPattern.hasMatch(item),
+            _urlPattern.hasMatch(item) ||
+            _packagePattern.hasMatch(item),
       )) {
     throw const FormatException('Invalid privacy policy text list.');
   }
@@ -125,8 +135,7 @@ class PrivacyPolicyDocument {
   factory PrivacyPolicyDocument.fromJson(Map<String, dynamic> value) {
     if (value['schemaVersion'] != 1 ||
         value['appName'] != AppConfig.name ||
-        value['launcherName'] != AppConfig.launcherName ||
-        value['androidPackage'] != AppConfig.androidPackage ||
+        value.containsKey('androidPackage') ||
         value['developerName'] != AppConfig.developerName ||
         value['developerEmail'] != AppConfig.developerEmail ||
         value['policyTitle'] != 'Privacy Policy') {
