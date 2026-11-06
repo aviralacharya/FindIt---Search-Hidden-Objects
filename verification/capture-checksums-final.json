@@ -1,0 +1,223 @@
+{
+  "checkedAt": "2026-11-06T05:40:35.560158+00:00",
+  "scope": "Rechecks existing widget and release-web PNG hashes and dimensions; no app or browser storage is touched.",
+  "status": "passed",
+  "captures": [
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-home.png",
+      "sha256": "88e4a35bf7dd321e23653ab171effebb8029de4decf55141e6bc997ef55ea644",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-levels.png",
+      "sha256": "972f5e293622ab37dd4cf329044082d2bca021c2e0de367037c384ce7b18f04a",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-daily.png",
+      "sha256": "9d60dcb795ec548f101b1fe92c74a05c1056419186f5ffd317f21de63e1c2ae5",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-reading-room.png",
+      "sha256": "bf9d6d56b63bb17db67d29241577f1ba08b8066e8769a044f68cdc31718c6344",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-area-hint.png",
+      "sha256": "b93fe42f123679fc048312bd8a7c3216c3555f73ee0f03c4b5207df91f4eed4d",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-precise-reveal.png",
+      "sha256": "fe3d7d0f1b9f2e7b0ca251aaff59ca33121e1bfed7be84e492237d5b09492ed3",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-resumed-search.png",
+      "sha256": "7f4b47c4582c8f409aaa0e2681aa0679b0c262d4c0cac1fb02f9e322a25df842",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-completed.png",
+      "sha256": "b0ee7a7a5d31ab95e2a1fbd4885d646c78332166da7217b7f6b396e6eff630e5",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-garden.png",
+      "sha256": "ff6b8dde93627ba0d60d98857861de7a1437c3e5de210c2b835b0830d3e7564d",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/phone-cafe.png",
+      "sha256": "03e35de9a8123b98133792a178eecc9d6bd5469cfe745fc9644201b5f6bca9ed",
+      "width": 780,
+      "height": 1688,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/wide-home.png",
+      "sha256": "d5362104efc80315414835d31d14cf48e7d56706e962ef57f020798ac7fd694c",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/wide-search.png",
+      "sha256": "dae2068c97be746551a300b3e4a3255f44dc8ca802429b1c689ea4bbdf0b54fd",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/landscape-home.png",
+      "sha256": "e5267ed43bb9d8aa434bf38cf34de8fab7afa3b68f3010b96be9d9fe90f4614c",
+      "width": 844,
+      "height": 390,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/landscape-search.png",
+      "sha256": "4bbffd07a9ece000db74189d61ed66d4393449a6c4807eb684948a69e9f69a4f",
+      "width": 844,
+      "height": 390,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/large-text-home.png",
+      "sha256": "af394c1b236758e503f7f37a30678a98d0e3ce5f1282ce1ddd67efa3ef893666",
+      "width": 390,
+      "height": 844,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/large-text-search.png",
+      "sha256": "e675b9393f516416e8971214f6f5b6ddd6a5cd6dad8ba5aec9b8dcf525f0a7d2",
+      "width": 390,
+      "height": 844,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/wide-large-text-home.png",
+      "sha256": "b5d64d2b7f4d68b1f0e054602d4c57ba5bbe56f94e0b1ea4b776f69003aea322",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "widgets",
+      "file": "verification/screenshots/wide-large-text-search.png",
+      "sha256": "5292c620b4be7cefdfee0ba0301558837e2f304c8070de570369cdeb82bfb902",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-home.png",
+      "sha256": "5c07ab8aae0ed694b3e1a96abd0699b80c5c4846a10daa722704856c61a6585d",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-search.png",
+      "sha256": "8d37f1d1b074779bea82d3775ffb21b61279d8ec57b835e3437c466af21c483a",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-area-hint.png",
+      "sha256": "e553b8ac460a550a08dd9282b04cff285551899d06de604fb5e1786bf709dd3f",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-precise-reveal.png",
+      "sha256": "40dfeb486b727d614e3842556682887dc51eafe61b0109ee5ad0572181e75e00",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-resumed-search.png",
+      "sha256": "2b564a7810a745894e6bcab78f068dd9be5df21687cd1842c577e30addf7661c",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/wide-completed.png",
+      "sha256": "b1510f53e6044943936304d8e0b8e54b71f70037a55eb49ddb147ef6f70b0d45",
+      "width": 1440,
+      "height": 960,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-home.png",
+      "sha256": "67f04d7cd942f0b7f802dbbecca5af37b7b61d3d81dbbe65b67b9090745aa7aa",
+      "width": 390,
+      "height": 844,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-resume-choice.png",
+      "sha256": "91582927ac8b597c2caf09a748773cf4f1af052bd83bdb60f9f0b35c83c95a8f",
+      "width": 390,
+      "height": 844,
+      "status": "passed"
+    },
+    {
+      "kind": "release-web",
+      "file": "verification/web-preview/runs/2026-11-06T05-37-57-988Z/phone-search.png",
+      "sha256": "a7c043dcdec021b20164cd94db25b856e897e04b9243d55437dbfb9a3106b81f",
+      "width": 390,
+      "height": 844,
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+00:00 +0: loading E:/Google Apps/FindIt - Search Hidden Objects/test/platform/android_configuration_test.dart
+00:00 +0: Android permissions and backups match the ad-free family app
+00:00 +1: production identity, isolated QA and explicit candidate/signing gates
+00:00 +2: no advertising, WebView, or native test-plugin dependency remains
+00:00 +3: no preview project, original history, or signing credentials were copied
+00:00 +4: optimization stays enabled and no advertising reflection keeps remain
+00:00 +5: reused schema has a new storage identity and a hidden-only catalog
+00:00 +6: release configuration has no ad overrides or invented policy URL
+00:00 +7: All tests passed!

@@ -1,0 +1,885 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "packId": "findit-hidden-sample-expansion-v1",
+  "title": "Three more hidden-object discoveries",
+  "license": "Original FindIt vector compositions generated from this project’s editable source. Publisher rights review required before distribution.",
+  "puzzles": [
+    {
+      "id": "sample-hidden-061",
+      "mode": "hidden",
+      "title": "Morning light · Home",
+      "category": "Home",
+      "difficulty": 2,
+      "level": 61,
+      "seed": 3104141228,
+      "reward": 40,
+      "parSeconds": 130,
+      "timeLimitSeconds": 280,
+      "answerIds": [
+        "sample-hidden-061-object-0",
+        "sample-hidden-061-object-1",
+        "sample-hidden-061-object-2",
+        "sample-hidden-061-object-3",
+        "sample-hidden-061-object-4",
+        "sample-hidden-061-object-5",
+        "sample-hidden-061-object-6"
+      ],
+      "rounds": [],
+      "validation": "automated",
+      "generatorVersion": 1,
+      "scene": {
+        "template": "home",
+        "palette": 3,
+        "layout": 6,
+        "seed": 3104141228,
+        "objects": [
+          {
+            "id": "sample-hidden-061-object-10",
+            "kind": "ruler",
+            "region": {
+              "x": 0.4061535279750824,
+              "y": 0.12454589533805847,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": -0.004856364727020264
+          },
+          {
+            "id": "sample-hidden-061-object-4",
+            "kind": "bird",
+            "region": {
+              "x": 0.2257577343583107,
+              "y": 0.7463604836463928,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": -0.023133151531219483
+          },
+          {
+            "id": "sample-hidden-061-object-2",
+            "kind": "star",
+            "region": {
+              "x": 0.025813341617584227,
+              "y": 0.3281458613872528,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.03906035542488098
+          },
+          {
+            "id": "sample-hidden-061-object-17",
+            "kind": "fish",
+            "region": {
+              "x": 0.800734183371067,
+              "y": 0.3292455127239227,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": -0.035807232856750484
+          },
+          {
+            "id": "sample-hidden-061-object-11",
+            "kind": "pear",
+            "region": {
+              "x": 0.4087147627472878,
+              "y": 0.7384335310459137,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 2,
+            "variant": 0,
+            "rotation": -0.02148196220397949
+          },
+          {
+            "id": "sample-hidden-061-object-15",
+            "kind": "rocket",
+            "region": {
+              "x": 0.4062843203544617,
+              "y": 0.3319215097427368,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": -0.04815562963485718
+          },
+          {
+            "id": "sample-hidden-061-object-5",
+            "kind": "lemon",
+            "region": {
+              "x": 0.21555196714401245,
+              "y": 0.5312274007797242,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.042288726568222045
+          },
+          {
+            "id": "sample-hidden-061-object-16",
+            "kind": "pineapple",
+            "region": {
+              "x": 0.7991345226764679,
+              "y": 0.5357450232505798,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.06614877820014953
+          },
+          {
+            "id": "sample-hidden-061-object-9",
+            "kind": "cherry",
+            "region": {
+              "x": 0.592276915550232,
+              "y": 0.3280781273841858,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": -0.045968856811523434
+          },
+          {
+            "id": "sample-hidden-061-object-3",
+            "kind": "hat",
+            "region": {
+              "x": 0.7974108325242997,
+              "y": 0.12152611351013184,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.0661570394039154
+          },
+          {
+            "id": "sample-hidden-061-object-7",
+            "kind": "butterfly",
+            "region": {
+              "x": 0.026660750865936278,
+              "y": 0.12497971868515015,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": -0.044022613763809205
+          },
+          {
+            "id": "sample-hidden-061-object-8",
+            "kind": "cat",
+            "region": {
+              "x": 0.029418423295021055,
+              "y": 0.5342316250801087,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": 0.06347378969192505
+          },
+          {
+            "id": "sample-hidden-061-object-1",
+            "kind": "flag",
+            "region": {
+              "x": 0.7912154554128648,
+              "y": 0.745324577331543,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": -0.011566629409790039
+          },
+          {
+            "id": "sample-hidden-061-object-18",
+            "kind": "boat",
+            "region": {
+              "x": 0.6009358524680138,
+              "y": 0.7432003471851348,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": -0.022155067920684814
+          },
+          {
+            "id": "sample-hidden-061-object-0",
+            "kind": "mug",
+            "region": {
+              "x": 0.6001486986875535,
+              "y": 0.11949206638336182,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": 0.0899896788597107
+          },
+          {
+            "id": "sample-hidden-061-object-6",
+            "kind": "gift",
+            "region": {
+              "x": 0.6004472736120224,
+              "y": 0.5336292166709901,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.029956852197647092
+          },
+          {
+            "id": "sample-hidden-061-object-12",
+            "kind": "key",
+            "region": {
+              "x": 0.027524056673049926,
+              "y": 0.7377529637813568,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.08969582676887512
+          },
+          {
+            "id": "sample-hidden-061-object-13",
+            "kind": "globe",
+            "region": {
+              "x": 0.42259999251365665,
+              "y": 0.5344874691963196,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.047501181364059446
+          },
+          {
+            "id": "sample-hidden-061-object-19",
+            "kind": "compass",
+            "region": {
+              "x": 0.217877135515213,
+              "y": 0.3253551981449127,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": -0.07538619875907898
+          },
+          {
+            "id": "sample-hidden-061-object-14",
+            "kind": "telescope",
+            "region": {
+              "x": 0.21705938148498535,
+              "y": 0.12097763967514039,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 2,
+            "variant": 0,
+            "rotation": -0.04848132491111755
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-hidden-062",
+      "mode": "hidden",
+      "title": "Morning light · Garden",
+      "category": "Garden",
+      "difficulty": 2,
+      "level": 62,
+      "seed": 3120918847,
+      "reward": 40,
+      "parSeconds": 130,
+      "timeLimitSeconds": 280,
+      "answerIds": [
+        "sample-hidden-062-object-0",
+        "sample-hidden-062-object-1",
+        "sample-hidden-062-object-2",
+        "sample-hidden-062-object-3",
+        "sample-hidden-062-object-4",
+        "sample-hidden-062-object-5",
+        "sample-hidden-062-object-6"
+      ],
+      "rounds": [],
+      "validation": "automated",
+      "generatorVersion": 1,
+      "scene": {
+        "template": "garden",
+        "palette": 2,
+        "layout": 6,
+        "seed": 3120918847,
+        "objects": [
+          {
+            "id": "sample-hidden-062-object-13",
+            "kind": "hat",
+            "region": {
+              "x": 0.22698145896196364,
+              "y": 0.11641387677192688,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.015487257242202759
+          },
+          {
+            "id": "sample-hidden-062-object-11",
+            "kind": "cat",
+            "region": {
+              "x": 0.6010501662492753,
+              "y": 0.12040714883804322,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.027461882829666138
+          },
+          {
+            "id": "sample-hidden-062-object-14",
+            "kind": "watermelon",
+            "region": {
+              "x": 0.4189011023640633,
+              "y": 0.5402685308456421,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": 0.0227996027469635
+          },
+          {
+            "id": "sample-hidden-062-object-0",
+            "kind": "gift",
+            "region": {
+              "x": 0.8004468962550163,
+              "y": 0.740420429944992,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.0252904736995697
+          },
+          {
+            "id": "sample-hidden-062-object-12",
+            "kind": "cherry",
+            "region": {
+              "x": 0.8019020822644234,
+              "y": 0.3328944506645203,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": 0.05950599789619446
+          },
+          {
+            "id": "sample-hidden-062-object-5",
+            "kind": "pineapple",
+            "region": {
+              "x": 0.04159078007936477,
+              "y": 0.3232626996040344,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.08271301746368408
+          },
+          {
+            "id": "sample-hidden-062-object-19",
+            "kind": "car",
+            "region": {
+              "x": 0.023013624668121336,
+              "y": 0.11826443719863892,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.06399472832679748
+          },
+          {
+            "id": "sample-hidden-062-object-7",
+            "kind": "pizza",
+            "region": {
+              "x": 0.02217188811302185,
+              "y": 0.7441508347988128,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.03206318020820618
+          },
+          {
+            "id": "sample-hidden-062-object-15",
+            "kind": "feather",
+            "region": {
+              "x": 0.23176403129100798,
+              "y": 0.7426040914058685,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": 0.033348312377929686
+          },
+          {
+            "id": "sample-hidden-062-object-1",
+            "kind": "butterfly",
+            "region": {
+              "x": 0.6063258823752404,
+              "y": 0.7362887208461761,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": 0.06885901093482971
+          },
+          {
+            "id": "sample-hidden-062-object-2",
+            "kind": "leaf",
+            "region": {
+              "x": 0.7976885078549385,
+              "y": 0.5408048503398896,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.0670508050918579
+          },
+          {
+            "id": "sample-hidden-062-object-4",
+            "kind": "camera",
+            "region": {
+              "x": 0.4181349345445633,
+              "y": 0.11722311425209046,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": 0.0010796964168548584
+          },
+          {
+            "id": "sample-hidden-062-object-8",
+            "kind": "binoculars",
+            "region": {
+              "x": 0.7855916434526444,
+              "y": 0.11528296089172364,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.05838991999626159
+          },
+          {
+            "id": "sample-hidden-062-object-3",
+            "kind": "dog",
+            "region": {
+              "x": 0.2306118124127388,
+              "y": 0.3237413387298584,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.06490386843681335
+          },
+          {
+            "id": "sample-hidden-062-object-18",
+            "kind": "fish",
+            "region": {
+              "x": 0.4049028393030167,
+              "y": 0.32521230149269104,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.015589964389801024
+          },
+          {
+            "id": "sample-hidden-062-object-6",
+            "kind": "clock",
+            "region": {
+              "x": 0.21367641603946685,
+              "y": 0.531895135641098,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.009270722866058349
+          },
+          {
+            "id": "sample-hidden-062-object-9",
+            "kind": "bread",
+            "region": {
+              "x": 0.4146423904895783,
+              "y": 0.739877555847168,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.0006202554702758789
+          },
+          {
+            "id": "sample-hidden-062-object-10",
+            "kind": "donut",
+            "region": {
+              "x": 0.02315503770112991,
+              "y": 0.5302250685691834,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.002569524049758911
+          },
+          {
+            "id": "sample-hidden-062-object-16",
+            "kind": "pear",
+            "region": {
+              "x": 0.6108983322381975,
+              "y": 0.5362222075462342,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.0630423080921173
+          },
+          {
+            "id": "sample-hidden-062-object-17",
+            "kind": "lemon",
+            "region": {
+              "x": 0.6129315233826638,
+              "y": 0.3289718894958496,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.035729577541351316
+          }
+        ]
+      }
+    },
+    {
+      "id": "sample-hidden-063",
+      "mode": "hidden",
+      "title": "Morning light · Shopping mall",
+      "category": "Shopping mall",
+      "difficulty": 2,
+      "level": 63,
+      "seed": 3137696466,
+      "reward": 40,
+      "parSeconds": 130,
+      "timeLimitSeconds": 280,
+      "answerIds": [
+        "sample-hidden-063-object-0",
+        "sample-hidden-063-object-1",
+        "sample-hidden-063-object-2",
+        "sample-hidden-063-object-3",
+        "sample-hidden-063-object-4",
+        "sample-hidden-063-object-5",
+        "sample-hidden-063-object-6"
+      ],
+      "rounds": [],
+      "validation": "automated",
+      "generatorVersion": 1,
+      "scene": {
+        "template": "mall",
+        "palette": 1,
+        "layout": 6,
+        "seed": 3137696466,
+        "objects": [
+          {
+            "id": "sample-hidden-063-object-15",
+            "kind": "pizza",
+            "region": {
+              "x": 0.6019516325592995,
+              "y": 0.12132223129272461,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.06514773488044738
+          },
+          {
+            "id": "sample-hidden-063-object-8",
+            "kind": "basket",
+            "region": {
+              "x": 0.4035213569998741,
+              "y": 0.330503093957901,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": -0.0002536189556121826
+          },
+          {
+            "id": "sample-hidden-063-object-10",
+            "kind": "mug",
+            "region": {
+              "x": 0.2159035376906395,
+              "y": 0.12385011458396912,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": 0.009995412826538085
+          },
+          {
+            "id": "sample-hidden-063-object-14",
+            "kind": "bread",
+            "region": {
+              "x": 0.6117159110307694,
+              "y": 0.7413770945072174,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.08591946959495544
+          },
+          {
+            "id": "sample-hidden-063-object-19",
+            "kind": "butterfly",
+            "region": {
+              "x": 0.4205700182318688,
+              "y": 0.7413215806484222,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.05260325789451599
+          },
+          {
+            "id": "sample-hidden-063-object-4",
+            "kind": "globe",
+            "region": {
+              "x": 0.03781971955299378,
+              "y": 0.7385487051010132,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.025292544364929198
+          },
+          {
+            "id": "sample-hidden-063-object-17",
+            "kind": "car",
+            "region": {
+              "x": 0.7962424930334091,
+              "y": 0.5338646774291993,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": -0.0727336013317108
+          },
+          {
+            "id": "sample-hidden-063-object-9",
+            "kind": "watermelon",
+            "region": {
+              "x": 0.7947724531292916,
+              "y": 0.12103980898857117,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.047209367752075196
+          },
+          {
+            "id": "sample-hidden-063-object-18",
+            "kind": "strawberry",
+            "region": {
+              "x": 0.6125861299633981,
+              "y": 0.3298656508922577,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.053334996700286866
+          },
+          {
+            "id": "sample-hidden-063-object-5",
+            "kind": "cherry",
+            "region": {
+              "x": 0.22234648931026457,
+              "y": 0.3221274800300598,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.02771476149559021
+          },
+          {
+            "id": "sample-hidden-063-object-12",
+            "kind": "map",
+            "region": {
+              "x": 0.037891650855541234,
+              "y": 0.5382185127735138,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 5,
+            "variant": 0,
+            "rotation": 0.028707822561264036
+          },
+          {
+            "id": "sample-hidden-063-object-13",
+            "kind": "binoculars",
+            "region": {
+              "x": 0.2328008661866188,
+              "y": 0.5325628712177277,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 3,
+            "variant": 0,
+            "rotation": -0.01652667760848999
+          },
+          {
+            "id": "sample-hidden-063-object-2",
+            "kind": "shell",
+            "region": {
+              "x": 0.040366497218608854,
+              "y": 0.12354915499687195,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 2,
+            "variant": 0,
+            "rotation": -0.08495875597000122
+          },
+          {
+            "id": "sample-hidden-063-object-0",
+            "kind": "notebook",
+            "region": {
+              "x": 0.6003493908643723,
+              "y": 0.538815199136734,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": 0.0394293737411499
+          },
+          {
+            "id": "sample-hidden-063-object-3",
+            "kind": "cat",
+            "region": {
+              "x": 0.788678337097168,
+              "y": 0.7475162825584412,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.06365070819854736
+          },
+          {
+            "id": "sample-hidden-063-object-16",
+            "kind": "star",
+            "region": {
+              "x": 0.4152022109627724,
+              "y": 0.5340495924949646,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 0,
+            "variant": 0,
+            "rotation": 0.05993584871292114
+          },
+          {
+            "id": "sample-hidden-063-object-6",
+            "kind": "leaf",
+            "region": {
+              "x": 0.036368217289447786,
+              "y": 0.330379537820816,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 4,
+            "variant": 0,
+            "rotation": 0.04849829792976379
+          },
+          {
+            "id": "sample-hidden-063-object-7",
+            "kind": "flag",
+            "region": {
+              "x": 0.2167703282237053,
+              "y": 0.7388476998806,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.020103746652603147
+          },
+          {
+            "id": "sample-hidden-063-object-11",
+            "kind": "key",
+            "region": {
+              "x": 0.7820699811577797,
+              "y": 0.32454338860511783,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.03344180345535278
+          },
+          {
+            "id": "sample-hidden-063-object-1",
+            "kind": "plant",
+            "region": {
+              "x": 0.40911634236574174,
+              "y": 0.12190033388137818,
+              "w": 0.132,
+              "h": 0.17600000000000002
+            },
+            "color": 1,
+            "variant": 0,
+            "rotation": -0.030715337991714477
+          }
+        ]
+      }
+    }
+  ]
+}

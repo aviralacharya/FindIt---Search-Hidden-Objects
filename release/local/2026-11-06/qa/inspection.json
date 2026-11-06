@@ -1,0 +1,333 @@
+{
+  "createdAt": "2026-11-06T05:32:59.930128+00:00",
+  "scope": "Packaging inspection only. No Android installation, real 16 KB runtime, ad/network/privacy-policy validation or publication.",
+  "buildTools": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\sdk\\build-tools\\36.0.0",
+  "profile": "qa-candidate",
+  "bundleConfigSchema": "https://github.com/google/bundletool/blob/master/src/main/proto/config.proto",
+  "artifacts": [
+    {
+      "file": "release\\local\\2026-11-06\\qa\\FindIt-Hidden-Objects-1.0.0-QA.apk",
+      "bytes": 72157788,
+      "modifiedAt": "2026-11-06T05:29:46.588047+00:00",
+      "sha256": "aaf04e035a7f0af05876b48116ba2f49c799e3ba48937a18ad81dabbbdb5f326",
+      "type": "apk",
+      "profile": "qa-candidate",
+      "nativeLibraries": [
+        {
+          "entry": "lib/arm64-v8a/libapp.so",
+          "elfBits": 64,
+          "sha256": "f08b14d62fecc6ab4201dfa9c9dce429355d1cd5983df2be2e8caf6b640fa02e",
+          "loadSegmentAlignments": [
+            65536,
+            65536,
+            65536
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 425984,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/arm64-v8a/libdartjni.so",
+          "elfBits": 64,
+          "sha256": "fdb8f64f3c415042d7c92b148c09eb852f271c8e9613b812662bef33a6aec73c",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 7454720,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/arm64-v8a/libdatastore_shared_counter.so",
+          "elfBits": 64,
+          "sha256": "178f89a2c6c9234ddf980dd4cd1f3616186a46b2b932aafa6707abd04c5fd76a",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 7602176,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/arm64-v8a/libflutter.so",
+          "elfBits": 64,
+          "sha256": "86b660128f3a3b6220c32d4d637f8198b2083f60c36c55ff025d3dba1a64d0f8",
+          "loadSegmentAlignments": [
+            65536,
+            65536,
+            65536
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 7618560,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/arm64-v8a/libsqlite3.so",
+          "elfBits": 64,
+          "sha256": "f4b91af775957cd9b536f8a4a445f5740bf8ada6085dd0015125a9ba28c19358",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 19382272,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/armeabi-v7a/libapp.so",
+          "elfBits": 32,
+          "sha256": "2eeee0edffdabb0fa0b458bfd3abb0f3277e4a6ee05305991a9489c59d0f6e65",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": false,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 21135360,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/armeabi-v7a/libdartjni.so",
+          "elfBits": 32,
+          "sha256": "93118e6afbbe996771f617e56de65dde4fcd02f69ec17fdf293956d55c45c580",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": false,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 28868608,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/armeabi-v7a/libdatastore_shared_counter.so",
+          "elfBits": 32,
+          "sha256": "b4a465c02ee3ab581128ce8fedf83b40f6868c73c74b88e98908803229947e6a",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": false,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 28950528,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/armeabi-v7a/libflutter.so",
+          "elfBits": 32,
+          "sha256": "d96888c4a096874f949ff71fa490c54f38398462a19e28c7caccbb166cda7c5b",
+          "loadSegmentAlignments": [
+            65536,
+            65536,
+            65536
+          ],
+          "elf16kRequired": false,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 28966912,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/armeabi-v7a/libsqlite3.so",
+          "elfBits": 32,
+          "sha256": "dc1b23dc9bf72ac59951fffb94741ebc7a45f455acc371261274f399ae0c7f4c",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": false,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 37601280,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/x86_64/libapp.so",
+          "elfBits": 64,
+          "sha256": "bd8774fc6aebe270e7e2e0ebb823630b9e1ceb56e2ccbf67673bb2548c73ec26",
+          "loadSegmentAlignments": [
+            65536,
+            65536,
+            65536
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 39337984,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/x86_64/libdartjni.so",
+          "elfBits": 64,
+          "sha256": "89270019f9f4370bf112681ad6b16c43a413a04775570775e0b55693cb4a5032",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 46563328,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/x86_64/libdatastore_shared_counter.so",
+          "elfBits": 64,
+          "sha256": "ccd1862ef8f854d2322f3ee07adebd107890ded3b7c96b8f3528ac99aab4a4f6",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 46694400,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/x86_64/libflutter.so",
+          "elfBits": 64,
+          "sha256": "cdc3311b5dd2bce3bbf4b5c64d294aa936c2153012965b426862b91e14f1db3b",
+          "loadSegmentAlignments": [
+            65536,
+            65536,
+            65536
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 46710784,
+          "apkZip16kAligned": true
+        },
+        {
+          "entry": "lib/x86_64/libsqlite3.so",
+          "elfBits": 64,
+          "sha256": "42736248fc380a4a8f395df6aa3be739bd18e6337c2be753188ccecbc04a953c",
+          "loadSegmentAlignments": [
+            16384,
+            16384,
+            16384
+          ],
+          "elf16kRequired": true,
+          "elf16kAligned": true,
+          "zipStored": true,
+          "zipDataOffset": 59801600,
+          "apkZip16kAligned": true
+        }
+      ],
+      "warnings": [],
+      "adFreeDexScan": {
+        "status": "passed",
+        "dexFiles": [
+          {
+            "entry": "classes.dex",
+            "definedClasses": 1030,
+            "referencedTypes": 1670,
+            "sha256": "4407cac1b2c310f3ca2f22a09b1a3157c2255d8fc97203f39bdc78f39e6dd6e2"
+          }
+        ],
+        "definedClasses": 1030,
+        "referencedTypes": 1670,
+        "forbiddenClassReferences": [],
+        "sdkRegistrationMarkers": [],
+        "scope": "All DEX class/type/string tables. R8 original-name and resolved-dependency checks are also required."
+      },
+      "catalogPreservation": {
+        "status": "passed",
+        "sha256": "5c7ccd833535e5b5fbb1c134e386e625d53cff8444a9414359c7c979155e05d6",
+        "puzzles": 60,
+        "uniqueIds": 60,
+        "puzzlesPerCoreMode": {
+          "hidden": 60
+        }
+      },
+      "adFreeR8Scan": {
+        "status": "passed",
+        "file": "release\\local\\2026-11-06\\qa\\r8\\mapping.txt",
+        "sha256": "a7c9470d6639cb95802c411362f25d02b2647cb37329c1f54988d05a61704dd8",
+        "originalClassCount": 1213,
+        "forbiddenOriginalClasses": []
+      },
+      "adFreeNativeDartMarkersAbsent": true,
+      "zipalignVerified": true,
+      "zipalignOutputTail": [
+        "72014044 resources.arsc (OK)",
+        "Verification successful"
+      ],
+      "mergedManifest": {
+        "applicationId": "abiral.mobile.findithiddenobjects.qa",
+        "versionName": "1.0.0-qa",
+        "versionCode": "1",
+        "minSdk": "24",
+        "targetSdk": "36",
+        "permissions": [
+          "abiral.mobile.findithiddenobjects.qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+          "android.permission.INTERNET",
+          "android.permission.VIBRATE"
+        ],
+        "providers": [
+          "androidx.startup.InitializationProvider"
+        ],
+        "metadataNames": [
+          "androidx.lifecycle.ProcessLifecycleInitializer",
+          "androidx.profileinstaller.ProfileInstallerInitializer",
+          "flutterEmbedding",
+          "io.flutter.embedding.android.NormalTheme"
+        ],
+        "adsMetadataAbsent": true,
+        "debuggable": false,
+        "automaticAdsProviderAbsent": true,
+        "aaidPermissionAbsent": true,
+        "adServicesPermissionsAbsent": true,
+        "backupDisabled": true,
+        "fullBackupDisabled": true,
+        "cleartextDisabled": true,
+        "dataExtractionRulesResource": "@0x7f100000"
+      },
+      "applicationLabel": "FindIt Hidden QA",
+      "signingMetadata": {
+        "jarSignatureFiles": [],
+        "apkSigningBlockPresent": true
+      },
+      "apkSignatureVerified": true,
+      "certificateSubjects": [
+        "C=US, O=Android, CN=Android Debug"
+      ],
+      "certificateSha256": [
+        "b08451266f6a68fa07cc2cf4da0112d0c755b77a671a46b2c7980bc8b920b594"
+      ],
+      "status": "passed"
+    }
+  ],
+  "nativePayloadConsistency": {
+    "status": "not_checked",
+    "reason": "Both APK and AAB reports are required."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "count": 60,
+  "checks": [
+    "unique IDs",
+    "answer correctness",
+    "hidden-object-only content",
+    "all listed targets are present",
+    "non-overlapping regions",
+    "minimum target dimensions",
+    "safe asset references",
+    "bounded data"
+  ],
+  "byMode": {
+    "hidden": 60
+  },
+  "pixelValidation": "Run flutter test tool/export_hidden_art_test.dart",
+  "humanReview": "Original vector art. Independent editorial/art review remains a release gate."
+}

@@ -1,0 +1,506 @@
+00:00 +0: loading E:/Google Apps/FindIt - Search Hidden Objects/test/content/catalog_test.dart
+00:00 +0: E:/Google Apps/FindIt - Search Hidden Objects/test/content/catalog_test.dart: 60 unique hidden-object levels with complete progression
+00:00 +1: E:/Google Apps/FindIt - Search Hidden Objects/test/content/catalog_test.dart: bundled catalog matches deterministic generation and all 60 scenes exist
+00:00 +2: E:/Google Apps/FindIt - Search Hidden Objects/test/content/catalog_test.dart: bundled catalog matches deterministic generation and all 60 scenes exist
+00:00 +3: E:/Google Apps/FindIt - Search Hidden Objects/test/content/catalog_test.dart: bundled catalog matches deterministic generation and all 60 scenes exist
+00:00 +4: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: valid packs commit before exposure, work offline, and match a checksum
+00:00 +5: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: valid packs commit before exposure, work offline, and match a checksum
+00:00 +6: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: valid packs commit before exposure, work offline, and match a checksum
+00:00 +7: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: valid packs commit before exposure, work offline, and match a checksum
+00:00 +8: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: valid packs commit before exposure, work offline, and match a checksum
+00:00 +9: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: non-hidden packs and saved engines are never exposed by this app
+00:01 +10: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: an unsupported stored pack is refused without deleting its durable data
+00:01 +11: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: unsafe URLs and mismatched checksums leave the collection unchanged
+00:01 +12: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: duplicate IDs, padded repeats, and reserved daily IDs are rejected
+00:01 +13: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: unlicensed or malformed content is never partially installed
+00:01 +14: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: remote asset references are removed; only declarative vector data is rendered
+00:01 +15: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: HTTP failures, redirect responses, and declared oversized bodies install nothing
+00:01 +16: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: HTTP failures, redirect responses, and declared oversized bodies install nothing
+00:01 +17: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: HTTP failures, redirect responses, and declared oversized bodies install nothing
+00:01 +18: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: HTTP failures, redirect responses, and declared oversized bodies install nothing
+00:01 +19: E:/Google Apps/FindIt - Search Hidden Objects/test/content/pack_format_test.dart: publisher example contains three hidden scenes without launch repeats
+00:01 +20: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: streamed size limit and broken connections are fail-safe
+00:01 +21: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: streamed size limit and broken connections are fail-safe
+00:01 +22: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: two concurrent downloads of the same pack can install only once
+00:02 +23: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: concurrent different pack IDs cannot persist conflicting puzzle content
+00:02 +24: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: concurrent relabeled repeats are rejected before their durable save
+00:02 +25: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: distinct concurrent packs both install and reopen successfully
+00:02 +26: E:/Google Apps/FindIt - Search Hidden Objects/test/content/content_repository_test.dart: a failed pack save exposes nothing and does not poison the install queue
+00:02 +27: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: strict civil-date parsing includes leap days and rejects normalization
+00:02 +28: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: 366 leap-year sets are valid, unique, and hidden-object-only
+00:03 +29: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: 366 leap-year sets are valid, unique, and hidden-object-only
+00:03 +30: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: 366 leap-year sets are valid, unique, and hidden-object-only
+00:03 +31: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: 366 leap-year sets are valid, unique, and hidden-object-only
+00:03 +32: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: 366 leap-year sets are valid, unique, and hidden-object-only
+00:03 +33: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: completion is immutable, date-specific, and safely round-trips
+00:03 +34: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: current streak retains yesterday, ignores future days, and breaks at a gap
+00:03 +35: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: streak arithmetic handles leap, year, and DST-adjacent civil dates
+00:03 +36: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/daily_challenge_test.dart: incomplete sets never contribute to a streak
+00:04 +37: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-001 is valid and solvable, with a frozen completion
+00:04 +38: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-002 is valid and solvable, with a frozen completion
+00:04 +39: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-003 is valid and solvable, with a frozen completion
+00:04 +40: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-004 is valid and solvable, with a frozen completion
+00:04 +41: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-005 is valid and solvable, with a frozen completion
+00:04 +42: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-006 is valid and solvable, with a frozen completion
+00:04 +43: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-007 is valid and solvable, with a frozen completion
+00:04 +44: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-008 is valid and solvable, with a frozen completion
+00:04 +45: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-009 is valid and solvable, with a frozen completion
+00:04 +46: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-010 is valid and solvable, with a frozen completion
+00:04 +47: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-011 is valid and solvable, with a frozen completion
+00:04 +48: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-012 is valid and solvable, with a frozen completion
+00:04 +49: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-013 is valid and solvable, with a frozen completion
+00:04 +50: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-014 is valid and solvable, with a frozen completion
+00:04 +51: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-015 is valid and solvable, with a frozen completion
+00:04 +52: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-016 is valid and solvable, with a frozen completion
+00:04 +53: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-017 is valid and solvable, with a frozen completion
+00:04 +54: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +55: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +56: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +57: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +58: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +59: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +60: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +61: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +62: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +63: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +64: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +65: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +66: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +67: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:04 +68: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-031 is valid and solvable, with a frozen completion
+00:04 +69: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-032 is valid and solvable, with a frozen completion
+00:04 +70: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-002 supports durable two-stage hints and manual finds
+00:04 +71: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-002 supports durable two-stage hints and manual finds
+00:04 +72: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-002 supports durable two-stage hints and manual finds
+00:04 +73: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-035 is valid and solvable, with a frozen completion
+00:04 +74: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-003 supports durable two-stage hints and manual finds
+00:04 +75: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-003 supports durable two-stage hints and manual finds
+00:04 +76: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-003 supports durable two-stage hints and manual finds
+00:04 +77: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-038 is valid and solvable, with a frozen completion
+00:04 +78: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-004 supports durable two-stage hints and manual finds
+00:04 +79: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-004 supports durable two-stage hints and manual finds
+00:04 +80: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-040 is valid and solvable, with a frozen completion
+00:04 +81: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-005 supports durable two-stage hints and manual finds
+00:04 +82: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-005 supports durable two-stage hints and manual finds
+00:04 +83: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-042 is valid and solvable, with a frozen completion
+00:04 +84: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-006 supports durable two-stage hints and manual finds
+00:04 +85: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-006 supports durable two-stage hints and manual finds
+00:04 +86: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-006 supports durable two-stage hints and manual finds
+00:04 +87: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-007 supports durable two-stage hints and manual finds
+00:04 +88: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-007 supports durable two-stage hints and manual finds
+00:04 +89: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-046 is valid and solvable, with a frozen completion
+00:04 +90: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-047 is valid and solvable, with a frozen completion
+00:04 +91: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-008 supports durable two-stage hints and manual finds
+00:04 +92: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-008 supports durable two-stage hints and manual finds
+00:04 +93: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-049 is valid and solvable, with a frozen completion
+00:04 +94: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-009 supports durable two-stage hints and manual finds
+00:04 +95: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-009 supports durable two-stage hints and manual finds
+00:04 +96: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-051 is valid and solvable, with a frozen completion
+00:04 +97: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-010 supports durable two-stage hints and manual finds
+00:04 +98: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-010 supports durable two-stage hints and manual finds
+00:04 +99: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-053 is valid and solvable, with a frozen completion
+00:04 +100: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-011 supports durable two-stage hints and manual finds
+00:04 +101: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-011 supports durable two-stage hints and manual finds
+00:04 +102: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-055 is valid and solvable, with a frozen completion
+00:04 +103: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-012 supports durable two-stage hints and manual finds
+00:04 +104: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-012 supports durable two-stage hints and manual finds
+00:04 +105: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-012 supports durable two-stage hints and manual finds
+00:04 +106: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-013 supports durable two-stage hints and manual finds
+00:04 +107: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-013 supports durable two-stage hints and manual finds
+00:04 +108: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-013 supports durable two-stage hints and manual finds
+00:04 +109: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles spot-060 is valid and solvable, with a frozen completion
+00:04 +110: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-014 supports durable two-stage hints and manual finds
+00:04 +111: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-014 supports durable two-stage hints and manual finds
+00:04 +112: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-002 is valid and solvable, with a frozen completion
+00:04 +113: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-015 supports durable two-stage hints and manual finds
+00:04 +114: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-015 supports durable two-stage hints and manual finds
+00:04 +115: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-004 is valid and solvable, with a frozen completion
+00:04 +116: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-016 supports durable two-stage hints and manual finds
+00:04 +117: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-016 supports durable two-stage hints and manual finds
+00:04 +118: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-016 supports durable two-stage hints and manual finds
+00:04 +119: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-007 is valid and solvable, with a frozen completion
+00:04 +120: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-017 supports durable two-stage hints and manual finds
+00:04 +121: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-017 supports durable two-stage hints and manual finds
+00:04 +122: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-017 supports durable two-stage hints and manual finds
+00:04 +123: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-010 is valid and solvable, with a frozen completion
+00:04 +124: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-018 supports durable two-stage hints and manual finds
+00:04 +125: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-018 supports durable two-stage hints and manual finds
+00:04 +126: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-012 is valid and solvable, with a frozen completion
+00:04 +127: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-019 supports durable two-stage hints and manual finds
+00:04 +128: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-019 supports durable two-stage hints and manual finds
+00:04 +129: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-014 is valid and solvable, with a frozen completion
+00:04 +130: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-020 supports durable two-stage hints and manual finds
+00:04 +131: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-020 supports durable two-stage hints and manual finds
+00:04 +132: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-020 supports durable two-stage hints and manual finds
+00:04 +133: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-017 is valid and solvable, with a frozen completion
+00:04 +134: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-021 supports durable two-stage hints and manual finds
+00:04 +135: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-021 supports durable two-stage hints and manual finds
+00:04 +136: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-019 is valid and solvable, with a frozen completion
+00:04 +137: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-022 supports durable two-stage hints and manual finds
+00:04 +138: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-022 supports durable two-stage hints and manual finds
+00:04 +139: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-022 supports durable two-stage hints and manual finds
+00:04 +140: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-022 is valid and solvable, with a frozen completion
+00:04 +141: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-023 supports durable two-stage hints and manual finds
+00:04 +142: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-023 supports durable two-stage hints and manual finds
+00:04 +143: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-024 is valid and solvable, with a frozen completion
+00:04 +144: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-024 supports durable two-stage hints and manual finds
+00:04 +145: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-024 supports durable two-stage hints and manual finds
+00:04 +146: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-026 is valid and solvable, with a frozen completion
+00:04 +147: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-025 supports durable two-stage hints and manual finds
+00:04 +148: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-025 supports durable two-stage hints and manual finds
+00:04 +149: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-025 supports durable two-stage hints and manual finds
+00:04 +150: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-029 is valid and solvable, with a frozen completion
+00:04 +151: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-026 supports durable two-stage hints and manual finds
+00:04 +152: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-026 supports durable two-stage hints and manual finds
+00:04 +153: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-031 is valid and solvable, with a frozen completion
+00:04 +154: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-032 is valid and solvable, with a frozen completion
+00:04 +155: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-027 supports durable two-stage hints and manual finds
+00:04 +156: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-027 supports durable two-stage hints and manual finds
+00:04 +157: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-027 supports durable two-stage hints and manual finds
+00:04 +158: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-027 supports durable two-stage hints and manual finds
+00:04 +159: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-036 is valid and solvable, with a frozen completion
+00:04 +160: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-028 supports durable two-stage hints and manual finds
+00:04 +161: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-028 supports durable two-stage hints and manual finds
+00:04 +162: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-038 is valid and solvable, with a frozen completion
+00:04 +163: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-029 supports durable two-stage hints and manual finds
+00:04 +164: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-029 supports durable two-stage hints and manual finds
+00:04 +165: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-029 supports durable two-stage hints and manual finds
+00:04 +166: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-041 is valid and solvable, with a frozen completion
+00:04 +167: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-030 supports durable two-stage hints and manual finds
+00:05 +168: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-030 supports durable two-stage hints and manual finds
+00:05 +169: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-043 is valid and solvable, with a frozen completion
+00:05 +170: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-031 supports durable two-stage hints and manual finds
+00:05 +171: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-031 supports durable two-stage hints and manual finds
+00:05 +172: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-031 supports durable two-stage hints and manual finds
+00:05 +173: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-046 is valid and solvable, with a frozen completion
+00:05 +174: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-032 supports durable two-stage hints and manual finds
+00:05 +175: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-032 supports durable two-stage hints and manual finds
+00:05 +176: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-048 is valid and solvable, with a frozen completion
+00:05 +177: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-033 supports durable two-stage hints and manual finds
+00:05 +178: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-033 supports durable two-stage hints and manual finds
+00:05 +179: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-033 supports durable two-stage hints and manual finds
+00:05 +180: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-051 is valid and solvable, with a frozen completion
+00:05 +181: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-034 supports durable two-stage hints and manual finds
+00:05 +182: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-034 supports durable two-stage hints and manual finds
+00:05 +183: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-034 supports durable two-stage hints and manual finds
+00:05 +184: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-054 is valid and solvable, with a frozen completion
+00:05 +185: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-035 supports durable two-stage hints and manual finds
+00:05 +186: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-035 supports durable two-stage hints and manual finds
+00:05 +187: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-056 is valid and solvable, with a frozen completion
+00:05 +188: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-036 supports durable two-stage hints and manual finds
+00:05 +189: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-036 supports durable two-stage hints and manual finds
+00:05 +190: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-058 is valid and solvable, with a frozen completion
+00:05 +191: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles hidden-059 is valid and solvable, with a frozen completion
+00:05 +192: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-037 supports durable two-stage hints and manual finds
+00:05 +193: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-037 supports durable two-stage hints and manual finds
+00:05 +194: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-001 is valid and solvable, with a frozen completion
+00:05 +195: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-038 supports durable two-stage hints and manual finds
+00:05 +196: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-038 supports durable two-stage hints and manual finds
+00:05 +197: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-003 is valid and solvable, with a frozen completion
+00:05 +198: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-039 supports durable two-stage hints and manual finds
+00:05 +199: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-039 supports durable two-stage hints and manual finds
+00:05 +200: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-039 supports durable two-stage hints and manual finds
+00:05 +201: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-006 is valid and solvable, with a frozen completion
+00:05 +202: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-040 supports durable two-stage hints and manual finds
+00:05 +203: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-040 supports durable two-stage hints and manual finds
+00:05 +204: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-040 supports durable two-stage hints and manual finds
+00:05 +205: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-009 is valid and solvable, with a frozen completion
+00:05 +206: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-041 supports durable two-stage hints and manual finds
+00:05 +207: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-041 supports durable two-stage hints and manual finds
+00:05 +208: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-011 is valid and solvable, with a frozen completion
+00:05 +209: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-042 supports durable two-stage hints and manual finds
+00:05 +210: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-042 supports durable two-stage hints and manual finds
+00:05 +211: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-042 supports durable two-stage hints and manual finds
+00:05 +212: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-014 is valid and solvable, with a frozen completion
+00:05 +213: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-043 supports durable two-stage hints and manual finds
+00:05 +214: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-043 supports durable two-stage hints and manual finds
+00:05 +215: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-016 is valid and solvable, with a frozen completion
+00:05 +216: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-044 supports durable two-stage hints and manual finds
+00:05 +217: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-044 supports durable two-stage hints and manual finds
+00:05 +218: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-044 supports durable two-stage hints and manual finds
+00:05 +219: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-019 is valid and solvable, with a frozen completion
+00:05 +220: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-045 supports durable two-stage hints and manual finds
+00:05 +221: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-045 supports durable two-stage hints and manual finds
+00:05 +222: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-021 is valid and solvable, with a frozen completion
+00:05 +223: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-046 supports durable two-stage hints and manual finds
+00:05 +224: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-022 is valid and solvable, with a frozen completion
+00:05 +225: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-047 supports durable two-stage hints and manual finds
+00:05 +226: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-047 supports durable two-stage hints and manual finds
+00:05 +227: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-024 is valid and solvable, with a frozen completion
+00:05 +228: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-048 supports durable two-stage hints and manual finds
+00:05 +229: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-048 supports durable two-stage hints and manual finds
+00:05 +230: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-048 supports durable two-stage hints and manual finds
+00:05 +231: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-048 supports durable two-stage hints and manual finds
+00:05 +232: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-049 supports durable two-stage hints and manual finds
+00:05 +233: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-049 supports durable two-stage hints and manual finds
+00:05 +234: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-049 supports durable two-stage hints and manual finds
+00:05 +235: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-030 is valid and solvable, with a frozen completion
+00:05 +236: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-050 supports durable two-stage hints and manual finds
+00:05 +237: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-050 supports durable two-stage hints and manual finds
+00:05 +238: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-050 supports durable two-stage hints and manual finds
+00:05 +239: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-033 is valid and solvable, with a frozen completion
+00:05 +240: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-051 supports durable two-stage hints and manual finds
+00:05 +241: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-051 supports durable two-stage hints and manual finds
+00:05 +242: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-051 supports durable two-stage hints and manual finds
+00:05 +243: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-036 is valid and solvable, with a frozen completion
+00:05 +244: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-052 supports durable two-stage hints and manual finds
+00:05 +245: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-052 supports durable two-stage hints and manual finds
+00:05 +246: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-052 supports durable two-stage hints and manual finds
+00:05 +247: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-039 is valid and solvable, with a frozen completion
+00:05 +248: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-053 supports durable two-stage hints and manual finds
+00:05 +249: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-040 is valid and solvable, with a frozen completion
+00:05 +250: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-054 supports durable two-stage hints and manual finds
+00:05 +251: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-054 supports durable two-stage hints and manual finds
+00:05 +252: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-054 supports durable two-stage hints and manual finds
+00:05 +253: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-043 is valid and solvable, with a frozen completion
+00:05 +254: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-055 supports durable two-stage hints and manual finds
+00:05 +255: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-055 supports durable two-stage hints and manual finds
+00:05 +256: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-045 is valid and solvable, with a frozen completion
+00:05 +257: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-056 supports durable two-stage hints and manual finds
+00:05 +258: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-056 supports durable two-stage hints and manual finds
+00:05 +259: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-056 supports durable two-stage hints and manual finds
+00:05 +260: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-048 is valid and solvable, with a frozen completion
+00:05 +261: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-057 supports durable two-stage hints and manual finds
+00:05 +262: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-057 supports durable two-stage hints and manual finds
+00:05 +263: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-050 is valid and solvable, with a frozen completion
+00:05 +264: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-058 supports durable two-stage hints and manual finds
+00:05 +265: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-058 supports durable two-stage hints and manual finds
+00:05 +266: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-052 is valid and solvable, with a frozen completion
+00:05 +267: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-059 supports durable two-stage hints and manual finds
+00:05 +268: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-059 supports durable two-stage hints and manual finds
+00:05 +269: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-054 is valid and solvable, with a frozen completion
+00:05 +270: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-055 is valid and solvable, with a frozen completion
+00:05 +271: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-060 supports durable two-stage hints and manual finds
+00:05 +272: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-060 supports durable two-stage hints and manual finds
+00:05 +273: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-057 is valid and solvable, with a frozen completion
+00:05 +274: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: featured scenes are authored compositions with classic levels retained
+00:05 +275: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: featured scenes are authored compositions with classic levels retained
+00:05 +276: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: featured scenes are authored compositions with classic levels retained
+00:05 +277: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles odd-060 is valid and solvable, with a frozen completion
+00:05 +278: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: a miss retains the paid area hint and neither stage auto-finds a target
+00:05 +279: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-001 is valid and solvable, with a frozen completion
+00:05 +280: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: legacy precise saves remain precise without inventing a new charge
+00:05 +281: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-002 is valid and solvable, with a frozen completion
+00:05 +282: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: invalid hint stages and timed-out reveals are rejected
+00:05 +283: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-003 is valid and solvable, with a frozen completion
+00:05 +284: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-004 is valid and solvable, with a frozen completion
+00:05 +285: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-005 is valid and solvable, with a frozen completion
+00:05 +286: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-006 is valid and solvable, with a frozen completion
+00:05 +287: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-007 is valid and solvable, with a frozen completion
+00:05 +288: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-008 is valid and solvable, with a frozen completion
+00:05 +289: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-009 is valid and solvable, with a frozen completion
+00:05 +290: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-010 is valid and solvable, with a frozen completion
+00:05 +291: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-011 is valid and solvable, with a frozen completion
+00:05 +292: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-012 is valid and solvable, with a frozen completion
+00:05 +293: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-013 is valid and solvable, with a frozen completion
+00:05 +294: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-014 is valid and solvable, with a frozen completion
+00:05 +295: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-015 is valid and solvable, with a frozen completion
+00:05 +296: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-016 is valid and solvable, with a frozen completion
+00:05 +297: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-017 is valid and solvable, with a frozen completion
+00:05 +298: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-018 is valid and solvable, with a frozen completion
+00:05 +299: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-019 is valid and solvable, with a frozen completion
+00:05 +300: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-020 is valid and solvable, with a frozen completion
+00:05 +301: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-021 is valid and solvable, with a frozen completion
+00:05 +302: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-022 is valid and solvable, with a frozen completion
+00:05 +303: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-023 is valid and solvable, with a frozen completion
+00:05 +304: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-024 is valid and solvable, with a frozen completion
+00:05 +305: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-025 is valid and solvable, with a frozen completion
+00:05 +306: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-026 is valid and solvable, with a frozen completion
+00:05 +307: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-027 is valid and solvable, with a frozen completion
+00:05 +308: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-028 is valid and solvable, with a frozen completion
+00:05 +309: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-029 is valid and solvable, with a frozen completion
+00:05 +310: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-030 is valid and solvable, with a frozen completion
+00:05 +311: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-031 is valid and solvable, with a frozen completion
+00:05 +312: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-032 is valid and solvable, with a frozen completion
+00:05 +313: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-033 is valid and solvable, with a frozen completion
+00:05 +314: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-034 is valid and solvable, with a frozen completion
+00:05 +315: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-035 is valid and solvable, with a frozen completion
+00:05 +316: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-036 is valid and solvable, with a frozen completion
+00:05 +317: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-037 is valid and solvable, with a frozen completion
+00:05 +318: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-038 is valid and solvable, with a frozen completion
+00:05 +319: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-039 is valid and solvable, with a frozen completion
+00:05 +320: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-040 is valid and solvable, with a frozen completion
+00:05 +321: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-041 is valid and solvable, with a frozen completion
+00:05 +322: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-042 is valid and solvable, with a frozen completion
+00:05 +323: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-043 is valid and solvable, with a frozen completion
+00:05 +324: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-044 is valid and solvable, with a frozen completion
+00:05 +325: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-045 is valid and solvable, with a frozen completion
+00:05 +326: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-046 is valid and solvable, with a frozen completion
+00:05 +327: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-047 is valid and solvable, with a frozen completion
+00:05 +328: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-048 is valid and solvable, with a frozen completion
+00:05 +329: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-049 is valid and solvable, with a frozen completion
+00:05 +330: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-050 is valid and solvable, with a frozen completion
+00:05 +331: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-051 is valid and solvable, with a frozen completion
+00:05 +332: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-052 is valid and solvable, with a frozen completion
+00:05 +333: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-053 is valid and solvable, with a frozen completion
+00:06 +334: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-054 is valid and solvable, with a frozen completion
+00:06 +335: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-055 is valid and solvable, with a frozen completion
+00:06 +336: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-056 is valid and solvable, with a frozen completion
+00:06 +337: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-057 is valid and solvable, with a frozen completion
+00:06 +338: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-058 is valid and solvable, with a frozen completion
+00:06 +339: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-059 is valid and solvable, with a frozen completion
+00:06 +340: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles memory-060 is valid and solvable, with a frozen completion
+00:06 +341: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-001 is valid and solvable, with a frozen completion
+00:06 +342: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-002 is valid and solvable, with a frozen completion
+00:06 +343: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-003 is valid and solvable, with a frozen completion
+00:06 +344: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-004 is valid and solvable, with a frozen completion
+00:06 +345: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-005 is valid and solvable, with a frozen completion
+00:06 +346: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-006 is valid and solvable, with a frozen completion
+00:06 +347: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-007 is valid and solvable, with a frozen completion
+00:06 +348: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-008 is valid and solvable, with a frozen completion
+00:06 +349: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-009 is valid and solvable, with a frozen completion
+00:06 +350: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-010 is valid and solvable, with a frozen completion
+00:06 +351: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-011 is valid and solvable, with a frozen completion
+00:06 +352: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-012 is valid and solvable, with a frozen completion
+00:06 +353: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-013 is valid and solvable, with a frozen completion
+00:06 +354: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-014 is valid and solvable, with a frozen completion
+00:06 +355: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-015 is valid and solvable, with a frozen completion
+00:06 +356: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-016 is valid and solvable, with a frozen completion
+00:06 +357: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-017 is valid and solvable, with a frozen completion
+00:06 +358: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-018 is valid and solvable, with a frozen completion
+00:06 +359: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-019 is valid and solvable, with a frozen completion
+00:06 +360: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-020 is valid and solvable, with a frozen completion
+00:06 +361: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-021 is valid and solvable, with a frozen completion
+00:06 +362: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-022 is valid and solvable, with a frozen completion
+00:06 +363: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-023 is valid and solvable, with a frozen completion
+00:06 +364: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-024 is valid and solvable, with a frozen completion
+00:06 +365: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-025 is valid and solvable, with a frozen completion
+00:06 +366: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-026 is valid and solvable, with a frozen completion
+00:06 +367: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-027 is valid and solvable, with a frozen completion
+00:06 +368: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-028 is valid and solvable, with a frozen completion
+00:06 +369: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-029 is valid and solvable, with a frozen completion
+00:06 +370: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-030 is valid and solvable, with a frozen completion
+00:06 +371: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-031 is valid and solvable, with a frozen completion
+00:06 +372: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-032 is valid and solvable, with a frozen completion
+00:06 +373: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-033 is valid and solvable, with a frozen completion
+00:06 +374: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-034 is valid and solvable, with a frozen completion
+00:06 +375: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-035 is valid and solvable, with a frozen completion
+00:06 +376: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-036 is valid and solvable, with a frozen completion
+00:06 +377: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-037 is valid and solvable, with a frozen completion
+00:06 +378: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-038 is valid and solvable, with a frozen completion
+00:06 +379: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-039 is valid and solvable, with a frozen completion
+00:06 +380: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-040 is valid and solvable, with a frozen completion
+00:06 +381: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-041 is valid and solvable, with a frozen completion
+00:06 +382: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-042 is valid and solvable, with a frozen completion
+00:06 +383: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-043 is valid and solvable, with a frozen completion
+00:06 +384: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-044 is valid and solvable, with a frozen completion
+00:06 +385: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-045 is valid and solvable, with a frozen completion
+00:06 +386: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-046 is valid and solvable, with a frozen completion
+00:06 +387: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-047 is valid and solvable, with a frozen completion
+00:06 +388: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-048 is valid and solvable, with a frozen completion
+00:06 +389: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-049 is valid and solvable, with a frozen completion
+00:06 +390: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-050 is valid and solvable, with a frozen completion
+00:06 +391: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-051 is valid and solvable, with a frozen completion
+00:06 +392: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-052 is valid and solvable, with a frozen completion
+00:06 +393: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-053 is valid and solvable, with a frozen completion
+00:06 +394: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-054 is valid and solvable, with a frozen completion
+00:06 +395: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-055 is valid and solvable, with a frozen completion
+00:06 +396: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-056 is valid and solvable, with a frozen completion
+00:06 +397: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-057 is valid and solvable, with a frozen completion
+00:06 +398: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-058 is valid and solvable, with a frozen completion
+00:06 +399: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-059 is valid and solvable, with a frozen completion
+00:06 +400: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: all 300 launch puzzles quick-060 is valid and solvable, with a frozen completion
+00:06 +401: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: scene answers normalized bounds, duplicate finds, and non-target taps
+00:06 +402: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: scene answers a hint highlights but never finds an answer
+00:06 +403: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: grid rounds and hints invalid and eliminated tiles cannot spend accuracy or finish
+00:06 +404: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: grid rounds and hints quick combos, wrong-tap penalty, and exact timeout
+00:06 +405: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: grid rounds and hints relaxed play has no deadline or wrong-tap time penalty
+00:06 +406: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules disappeared supports preview, answers, re-preview, and restoration
+00:06 +407: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules added supports preview, answers, re-preview, and restoration
+00:06 +408: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules moved supports preview, answers, re-preview, and restoration
+00:06 +409: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules duplicated supports preview, answers, re-preview, and restoration
+00:06 +410: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules relaxed preview waits for readiness, even after a hint
+00:06 +411: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: memory rules an interrupted transition reopens the next round exactly once
+00:06 +412: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: scoring and restoration three, two, and one-star results use accuracy, hints, and pace
+00:06 +413: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: scoring and restoration partial scene snapshots retain all counters, hint, and pace
+00:06 +414: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/game_engine_test.dart: scoring and restoration non-positive ticks and a non-memory preview finish are no-ops
+00:06 +415: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: spot valid opening and completed saves restore unchanged
+00:06 +416: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: spot restores every reachable phase across all 60 levels
+00:07 +417: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: spot restores every reachable phase across all 60 levels
+00:07 +418: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: spot restores every reachable phase across all 60 levels
+00:07 +419: E:/Google Apps/FindIt - Search Hidden Objects/test/platform/android_configuration_test.dart: no advertising, WebView, or native test-plugin dependency remains
+00:07 +420: E:/Google Apps/FindIt - Search Hidden Objects/test/platform/android_configuration_test.dart: no advertising, WebView, or native test-plugin dependency remains
+00:07 +421: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: hidden restores every reachable phase across all 60 levels
+00:07 +422: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: hidden restores every reachable phase across all 60 levels
+00:07 +423: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: hidden restores every reachable phase across all 60 levels
+00:07 +424: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: hidden restores every reachable phase across all 60 levels
+00:07 +425: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: hidden restores every reachable phase across all 60 levels
+00:07 +426: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd valid opening and completed saves restore unchanged
+00:07 +427: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:08 +428: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:08 +429: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:08 +430: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +431: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +432: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +433: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +434: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +435: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +436: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +437: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +438: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +439: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +440: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +441: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +442: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +443: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +444: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +445: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +446: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +447: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +448: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:09 +449: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +450: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +451: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +452: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +453: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +454: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +455: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +456: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +457: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:10 +458: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: odd restores every reachable phase across all 60 levels
+00:11 +459: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/board_accessibility_test.dart: tile labels describe markings and expose working accessibility taps
+00:11 +460: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/board_accessibility_test.dart: tile labels describe markings and expose working accessibility taps
+00:12 +461: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +462: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +463: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +464: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +465: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +466: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:12 +467: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:13 +468: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: memory restores every reachable phase across all 60 levels
+00:13 +469: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: quick valid opening and completed saves restore unchanged
+00:13 +470: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: quick restores every reachable phase across all 60 levels
+00:18 +471: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: quick restores every reachable phase across all 60 levels
+00:20 +472: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/saved_state_test.dart: quick restores every reachable phase across all 60 levels
+00:22 +473: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +474: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +475: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +476: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +477: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +478: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +479: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +480: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +481: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +482: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +483: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +484: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +485: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +486: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +487: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:22 +488: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:25 +489: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: phone keeps pages, pinned checklist, and search controls usable
+00:27 +490: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: Daily Challenge searches all three scenes and grants one set bonus
+00:29 +491: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:30 +492: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:31 +493: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: failed free reveal preserves the paid hint without an extra charge
+00:31 +494: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: landscape keeps pages, pinned checklist, and search controls usable
+00:33 +495: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: landscape keeps pages, pinned checklist, and search controls usable
+00:34 +496: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: landscape keeps pages, pinned checklist, and search controls usable
+00:34 +497: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: insufficient funds offer only earned coins and leave an unpaid target hidden
+00:35 +498: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide keeps pages, pinned checklist, and search controls usable
+00:37 +499: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide keeps pages, pinned checklist, and search controls usable
+00:38 +500: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown
+00:38 +501: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: large text keeps pages, pinned checklist, and search controls usable
+00:40 +502: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable
+00:42 +503: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: (tearDownAll)
+00:42 +503: All tests passed!

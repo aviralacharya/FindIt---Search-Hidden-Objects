@@ -1,0 +1,3 @@
+app-prod-release.apk: passed; 15 native libraries; 68.8 MiB
+APK/AAB native payload comparison: not_checked
+Report: verification\android-production-unsigned.json

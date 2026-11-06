@@ -1,0 +1,202 @@
+﻿00:00 +0: loading E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart
+00:00 +0: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-001 supports durable two-stage hints and manual finds
+00:00 +1: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-002 supports durable two-stage hints and manual finds
+00:00 +2: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-003 supports durable two-stage hints and manual finds
+00:00 +3: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-004 supports durable two-stage hints and manual finds
+00:00 +4: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-005 supports durable two-stage hints and manual finds
+00:00 +5: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-006 supports durable two-stage hints and manual finds
+00:00 +6: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-007 supports durable two-stage hints and manual finds
+00:00 +7: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-008 supports durable two-stage hints and manual finds
+00:00 +8: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-009 supports durable two-stage hints and manual finds
+00:00 +9: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-010 supports durable two-stage hints and manual finds
+00:00 +10: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-011 supports durable two-stage hints and manual finds
+00:00 +11: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-012 supports durable two-stage hints and manual finds
+00:00 +12: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-013 supports durable two-stage hints and manual finds
+00:00 +13: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-014 supports durable two-stage hints and manual finds
+00:00 +14: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-015 supports durable two-stage hints and manual finds
+00:00 +15: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-016 supports durable two-stage hints and manual finds
+00:00 +16: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-017 supports durable two-stage hints and manual finds
+00:00 +17: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-018 supports durable two-stage hints and manual finds
+00:00 +18: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-019 supports durable two-stage hints and manual finds
+00:00 +19: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-020 supports durable two-stage hints and manual finds
+00:00 +20: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-021 supports durable two-stage hints and manual finds
+00:00 +21: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-022 supports durable two-stage hints and manual finds
+00:00 +22: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-023 supports durable two-stage hints and manual finds
+00:00 +23: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-024 supports durable two-stage hints and manual finds
+00:00 +24: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-025 supports durable two-stage hints and manual finds
+00:00 +25: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-026 supports durable two-stage hints and manual finds
+00:00 +26: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-027 supports durable two-stage hints and manual finds
+00:00 +27: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-028 supports durable two-stage hints and manual finds
+00:00 +28: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-029 supports durable two-stage hints and manual finds
+00:00 +29: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-030 supports durable two-stage hints and manual finds
+00:00 +30: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-031 supports durable two-stage hints and manual finds
+00:00 +31: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-032 supports durable two-stage hints and manual finds
+00:00 +32: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-033 supports durable two-stage hints and manual finds
+00:00 +33: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-034 supports durable two-stage hints and manual finds
+00:00 +34: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-035 supports durable two-stage hints and manual finds
+00:00 +35: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-036 supports durable two-stage hints and manual finds
+00:00 +36: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-037 supports durable two-stage hints and manual finds
+00:00 +37: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-038 supports durable two-stage hints and manual finds
+00:00 +38: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-039 supports durable two-stage hints and manual finds
+00:00 +39: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-040 supports durable two-stage hints and manual finds
+00:00 +40: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-041 supports durable two-stage hints and manual finds
+00:00 +41: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-042 supports durable two-stage hints and manual finds
+00:00 +42: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-043 supports durable two-stage hints and manual finds
+00:00 +43: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-044 supports durable two-stage hints and manual finds
+00:00 +44: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-045 supports durable two-stage hints and manual finds
+00:00 +45: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-046 supports durable two-stage hints and manual finds
+00:00 +46: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-047 supports durable two-stage hints and manual finds
+00:00 +47: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-048 supports durable two-stage hints and manual finds
+00:00 +48: E:/Google Apps/FindIt - Search Hidden Objects/test/domain/hidden_search_test.dart: hidden-049 supports durable two-stage hints and manual finds
+00:00 +49: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +50: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +51: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +52: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +53: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +54: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +55: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +56: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +57: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +58: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +59: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +60: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +61: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +62: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +63: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:00 +64: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: default app preferences ignore original and Ads Preview namespaces
+00:01 +65: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: independent SQLite files preserve original wallet and save through hidden reset
+00:01 +66: E:/Google Apps/FindIt - Search Hidden Objects/test/storage/hidden_app_isolation_test.dart: unsafe namespaces are refused before opening local storage
+00:13 +67: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (setUpAll)
+00:13 +67: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:13 +68: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:13 +69: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:13 +70: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:14 +71: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:14 +72: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:20 +73: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:20 +74: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:22 +75: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:23 +76: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:25 +77: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:26 +78: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide keeps pages, pinned checklist, and search controls usable
+00:26 +79: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: Daily Challenge searches all three scenes and grants one set bonus
+00:28 +80: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: Daily Challenge searches all three scenes and grants one set bonus
+00:28 +81: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following TestFailure was thrown running a test:
+Expected: null
+  Actual: FlutterError:<A RenderFlex overflowed by 183 pixels on the bottom.>
+wide large text: / at top
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_layout_test.dart:37:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_layout_test.dart line 37
+The test description was:
+  wide large text keeps pages, pinned checklist, and search controls usable
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:28 +81 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: failed area-hint transaction rolls back coins and retries cleanly
+00:28 +81 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable [E]
+  Test failed. See exception logs above.
+  The test description was: wide large text keeps pages, pinned checklist, and search controls usable
+  
+00:28 +81 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: failed area-hint transaction rolls back coins and retries cleanly
+00:28 +82 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: failed free reveal preserves the paid hint without an extra charge
+00:29 +83 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: backgrounding during both hint writes cannot overwrite the committed stage
+00:31 +84 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: leaving during a paid hint keeps its durable save for reopening
+00:32 +85 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: insufficient funds offer only earned coins and leave an unpaid target hidden
+00:32 +86 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY WIDGETS LIBRARY Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following StateError was thrown while dispatching notifications for
+WidgetsBindingObserver.didChangeAppLifecycleState:
+Bad state: Tried to read a provider from a ProviderContainer that was already disposed
+
+When the exception was thrown, this was the stack:
+#0      ProviderContainer._readProviderElement (package:riverpod/src/core/provider_container.dart:1285:7)
+#1      ContainerReadElement.readProviderElement (package:riverpod/src/core/provider_container.dart:854:8)
+#2      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:117:38)
+#3      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1141:26)
+#4      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1068:17)
+#5      ConsumerStatefulElement.read (package:flutter_riverpod/src/core/consumer.dart:563:59)
+#6      _FindItAppState.didChangeAppLifecycleState (package:findit/app/app.dart:43:12)
+#7      WidgetsBinding.handleAppLifecycleStateChanged (package:flutter/src/widgets/binding.dart:1334:18)
+#8      main.<anonymous closure> (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_gameplay_test.dart:476:24)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "A little off the beaten path.": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_gameplay_test.dart:439:11)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_gameplay_test.dart line 439
+The test description was:
+  non-hidden, locked, and unauthorized daily routes preserve the active save
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:34 +86 -2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save [E]
+  Test failed. See exception logs above.
+  The test description was: non-hidden, locked, and unauthorized daily routes preserve the active save
+  
+00:34 +86 -2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.element (package:flutter_test/src/controller.dart:888:30)
+#2      WidgetController.ensureVisible (package:flutter_test/src/controller.dart:2389:32)
+#3      AppHarness.tap (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/support/app_harness.dart:168:18)
+#4      main.<anonymous closure> (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_gameplay_test.dart:503:19)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  timed search pauses in the background and can restart without a countdown
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+00:34 +86 -3: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown [E]
+  Test failed. See exception logs above.
+  The test description was: timed search pauses in the background and can restart without a countdown
+  
+00:34 +86 -3: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (tearDownAll)
+00:34 +86 -3: Some tests failed.
+
+Failing tests:
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable

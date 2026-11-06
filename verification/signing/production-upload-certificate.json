@@ -1,0 +1,14 @@
+{
+  "createdAt": "2026-11-06T08:12:01.930227+00:00",
+  "applicationId": "abiral.mobile.findithiddenobjects",
+  "keystore": ".local-signing/findit-hidden-objects-upload.p12",
+  "storeType": "PKCS12",
+  "keyAlias": "findit-hidden-upload",
+  "certificateSha256": "e4d765e9c1676c9acfa95560b78177754e35fafc77dcb990dbf2e7ac2c999114",
+  "certificateSubject": "CN=FindIt Hidden Upload, OU=Android Upload, O=FindIt Hidden",
+  "keyAlgorithm": "RSA",
+  "keySize": 3072,
+  "signatureAlgorithm": "SHA256withRSA",
+  "validityDays": 10000,
+  "scope": "New dedicated upload key only. No original key used; no AAB built, uploaded or published."
+}

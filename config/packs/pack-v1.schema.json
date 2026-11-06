@@ -1,0 +1,399 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FindIt Hidden Objects declarative scene pack v1",
+  "description": "Hidden-object scenes only. No code, remote images, ZIPs or daily IDs. Also run tool/pack_tool.dart validate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "contentVersion",
+    "packId",
+    "license",
+    "puzzles"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "contentVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "packId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,79}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "puzzles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/puzzle"
+      },
+      "minItems": 1,
+      "maxItems": 1000
+    }
+  },
+  "$defs": {
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "x",
+        "y",
+        "w",
+        "h"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "w": {
+          "type": "number",
+          "minimum": 0.055,
+          "maximum": 1
+        },
+        "h": {
+          "type": "number",
+          "minimum": 0.055,
+          "maximum": 1
+        }
+      }
+    },
+    "sceneObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "region",
+        "color",
+        "variant",
+        "rotation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "kind": {
+          "enum": [
+            "plant",
+            "vase",
+            "clock",
+            "book",
+            "mug",
+            "cat",
+            "cake",
+            "apple",
+            "pear",
+            "lemon",
+            "camera",
+            "umbrella",
+            "bird",
+            "fish",
+            "boat",
+            "car",
+            "scooter",
+            "train",
+            "hat",
+            "key",
+            "shoe",
+            "ball",
+            "star",
+            "shell",
+            "feather",
+            "leaf",
+            "butterfly",
+            "flower",
+            "gift",
+            "basket",
+            "lantern",
+            "teapot",
+            "binoculars",
+            "map",
+            "compass",
+            "bottle",
+            "watermelon",
+            "strawberry",
+            "donut",
+            "pizza",
+            "bread",
+            "pineapple",
+            "backpack",
+            "pencil",
+            "notebook",
+            "ruler",
+            "globe",
+            "flag",
+            "telescope",
+            "rocket",
+            "dog",
+            "cherry"
+          ]
+        },
+        "region": {
+          "$ref": "#/$defs/region"
+        },
+        "color": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "variant": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "rotation": {
+          "type": "number",
+          "minimum": -0.5,
+          "maximum": 0.5
+        },
+        "alternateKind": {
+          "enum": [
+            "plant",
+            "vase",
+            "clock",
+            "book",
+            "mug",
+            "cat",
+            "cake",
+            "apple",
+            "pear",
+            "lemon",
+            "camera",
+            "umbrella",
+            "bird",
+            "fish",
+            "boat",
+            "car",
+            "scooter",
+            "train",
+            "hat",
+            "key",
+            "shoe",
+            "ball",
+            "star",
+            "shell",
+            "feather",
+            "leaf",
+            "butterfly",
+            "flower",
+            "gift",
+            "basket",
+            "lantern",
+            "teapot",
+            "binoculars",
+            "map",
+            "compass",
+            "bottle",
+            "watermelon",
+            "strawberry",
+            "donut",
+            "pizza",
+            "bread",
+            "pineapple",
+            "backpack",
+            "pencil",
+            "notebook",
+            "ruler",
+            "globe",
+            "flag",
+            "telescope",
+            "rocket",
+            "dog",
+            "cherry"
+          ]
+        },
+        "alternateColor": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "alternateVariant": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "alternateHidden": {
+          "type": "boolean"
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "template",
+        "palette",
+        "layout",
+        "seed",
+        "objects"
+      ],
+      "properties": {
+        "template": {
+          "enum": [
+            "illustrated-home",
+            "illustrated-garden",
+            "illustrated-cafe",
+            "living",
+            "kitchen",
+            "bedroom",
+            "animals",
+            "nature",
+            "beach",
+            "city",
+            "food",
+            "transport",
+            "studio",
+            "home",
+            "garden",
+            "mall",
+            "forest",
+            "restaurant",
+            "school",
+            "travel",
+            "adventure"
+          ]
+        },
+        "palette": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "layout": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sceneObject"
+          },
+          "minItems": 5,
+          "maxItems": 60
+        }
+      }
+    },
+    "puzzle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "mode",
+        "title",
+        "category",
+        "difficulty",
+        "level",
+        "seed",
+        "reward",
+        "parSeconds",
+        "timeLimitSeconds",
+        "answerIds",
+        "rounds",
+        "validation",
+        "generatorVersion",
+        "scene"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(?!daily-)[a-z0-9][a-z0-9_-]{2,99}$"
+        },
+        "mode": {
+          "const": "hidden"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60
+        },
+        "difficulty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "reward": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "parSeconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3600
+        },
+        "timeLimitSeconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3600
+        },
+        "answerIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "minItems": 5,
+          "maxItems": 10,
+          "uniqueItems": true
+        },
+        "rounds": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "validation": {
+          "enum": [
+            "automated",
+            "reviewed"
+          ]
+        },
+        "generatorVersion": {
+          "const": 1
+        },
+        "scene": {
+          "$ref": "#/$defs/scene"
+        }
+      }
+    }
+  }
+}

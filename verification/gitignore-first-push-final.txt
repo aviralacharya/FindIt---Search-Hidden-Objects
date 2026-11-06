@@ -1,0 +1,9 @@
+test_android_outputs_are_ignored_at_any_depth (test_gitignore.PublishingIgnoreTests.test_android_outputs_are_ignored_at_any_depth) ... ok
+test_existing_local_binary_and_private_key_paths_are_ignored_without_reading_them (test_gitignore.PublishingIgnoreTests.test_existing_local_binary_and_private_key_paths_are_ignored_without_reading_them) ... ok
+test_policy_source_html_examples_and_checked_public_certificate_remain_publishable (test_gitignore.PublishingIgnoreTests.test_policy_source_html_examples_and_checked_public_certificate_remain_publishable) ... ok
+test_private_signing_files_backups_and_local_inputs_are_ignored (test_gitignore.PublishingIgnoreTests.test_private_signing_files_backups_and_local_inputs_are_ignored) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.823s
+
+OK

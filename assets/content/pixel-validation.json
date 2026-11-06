@@ -1,0 +1,49 @@
+{
+  "scope": "three enhanced featured scenes; 57 classic PNGs reused",
+  "size": "1200x900",
+  "method": "Rendered scene compared with each target omitted in turn",
+  "checks": [
+    {
+      "id": "hidden-001",
+      "template": "illustrated-home",
+      "file": "assets/scenes/hidden-001-a.png",
+      "sha256": "99b6d26f36b9471bcc18b1da9d84dd0393a01bbc53fe0b3a9ead91344c964cf3",
+      "targetVisiblePixels": {
+        "hidden-001-object-0": 1677,
+        "hidden-001-object-1": 2894,
+        "hidden-001-object-2": 2732,
+        "hidden-001-object-3": 5773,
+        "hidden-001-object-4": 3337,
+        "hidden-001-object-5": 2870
+      }
+    },
+    {
+      "id": "hidden-002",
+      "template": "illustrated-garden",
+      "file": "assets/scenes/hidden-002-a.png",
+      "sha256": "8e8a16e9562a08b18c01a36667a40be50f8e70621c2e3f899d4518f4090b59c8",
+      "targetVisiblePixels": {
+        "hidden-002-object-0": 2971,
+        "hidden-002-object-1": 3065,
+        "hidden-002-object-2": 1259,
+        "hidden-002-object-3": 2470,
+        "hidden-002-object-4": 2860,
+        "hidden-002-object-5": 1990
+      }
+    },
+    {
+      "id": "hidden-003",
+      "template": "illustrated-cafe",
+      "file": "assets/scenes/hidden-003-a.png",
+      "sha256": "47d8f7cce3ee5b96fd97148acd0c164d2c14fbe3eb0965f1679a3e70fec49f04",
+      "targetVisiblePixels": {
+        "hidden-003-object-0": 2558,
+        "hidden-003-object-1": 3031,
+        "hidden-003-object-2": 1292,
+        "hidden-003-object-3": 2826,
+        "hidden-003-object-4": 2959,
+        "hidden-003-object-5": 4324
+      }
+    }
+  ]
+}

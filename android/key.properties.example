@@ -1,0 +1,9 @@
+# Gradle field names for reference only, not a password-storage workflow.
+# Do not copy this into key.properties with real passwords. Use native masked
+# input: python tool/build_signed_aab.py --dialog, or approved process-local
+# FINDIT_HIDDEN_ signing variables. Never put a password in a command or chat.
+# Reuse the existing dedicated PKCS12 key; never use the original app's key.
+storeFile=../../.local-signing/findit-hidden-objects-upload.p12
+storePassword=NOT_STORED_USE_PRIVATE_INPUT
+keyAlias=findit-hidden-upload
+keyPassword=NOT_STORED_USE_PRIVATE_INPUT

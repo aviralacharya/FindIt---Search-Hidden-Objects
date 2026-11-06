@@ -1,0 +1,12 @@
+Resolving dependencies...
+Downloading packages...
+  cli_util 0.4.2 (0.5.2 available)
+These packages are no longer being depended on:
+- flutter_driver 0.0.0 from sdk flutter
+- fuchsia_remote_debug_protocol 0.0.0 from sdk flutter
+- integration_test 0.0.0 from sdk flutter
+- sync_http 0.3.1
+- webdriver 3.2.0
+Changed 5 dependencies!
+1 package has newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.

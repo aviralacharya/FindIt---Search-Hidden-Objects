@@ -1,0 +1,74 @@
+﻿00:00 +0: loading E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart
+00:00 +0: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (setUpAll)
+00:00 +0: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:00 +1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:00 +2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:00 +3: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:00 +4: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +5: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +6: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +7: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +8: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +9: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +10: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +11: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +12: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:01 +13: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:02 +14: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:02 +15: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:02 +16: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:05 +17: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: area hint and free precise reveal both survive save and resume
+00:06 +18: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:07 +19: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: small phone keeps pages, pinned checklist, and search controls usable
+00:09 +20: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:12 +21: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: featured and reused scenes complete with real taps and unlock sequentially
+00:13 +22: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide keeps pages, pinned checklist, and search controls usable
+00:15 +23: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: Daily Challenge searches all three scenes and grants one set bonus
+00:17 +24: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: large text keeps pages, pinned checklist, and search controls usable
+00:17 +25: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: failed area-hint transaction rolls back coins and retries cleanly
+00:18 +26: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable
+00:19 +27: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_layout_test.dart: wide large text keeps pages, pinned checklist, and search controls usable
+00:19 +28: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: backgrounding during both hint writes cannot overwrite the committed stage
+00:20 +29: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: leaving during a paid hint keeps its durable save for reopening
+00:21 +30: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: insufficient funds offer only earned coins and leave an unpaid target hidden
+00:22 +31: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save
+10:22 +31 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save [E]
+  TimeoutException after 0:10:00.000000: Test timed out after 10 minutes.
+  dart:isolate  _RawReceivePort._handleMessage
+  
+10:22 +31 -1: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown
+ΓòÉΓòÉΓòí EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK Γò₧ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+The following TestFailure was thrown running a test:
+Reentrant call to runAsync() denied.
+runAsync() was called, then before its future completed, it was called again. You must wait for the
+first returned future to complete before calling runAsync() again.
+
+When the exception was thrown, this was the stack:
+#0      fail (package:matcher/src/expect/expect.dart:187:31)
+#1      AutomatedTestWidgetsFlutterBinding.runAsync.<anonymous closure> (package:flutter_test/src/binding.dart:2274:7)
+#2      AutomatedTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2280:6)
+#3      WidgetTester.runAsync (package:flutter_test/src/widget_tester.dart:838:17)
+#4      AppHarness.forTest (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/support/app_harness.dart:66:29)
+#5      main.<anonymous closure> (file:///E:/Google%20Apps/FindIt%20-%20Search%20Hidden%20Objects/test/widgets/hidden_gameplay_test.dart:498:36)
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:29)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  timed search pauses in the background and can restart without a countdown
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+10:22 +31 -2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown [E]
+  Test failed. See exception logs above.
+  The test description was: timed search pauses in the background and can restart without a countdown
+  
+11:03 +31 -2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (tearDownAll)
+11:03 +31 -2: E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (tearDownAll) - did not complete [E]
+11:03 +31 -2: Some tests failed.
+
+Failing tests:
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: (tearDownAll) (did not complete)
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: non-hidden, locked, and unauthorized daily routes preserve the active save
+  E:/Google Apps/FindIt - Search Hidden Objects/test/widgets/hidden_gameplay_test.dart: timed search pauses in the background and can restart without a countdown

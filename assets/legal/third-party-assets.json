@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "Outfit",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/outfit/Outfit%5Bwght%5D.ttf",
+    "license": "SIL Open Font License 1.1",
+    "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade"
+  },
+  {
+    "asset": "Nunito",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/nunito/Nunito%5Bwght%5D.ttf",
+    "license": "SIL Open Font License 1.1",
+    "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+  },
+  {
+    "asset": "sqlite3.wasm",
+    "source": "https://github.com/simolus3/drift/releases/download/drift-2.35.3/sqlite3.wasm",
+    "license": "SQLite public domain / Drift MIT",
+    "sha256": "efd308be92a34f3aa15f289a37f213b0230fd80888a1364326ee29579d892d37"
+  },
+  {
+    "asset": "drift_worker.js",
+    "source": "https://github.com/simolus3/drift/releases/download/drift-2.35.3/drift_worker.js",
+    "license": "SQLite public domain / Drift MIT",
+    "sha256": "a54b81412d4c4ab56653bb9e4c02912b0820bb37e2bba00722ddef4d78083d4a"
+  }
+]

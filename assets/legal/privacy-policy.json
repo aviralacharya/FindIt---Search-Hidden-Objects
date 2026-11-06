@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "policyTitle": "Privacy Policy",
+  "policyVersion": "1.0",
+  "updated": "2026-11-06",
+  "appName": "FindIt - Search Hidden Objects",
+  "launcherName": "FindIt Hidden",
+  "androidPackage": "abiral.mobile.findithiddenobjects",
+  "developerName": "Abiral Acharya",
+  "developerEmail": "abiralacharya80@gmail.com",
+  "eyebrow": "Your discoveries belong to you",
+  "intro": "FindIt - Search Hidden Objects is a hidden-object game developed by Abiral Acharya. Its included puzzles work offline. The app does not require an account, show advertising, or send your gameplay data to the developer.",
+  "summaryBadges": ["No account", "Local game saves", "No ads or analytics"],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Which app this policy covers",
+      "paragraphs": [
+        "This policy covers the Android app FindIt - Search Hidden Objects, shown in your phone launcher as FindIt Hidden, with package ID abiral.mobile.findithiddenobjects. It is separate from the original FindIt app and does not read, import, replace, or reset that app’s saved data."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "local_data",
+      "title": "2. Data stored on your device",
+      "paragraphs": [
+        "The app stores the following information locally so you can continue playing. Progress is stored in the app’s local SQLite database and settings are stored locally. This information is used only for gameplay and your chosen settings; the app does not upload your saves or scores. There is no account-based recovery, cloud sync, or developer-hosted save service."
+      ],
+      "bullets": [
+        "Level progress, completed puzzles, scores, stars, and personal bests.",
+        "Earned coin balances and transactions. Coins are game rewards, not money or purchases.",
+        "Hints, found objects, the current puzzle, and daily-challenge history.",
+        "Sound, music, vibration, volume, and relaxed or timed gameplay settings.",
+        "Locally installed puzzle content, if any."
+      ],
+      "links": []
+    },
+    {
+      "id": "collection_sharing",
+      "title": "3. Collection, use, and sharing",
+      "paragraphs": [
+        "The app contains no advertising, advertising-consent, analytics, or third-party crash-reporting SDK. It does not use an advertising ID, App Set ID, or persistent device identifier for tracking. It does not sell personal information or share gameplay data with advertisers or other companies. It does not ask for your name, date of birth, email address, location, or an account to play. There are no subscriptions or in-app purchases.",
+        "If you choose to email the developer for support or a privacy request, your email provider and the developer receive the information you send, including your email address, message, and any attachments you choose to include. It is used to respond to your request, investigate an issue you report, and handle necessary legal obligations, not for advertising. Please do not include passwords, payment details, a child’s personal information, or unnecessary personal information.",
+        "The developer’s support inbox uses Google/Gmail, which processes email as a service provider. Support information is not sold or shared for advertising; it is handled by the developer and the email services needed to deliver, store, and respond to your message. Information may be disclosed only when necessary to comply with a valid legal requirement. External providers’ own privacy policies also apply."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "network_services",
+      "title": "4. Network requests and external services",
+      "paragraphs": [
+        "All 60 included hidden-object levels are bundled with the app. No remote puzzle-pack server is configured in this release. The included game does not need a network connection, and the app does not send gameplay telemetry to the developer.",
+        "The app retains optional puzzle-pack support for possible future releases. If a future release enables downloads, its policy and store disclosures must explain the server and its data handling before distribution. A download server would receive a normal network request and could see your IP address. Puzzle packs are validated puzzle descriptions, not executable code.",
+        "When you view the public privacy policy in a browser, the website operator may receive normal request information such as your IP address and browser headers. If the public policy is hosted on GitHub Pages, GitHub’s hosting practices apply. The policy HTML itself has no scripts, analytics, advertising, tracking pixels, external fonts, cookies set by its HTML, or external links. The same complete policy is available offline inside the app.",
+        "Google Play, Android, your browser, and your email provider may process information under their own settings and privacy policies. Their platform services are separate from the app’s local game storage."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "permissions_backups",
+      "title": "5. Android permissions and backups",
+      "paragraphs": [
+        "The app declares Internet permission for its optional content capabilities and vibration permission for optional haptic feedback. Declaring Internet permission does not mean that your game saves are transmitted. Android libraries also declare a package-specific, signature-protected permission used for internal receiver safety; it does not grant access to your personal data.",
+        "The app does not request camera, microphone, contacts, location, personal-file, advertising-ID, or Android AdServices permissions. Cloud backup and Android device-transfer backup of its game data are disabled in the Android configuration."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "security",
+      "title": "6. How data is protected",
+      "paragraphs": [
+        "Local saves use the app’s private Android storage, which Android normally separates from other apps. The app does not expose saves through a public game server or export them automatically. Device security, such as a screen lock, operating-system updates, and avoiding unauthorized device access, helps protect those local records. The app does not provide a separate encrypted vault and does not claim that its SQLite records are individually encrypted by the app.",
+        "The public policy is hosted using HTTPS. Support emails are handled through the email services you and the developer use; their access controls and transport protections apply. Access to the developer’s support correspondence is limited to what is needed to handle support and legal obligations. Do not send sensitive information in a support message. No device storage, email system, or Internet transmission can be guaranteed completely secure."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "retention",
+      "title": "7. How long data is kept",
+      "paragraphs": [
+        "Local gameplay records remain on your device until you reset progress, clear the app’s storage, or uninstall the app. Reset progress keeps your settings and installed packs; those remain until you clear all app data or uninstall. The developer has no remote copy of these local saves.",
+        "Support correspondence is kept only for as long as necessary to respond to your request, resolve the issue, and meet applicable legal obligations. You may request its deletion using the contact below. If information must be retained for a legal obligation, only the necessary information is retained for that purpose and for the required period."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "choices_deletion",
+      "title": "8. Your choices and deletion",
+      "paragraphs": [
+        "Because the app does not create accounts or upload gameplay records, there is no app account to delete and the developer does not hold a copy of your local saves to recover or delete remotely. Privacy setup or consent to tracking is not required to play this offline, ad-free release."
+      ],
+      "bullets": [
+        "Change sound, music, vibration, volume, and gameplay pace in Settings.",
+        "Use Settings, then Reset progress, to delete saved gameplay history, hints, daily history, and earned coins after confirmation. You restart with the initial game coins. Sound settings and installed packs are kept.",
+        "To remove all local app data, use Android’s app-storage clearing option or uninstall the app. Local progress cannot be recovered through the developer.",
+        "Contact the developer to request access, correction, or deletion of information you sent in support correspondence, subject to applicable law and any necessary legal retention. Depending on your location, you may also have the right to complain to your local data-protection authority."
+      ],
+      "links": []
+    },
+    {
+      "id": "children",
+      "title": "9. Children’s privacy",
+      "paragraphs": [
+        "The app does not request a child’s age, birthday, contact details, or an account, and has no ads, tracking, purchases, public profiles, or chat. The developer does not knowingly collect children’s personal information through gameplay. Parents or guardians should supervise web browsing and any support communication. If you believe a child’s personal information was sent in a support message, please contact the developer so it can be reviewed and deleted where appropriate."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "changes",
+      "title": "10. Changes to this policy",
+      "paragraphs": [
+        "This policy may be updated if the app’s features or data practices change. The date at the top identifies the latest revision. The in-app policy and the public policy are maintained from the same policy source. Any future collection, tracking, advertising, or remote-content changes must be disclosed accurately before the changed app is distributed, with any required permissions and consent obtained before the new data handling begins."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "contact",
+      "title": "11. Contact the developer",
+      "paragraphs": [
+        "Developer and privacy contact: Abiral Acharya.",
+        "Email: abiralacharya80@gmail.com.",
+        "For privacy questions or support-message deletion requests, include FindIt - Search Hidden Objects in your message so your request can be directed to this independent hidden-object app."
+      ],
+      "bullets": [],
+      "links": []
+    }
+  ],
+  "footer": "FindIt - Search Hidden Objects · abiral.mobile.findithiddenobjects"
+}

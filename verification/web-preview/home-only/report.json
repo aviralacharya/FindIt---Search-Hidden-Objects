@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-06T05:18:23.317Z",
+  "url": "http://127.0.0.1:8771/",
+  "scope": "Actual release web app in a new test-only Chrome profile; no ordinary browser or installed storage accessed or cleared.",
+  "profile": "build/verification-tests/web-profile-x098Mx",
+  "status": "passed",
+  "captures": [
+    {
+      "file": "verification/web-preview/home-only/wide-home.png",
+      "sha256": "5c07ab8aae0ed694b3e1a96abd0699b80c5c4846a10daa722704856c61a6585d"
+    }
+  ],
+  "checks": [
+    {
+      "check": "Rendered Home and Flutter semantics",
+      "status": "passed"
+    },
+    {
+      "check": "Cross-origin isolation for durable storage",
+      "status": "passed"
+    }
+  ],
+  "exceptions": [],
+  "console": [],
+  "failedRequests": [],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/157.0.8103.38",
+    "revision": "@a733b5afbb3ba618844ff8876b89ad1a774b2f18",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "jsVersion": "15.7.112.23"
+  },
+  "environment": {
+    "title": "FindIt - Search Hidden Objects",
+    "crossOriginIsolated": true,
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "semantics": "FindIt\nSearch Hidden Objects\nYOUR LITTLE CORNER\nPlay\nDaily\nProgress\nSettings\nYour offline escape No accounts. No rush. Just you and a good puzzle.\nLOOK CLOSELY. STAY CURIOUS.\nFind little treasures. Leave the rush behind.\nHIDDEN OBJECTS. LITTLE ADVENTURES.\nLook closer. A little wonder awaits.\nStart searching\nExplore colorful places, spot the objects on your list, and enjoy the simple delight of finding. No ads. No sign-up. No rush.\nA LITTLE SOMETHING FOR TODAY Your daily adventure Three fresh puzzles, a moment of focus, and 60 bonus coins when you finish. Let’s play\n60 offline search levels\nNo sign-up. Just play.\nWhere will you search?\nFEATURED SCENES\nYour first three adventures. Familiar objects, wonderfully hidden.\nLEVEL 1 · HOME Sunlit reading room 6 objects · Easy 0 of 3 stars\nLEVEL 2 · GARDEN The secret garden 6 objects · Easy 0 of 3 stars\nLEVEL 3 · CAFÉ A corner café 6 objects · Easy 0 of 3 stars\nExplore all 60 hidden-object levels\nA little challenge for your eyes. A little calm for your day.\n100 coins",
+    "localStorageKeys": [],
+    "databases": [],
+    "storage": {
+      "quota": 10737493335,
+      "usage": 75095,
+      "usageDetails": {
+        "fileSystem": 74246,
+        "indexedDB": 849
+      }
+    }
+  }
+}

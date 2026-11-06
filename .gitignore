@@ -1,0 +1,102 @@
+# Local Android binaries: keep these out of Git even under release/.
+*.aab
+*.apk
+*.apks
+
+# Private signing keys, exported private material, and key backups.
+# These patterns apply at any depth, not just inside build/.
+**/key.properties
+**/key.properties.*
+**/keystore.properties
+**/keystore.properties.*
+**/signing.properties
+**/signing.properties.*
+*.jks
+*.jks.*
+*.keystore
+*.keystore.*
+*.p12
+*.p12.*
+*.pfx
+*.pfx.*
+*.key
+*.key.*
+*.pk8
+*.pk8.*
+*.pem
+*.pem.*
+*.der
+*.der.*
+/.local-signing/
+
+# Placeholder-only signing example is safe; property backups are not.
+!/android/key.properties.example
+
+# This one checked public certificate is not a private signing key.
+# It is required by the release verifier; no other PEM is publishable.
+!/verification/signing/production-upload-certificate.pem
+
+# Local release inputs and environment files may contain credentials.
+config/production.json
+.env
+.env.*
+!.env.example
+
+# Miscellaneous
+*.download
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+/android/local.properties
+/android/.gradle/
+/android/.kotlin/
+/tool/__pycache__/
+/ad_preview/build/
+/ad_preview/.dart_tool/
+/ad_preview/android/.gradle/
+/ad_preview/android/.kotlin/
+/ad_preview/android/local.properties
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/

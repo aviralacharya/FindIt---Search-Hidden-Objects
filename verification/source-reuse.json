@@ -1,0 +1,1153 @@
+﻿{
+    "source":  "E:\\Google Apps\\Find It",
+    "destination":  "E:\\Google Apps\\FindIt - Search Hidden Objects",
+    "copiedAtUtc":  "2026-11-06T03:38:22.1848288Z",
+    "count":  227,
+    "excludes":  [
+                     "original .git history",
+                     "build caches",
+                     "old release outputs",
+                     "Ads Preview",
+                     "local.properties",
+                     "private signing credentials",
+                     "non-hidden scene images",
+                     "obsolete multi-mode UI tests"
+                 ],
+    "files":  [
+                  {
+                      "path":  ".gitignore",
+                      "sourceSha256":  "7791638ba9db94c667d7dfcb4292ebc8ea378600110e75446dfc505d1053367c",
+                      "bytes":  1004
+                  },
+                  {
+                      "path":  ".metadata",
+                      "sourceSha256":  "ba8146e8b5e2275e016fb0348781b227f410ef95a157f2dbc48d3f86df15eb92",
+                      "bytes":  1114
+                  },
+                  {
+                      "path":  "analysis_options.yaml",
+                      "sourceSha256":  "cca6738e167b3ba02c3bf2a674b6aa64a71f9700fa97c8dac5fa03733e9edc0c",
+                      "bytes":  1617
+                  },
+                  {
+                      "path":  "android/.gitignore",
+                      "sourceSha256":  "c9af75dbc2c8aa867476a09426c80b178c4aeed8b9393ae48503eedfa3273d71",
+                      "bytes":  267
+                  },
+                  {
+                      "path":  "android/.kotlin/errors/errors-1793807023089.log",
+                      "sourceSha256":  "bd42b5875dd35ea22176eb9a5b85c60493c91f955a4bb92b199572cc53a5e6ea",
+                      "bytes":  64
+                  },
+                  {
+                      "path":  "android/.kotlin/errors/errors-1793807023180.log",
+                      "sourceSha256":  "bd42b5875dd35ea22176eb9a5b85c60493c91f955a4bb92b199572cc53a5e6ea",
+                      "bytes":  64
+                  },
+                  {
+                      "path":  "android/.kotlin/errors/errors-1793807023408.log",
+                      "sourceSha256":  "bd42b5875dd35ea22176eb9a5b85c60493c91f955a4bb92b199572cc53a5e6ea",
+                      "bytes":  64
+                  },
+                  {
+                      "path":  "android/.kotlin/errors/errors-1793807023488.log",
+                      "sourceSha256":  "bd42b5875dd35ea22176eb9a5b85c60493c91f955a4bb92b199572cc53a5e6ea",
+                      "bytes":  64
+                  },
+                  {
+                      "path":  "android/app/build.gradle.kts",
+                      "sourceSha256":  "c0b35c25ca51738b88e9af2f99fa8eec8cc7b1b98392ee01114672ab4b2b15c9",
+                      "bytes":  12427
+                  },
+                  {
+                      "path":  "android/app/proguard-rules.pro",
+                      "sourceSha256":  "6327b78c8fb57e6d9868c17e56024dec6d0d6cfdeab7b13019f53a9c9aec8d94",
+                      "bytes":  292
+                  },
+                  {
+                      "path":  "android/app/src/debug/AndroidManifest.xml",
+                      "sourceSha256":  "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c",
+                      "bytes":  385
+                  },
+                  {
+                      "path":  "android/app/src/main/AndroidManifest.xml",
+                      "sourceSha256":  "7a1a93cafd7d4d8e6fd3c278b98f21efee19bd6f28463755764a92ad9466c0bc",
+                      "bytes":  2558
+                  },
+                  {
+                      "path":  "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+                      "sourceSha256":  "362074114ce429434dac2d7e85e08d11d2342782bf88f1985f83f1c7d44a6e8a",
+                      "bytes":  2042
+                  },
+                  {
+                      "path":  "android/app/src/main/kotlin/abiral/mobile/playit/MainActivity.kt",
+                      "sourceSha256":  "53e80535f0bcbfeedf3a4a6f52c788f616bee5d6d82d8891423336f5a1fc1019",
+                      "bytes":  126
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable/background.png",
+                      "sourceSha256":  "843b8c3624bddeb15af5f145c61b63a5d8f8bcb8ec001baf0fb20b35d23ea56a",
+                      "bytes":  69
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable/launch_background.xml",
+                      "sourceSha256":  "42b8d099f0a6d79e90a67949d7a655c09458c734aa1bd8c4d7c73a79b28397ea",
+                      "bytes":  321
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-hdpi/android12splash.png",
+                      "sourceSha256":  "2035520cb0c9a2312dd0a82aaa655f3b33111698d88803d10362c5e6ce19e998",
+                      "bytes":  4270
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-hdpi/ic_launcher_foreground.png",
+                      "sourceSha256":  "c224d58a01263fe96ac226403747418918addfa700ab2c804e1e75b0289551bb",
+                      "bytes":  5090
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-hdpi/ic_launcher_monochrome.png",
+                      "sourceSha256":  "07c7ab1a9cf96bd576ee260e58aefd7f660d849f172d1e229d50042869f5ddf2",
+                      "bytes":  4888
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-hdpi/splash.png",
+                      "sourceSha256":  "2035520cb0c9a2312dd0a82aaa655f3b33111698d88803d10362c5e6ce19e998",
+                      "bytes":  4270
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-mdpi/android12splash.png",
+                      "sourceSha256":  "2f4ec539144e20c274a3bcacc14c50e1c44eef03c02f6b418fa69b826457aea0",
+                      "bytes":  2803
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-mdpi/ic_launcher_foreground.png",
+                      "sourceSha256":  "02c9e4b38e7e49adc0d111ac554966d5faca272b5ef3ee8d12313b720471395a",
+                      "bytes":  3125
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-mdpi/ic_launcher_monochrome.png",
+                      "sourceSha256":  "fe6ac1914b3bcaadaaf1267b1bc42acc9e118b3ce47144ccee2b72e7e68da2e3",
+                      "bytes":  3038
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-mdpi/splash.png",
+                      "sourceSha256":  "2f4ec539144e20c274a3bcacc14c50e1c44eef03c02f6b418fa69b826457aea0",
+                      "bytes":  2803
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-night-hdpi/android12splash.png",
+                      "sourceSha256":  "2035520cb0c9a2312dd0a82aaa655f3b33111698d88803d10362c5e6ce19e998",
+                      "bytes":  4270
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-night-mdpi/android12splash.png",
+                      "sourceSha256":  "2f4ec539144e20c274a3bcacc14c50e1c44eef03c02f6b418fa69b826457aea0",
+                      "bytes":  2803
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-night-xhdpi/android12splash.png",
+                      "sourceSha256":  "0ad5a9230d16b8412166f0a26d7d1f02bb25e8fcd37d9ae4b32f426c35542034",
+                      "bytes":  5235
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-night-xxhdpi/android12splash.png",
+                      "sourceSha256":  "67b0edde5cb0c24f65b910a2da4bfc8d139d914ad0e70ad2cff278930ba7475a",
+                      "bytes":  7869
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-night-xxxhdpi/android12splash.png",
+                      "sourceSha256":  "ddf9c2bb1c1bacda0a334b5859ca3439adebfc50f51296479f57f544cb9e21f9",
+                      "bytes":  9856
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-v21/background.png",
+                      "sourceSha256":  "843b8c3624bddeb15af5f145c61b63a5d8f8bcb8ec001baf0fb20b35d23ea56a",
+                      "bytes":  69
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-v21/launch_background.xml",
+                      "sourceSha256":  "42b8d099f0a6d79e90a67949d7a655c09458c734aa1bd8c4d7c73a79b28397ea",
+                      "bytes":  321
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xhdpi/android12splash.png",
+                      "sourceSha256":  "0ad5a9230d16b8412166f0a26d7d1f02bb25e8fcd37d9ae4b32f426c35542034",
+                      "bytes":  5235
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xhdpi/ic_launcher_foreground.png",
+                      "sourceSha256":  "d0dfa58710eec5a8efcb9edce423bb9e71ba840aee2d53a5d081ce2f59d299dd",
+                      "bytes":  6328
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xhdpi/ic_launcher_monochrome.png",
+                      "sourceSha256":  "c451122aa767153c03f6016552f2886e661b4416d2e2480cac09eb35d515fd72",
+                      "bytes":  5950
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xhdpi/splash.png",
+                      "sourceSha256":  "0ad5a9230d16b8412166f0a26d7d1f02bb25e8fcd37d9ae4b32f426c35542034",
+                      "bytes":  5235
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxhdpi/android12splash.png",
+                      "sourceSha256":  "67b0edde5cb0c24f65b910a2da4bfc8d139d914ad0e70ad2cff278930ba7475a",
+                      "bytes":  7869
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxhdpi/ic_launcher_foreground.png",
+                      "sourceSha256":  "65949ce1ee0875cb419ceb0df58dd5dfe0f69cc5ab8cf5c1497c8da4018ca747",
+                      "bytes":  9447
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxhdpi/ic_launcher_monochrome.png",
+                      "sourceSha256":  "a029fa1b038b6243ea914e9e295c06f4f64908a075ce4970c010b079591c1345",
+                      "bytes":  8451
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxhdpi/splash.png",
+                      "sourceSha256":  "67b0edde5cb0c24f65b910a2da4bfc8d139d914ad0e70ad2cff278930ba7475a",
+                      "bytes":  7869
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxxhdpi/android12splash.png",
+                      "sourceSha256":  "ddf9c2bb1c1bacda0a334b5859ca3439adebfc50f51296479f57f544cb9e21f9",
+                      "bytes":  9856
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.png",
+                      "sourceSha256":  "2aa516c03264c679bb7fb748a1c7ec2984f9522b8869d8c0aae1106e5ba560e3",
+                      "bytes":  12544
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxxhdpi/ic_launcher_monochrome.png",
+                      "sourceSha256":  "873831b08980ff9445de6dd9c3de0a733232818c93c26076362114916fdfb185",
+                      "bytes":  11050
+                  },
+                  {
+                      "path":  "android/app/src/main/res/drawable-xxxhdpi/splash.png",
+                      "sourceSha256":  "ddf9c2bb1c1bacda0a334b5859ca3439adebfc50f51296479f57f544cb9e21f9",
+                      "bytes":  9856
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+                      "sourceSha256":  "38af5fd183da3b2c8f402f48e7bcf1e7551904752badb9e9f060e4734f86ada0",
+                      "bytes":  474
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+                      "sourceSha256":  "f0f15c4eadca646b868295b5812f0a57e128ef612a7ced784899bea97d24c24b",
+                      "bytes":  2454
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+                      "sourceSha256":  "5606b4c5efc1a61f8649b87a2e531f6407b79f06e1b8a2c316c88e363f33ca93",
+                      "bytes":  1454
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+                      "sourceSha256":  "865329199ef5d3e8b38022744af6f8ecf959d2cb7a2cad6494b46ceb6faaf3e1",
+                      "bytes":  2979
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+                      "sourceSha256":  "18b59e0386c1f50d6d9d05c1b3d217b3cc474525fe4a3599561bad93f7f3e099",
+                      "bytes":  4796
+                  },
+                  {
+                      "path":  "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+                      "sourceSha256":  "26d5cc7c5af41e8dea4d394bfa47968ebc1e0b92a843906f1959f9941028c834",
+                      "bytes":  5790
+                  },
+                  {
+                      "path":  "android/app/src/main/res/values/colors.xml",
+                      "sourceSha256":  "52cab6cc3f4cc483aed142e2bff33d9e451dc9d63bb08a37ae5f7f18a58f7e76",
+                      "bytes":  120
+                  },
+                  {
+                      "path":  "android/app/src/main/res/values/styles.xml",
+                      "sourceSha256":  "ad400d5305a8292d473ee60f3fd0e5ce2a38299c474ea44a77b758109903afc8",
+                      "bytes":  1273
+                  },
+                  {
+                      "path":  "android/app/src/main/res/values-night/styles.xml",
+                      "sourceSha256":  "cb6b7d64537c92955a21cb460a5550c849381f9ac51ba93e505343b933dcd31b",
+                      "bytes":  1272
+                  },
+                  {
+                      "path":  "android/app/src/main/res/values-night-v31/styles.xml",
+                      "sourceSha256":  "6f9a195ebdb9e3181b48eadaba109df93cdb695c52f8d8abe00b5c34184d366f",
+                      "bytes":  1306
+                  },
+                  {
+                      "path":  "android/app/src/main/res/values-v31/styles.xml",
+                      "sourceSha256":  "2a22b6b8fdb5c9fe9fc977f988c85a4f2a4f4407bdc0bf3bb49810716a1ded12",
+                      "bytes":  1307
+                  },
+                  {
+                      "path":  "android/app/src/main/res/xml/data_extraction_rules.xml",
+                      "sourceSha256":  "47d5a656382e07f83e01c26d6a55dea344d7719afc64c531970bbd65658f20db",
+                      "bytes":  661
+                  },
+                  {
+                      "path":  "android/app/src/profile/AndroidManifest.xml",
+                      "sourceSha256":  "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c",
+                      "bytes":  385
+                  },
+                  {
+                      "path":  "android/build.gradle.kts",
+                      "sourceSha256":  "218f400e3fff31c9c986a2535dfb974560e1b4d33cc27b7c1fee96a2b7e44454",
+                      "bytes":  561
+                  },
+                  {
+                      "path":  "android/findit_android.iml",
+                      "sourceSha256":  "c8e0091edeca4e766e9dcf948e59c86a0427381fb5e31768ae396eedde5f1dfc",
+                      "bytes":  1630
+                  },
+                  {
+                      "path":  "android/gradle.properties",
+                      "sourceSha256":  "1ec25e85041c3e1c698d78125c298b689bab0e0fea4213a6a4bfd025a83d52c2",
+                      "bytes":  487
+                  },
+                  {
+                      "path":  "android/gradle/wrapper/gradle-wrapper.jar",
+                      "sourceSha256":  "16caeaf66d57a0d1d2087fef6a97efa62de8da69afa5b908f40db35afc4342da",
+                      "bytes":  53636
+                  },
+                  {
+                      "path":  "android/gradle/wrapper/gradle-wrapper.properties",
+                      "sourceSha256":  "594a00250ef7a36609a01f3263bf5ed63963afaf9ca9f82f2cd1de0f6f056383",
+                      "bytes":  207
+                  },
+                  {
+                      "path":  "android/gradlew",
+                      "sourceSha256":  "ec56c02543666d92d9ac5ae7fcc48f88ce4de0deb8b7f9b39928ca46f68c1b2b",
+                      "bytes":  4971
+                  },
+                  {
+                      "path":  "android/gradlew.bat",
+                      "sourceSha256":  "c13c6e91b9a517783976de213d46398c661ea9e17651376d7301e839eaedcc62",
+                      "bytes":  2404
+                  },
+                  {
+                      "path":  "android/key.properties.example",
+                      "sourceSha256":  "658ca371a0f409921cc8e7bcb780c10b988fe72ca2f37d83b75b1e9baf4bc4e9",
+                      "bytes":  336
+                  },
+                  {
+                      "path":  "android/settings.gradle.kts",
+                      "sourceSha256":  "092ba880c8d4a07591aafc082f45deedc9afcf60c113a4bb3d13cbe1a1fce9de",
+                      "bytes":  796
+                  },
+                  {
+                      "path":  "assets/audio/complete.wav",
+                      "sourceSha256":  "680a895980723b8bd36812c291858280ebd0d3916af33b08dc08c6b41787290d",
+                      "bytes":  48554
+                  },
+                  {
+                      "path":  "assets/audio/found.wav",
+                      "sourceSha256":  "7d106b2bf33b1e916c69afba443b0377b801cb5ce4b50986028a0f6e0886370e",
+                      "bytes":  15038
+                  },
+                  {
+                      "path":  "assets/audio/garden_loop.wav",
+                      "sourceSha256":  "1302a0865dccfe2719f7932cba49bd3dc45e91055c63f38c3f48517c386495d0",
+                      "bytes":  1411244
+                  },
+                  {
+                      "path":  "assets/audio/hint.wav",
+                      "sourceSha256":  "3383c6b3c8d8decc4b09e7bf2beff48c96814b6e9cfbe24cefab8f956eb9adbe",
+                      "bytes":  22094
+                  },
+                  {
+                      "path":  "assets/audio/tap.wav",
+                      "sourceSha256":  "ca7ca1d35af1e6fe09d1492d974ae5292ac728ec568171182daa539ba044e9dd",
+                      "bytes":  4454
+                  },
+                  {
+                      "path":  "assets/audio/wrong.wav",
+                      "sourceSha256":  "af2934208d20f9bc075eac40a46fb192706facd5000fe57bbe2d1708b39d4a7a",
+                      "bytes":  10186
+                  },
+                  {
+                      "path":  "assets/branding/app_icon.png",
+                      "sourceSha256":  "48c79964bd5c245b6746109c050ced7295fb24eb279379513e9474d914312d8b",
+                      "bytes":  32661
+                  },
+                  {
+                      "path":  "assets/branding/icon_foreground.png",
+                      "sourceSha256":  "1a65b8ad1da20278ec80e942385129f42e19ea20ab1e27adeebedb3ce360cabb",
+                      "bytes":  22981
+                  },
+                  {
+                      "path":  "assets/branding/icon_monochrome.png",
+                      "sourceSha256":  "5270d53aaa72f4b45c3848de2c9087b0209c03b9f97bcfa28d0b0c468ee21277",
+                      "bytes":  19558
+                  },
+                  {
+                      "path":  "assets/branding/play_store_icon.png",
+                      "sourceSha256":  "937c486b7c6880f6b74315140f4c246f12d399ed5fe83d2760c8db28ba6a86f6",
+                      "bytes":  14733
+                  },
+                  {
+                      "path":  "assets/branding/splash_mark.png",
+                      "sourceSha256":  "9cb683638442a630c5186d3cdbc47d2cc3ab2d797a35992acc9fff373e5cd5c0",
+                      "bytes":  8502
+                  },
+                  {
+                      "path":  "assets/content/catalog.json",
+                      "sourceSha256":  "aa98e168a251310cc7e25f25bf11a62567b343c4189b051683e20e4784475b46",
+                      "bytes":  1767371
+                  },
+                  {
+                      "path":  "assets/fonts/Nunito.ttf",
+                      "sourceSha256":  "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+                      "bytes":  276932
+                  },
+                  {
+                      "path":  "assets/fonts/Outfit.ttf",
+                      "sourceSha256":  "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade",
+                      "bytes":  110884
+                  },
+                  {
+                      "path":  "assets/legal/Drift-MIT.txt",
+                      "sourceSha256":  "31f84e4edff98f0238a5bef1c2ce754e401fbab149782f0ff4dc9b68fd086f75",
+                      "bytes":  1069
+                  },
+                  {
+                      "path":  "assets/legal/Nunito-OFL.txt",
+                      "sourceSha256":  "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65",
+                      "bytes":  4385
+                  },
+                  {
+                      "path":  "assets/legal/original-assets.txt",
+                      "sourceSha256":  "91e016d1c0a3df6a38b266496e2443b02cfc317b297a621b9cc54d1cb59a4423",
+                      "bytes":  1076
+                  },
+                  {
+                      "path":  "assets/legal/Outfit-OFL.txt",
+                      "sourceSha256":  "c676351bf8576b9aba743cd5eaa8c0e7ee0d51f805d720447b4df4ddb6a2e416",
+                      "bytes":  4389
+                  },
+                  {
+                      "path":  "assets/legal/third-party-assets.json",
+                      "sourceSha256":  "40642f115181bee4b5ea29d55cdde795fa5451e58fdc4120055316058c68d76a",
+                      "bytes":  1079
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-001-a.png",
+                      "sourceSha256":  "3dcdf240900a79324544642fa6de415f9245e047a327b17b75c190f6e4ce65f6",
+                      "bytes":  136312
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-002-a.png",
+                      "sourceSha256":  "e37f2d05907a4e6912caac33c35130bb234be0a7631e1392378d8b89c629820c",
+                      "bytes":  135528
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-003-a.png",
+                      "sourceSha256":  "ff5dfeb3cf80138b756c507e074e0c5f49e185f9997b8a94857b8d308421a4f9",
+                      "bytes":  118301
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-004-a.png",
+                      "sourceSha256":  "28a75630f298161d2b008c9a83c39ef5d75e9440f68cfda2d96e8de3e8d38f68",
+                      "bytes":  134734
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-005-a.png",
+                      "sourceSha256":  "2c4661bd1c4052eb208a6a064ced9fb55d850d936ed127810e663ed4178eda29",
+                      "bytes":  131429
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-006-a.png",
+                      "sourceSha256":  "f087436799694ebf512c150d50c235e944030c206a865a71f505cf3f4561dc96",
+                      "bytes":  141554
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-007-a.png",
+                      "sourceSha256":  "450f8023cf23d0dcaf608257f614b54235402880e33df6c0ebc419bfeb2570cf",
+                      "bytes":  128121
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-008-a.png",
+                      "sourceSha256":  "42397bb07c39836cec6af5cfb1a1e105c28dd34b638630248c176398d5265cc2",
+                      "bytes":  141580
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-009-a.png",
+                      "sourceSha256":  "525520a2cb62a69d9feb89508ac921f131a3af8ebe37d326c05544132107abf8",
+                      "bytes":  129312
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-010-a.png",
+                      "sourceSha256":  "296ab7450d3de8469dd2ae08453ab778cc4b8ccfff0cc656ca3d9771ed419d0d",
+                      "bytes":  142574
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-011-a.png",
+                      "sourceSha256":  "c68434d89c7d289dc8f3d3c8eb7c402fa4eb1e36ecda94039b8d00c966752780",
+                      "bytes":  130444
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-012-a.png",
+                      "sourceSha256":  "a3b9788ff4aabe2ed503b999693dd07ba80668b47decfcd96bf05f754ae3fe96",
+                      "bytes":  139173
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-013-a.png",
+                      "sourceSha256":  "f923c544e24ce6ad327b74ba016cd8316339616c5f54056262655b4b7421bc45",
+                      "bytes":  116142
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-014-a.png",
+                      "sourceSha256":  "da670283516acb5378826bf06456db0f28978a26063337b4fcc292845e5574b7",
+                      "bytes":  131564
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-015-a.png",
+                      "sourceSha256":  "9fbd61799c7e981e670d487816a7aa9343b7fcafd0ecf776f40d07a57124dc0f",
+                      "bytes":  145647
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-016-a.png",
+                      "sourceSha256":  "0971f23d0471e6cbda7fd14fbaea6372c1fde1b47ba67f2db7316c1404ddaae9",
+                      "bytes":  141910
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-017-a.png",
+                      "sourceSha256":  "e9d3ae96ad3447059577789a60d26a057556c1ef3c11032984ee6b3d049d58bf",
+                      "bytes":  125516
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-018-a.png",
+                      "sourceSha256":  "30db665910cb87cd39f9bfe7878c449aae18e2f8d90173aefd2b0d089ca50443",
+                      "bytes":  139299
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-019-a.png",
+                      "sourceSha256":  "3a7309bebbccec8f4b5afdbebfed36ed8b4ce53a3af73b32664f3a620db8e8c7",
+                      "bytes":  132334
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-020-a.png",
+                      "sourceSha256":  "2ab35b6ae992b1a9cc5d0f776714b080b7a7863a0d44aa58ab37a49a05f3860b",
+                      "bytes":  139646
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-021-a.png",
+                      "sourceSha256":  "0bff6b9356be7d89c95453028df80bb488484407fe5516210454a976b1b3ac88",
+                      "bytes":  139363
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-022-a.png",
+                      "sourceSha256":  "5fbe75ce0824bb815ef813478e97a5d44ba47d3e84f2431f535750a2f62bb39d",
+                      "bytes":  132596
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-023-a.png",
+                      "sourceSha256":  "b84614b29d8e7d5719f0710c61282c70131788c11048b63d8b9f171f1802fb74",
+                      "bytes":  121103
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-024-a.png",
+                      "sourceSha256":  "485d265bf00d19edfca7c2c3e9f4478582a59ac6457a89b56dfb0c2d3e7b7115",
+                      "bytes":  131316
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-025-a.png",
+                      "sourceSha256":  "4435ffe7a3c4b6d5b03d1f1b2677be965cacd80b0a0368f560d72c607fe83ceb",
+                      "bytes":  131330
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-026-a.png",
+                      "sourceSha256":  "e37b57ce07c2b0d359046aaa7f6de7096a0bb4b1356220bbf2a2dd6da74ad9ba",
+                      "bytes":  144781
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-027-a.png",
+                      "sourceSha256":  "3f301f293ca2827991c36d032d22f6d75f0eca8ecd01ef279213e1a498011b48",
+                      "bytes":  127287
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-028-a.png",
+                      "sourceSha256":  "c46904b3e4de4e08058223d88529f01209df9ca2a9265a54023cf2f6e6b00407",
+                      "bytes":  127097
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-029-a.png",
+                      "sourceSha256":  "e07511d7d55f98076c0ca2e0b30c94002e592abb270a04979d16f1b20b872ca2",
+                      "bytes":  121705
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-030-a.png",
+                      "sourceSha256":  "28eb9266793f316427dadb319de03e58dd8e61c60fee904d270059d431018381",
+                      "bytes":  145174
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-031-a.png",
+                      "sourceSha256":  "70e296f041d25787c35bf64b9ee309ff50e96ab79c1984f5576fe1d8ae0be59b",
+                      "bytes":  128434
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-032-a.png",
+                      "sourceSha256":  "1b4ad8511fb40ac259f0cc633b8193bd96a672184c4fc47a207de615909f572a",
+                      "bytes":  144392
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-033-a.png",
+                      "sourceSha256":  "75f4e8fd0448fa58c81fa51a7304567ad9364a38a86cc2e3c084d7536ef5cc55",
+                      "bytes":  125612
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-034-a.png",
+                      "sourceSha256":  "ee59457a9ddfe4ebc7017278981df76b89971b0e6b9be9a584353b85c5b740cb",
+                      "bytes":  135287
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-035-a.png",
+                      "sourceSha256":  "ad2b689486f7e601c12e551b6ac27d46c3d7b402b8bcf16f2a8f315bee2698fc",
+                      "bytes":  141077
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-036-a.png",
+                      "sourceSha256":  "960f44a60a22cc7a93aac9407735792871489d1d701a043e153f8bfaac65d974",
+                      "bytes":  143528
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-037-a.png",
+                      "sourceSha256":  "5c04d506fd93acdd163870354194220b0a005ac3d826f99cc3c32c72a5a04b53",
+                      "bytes":  129460
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-038-a.png",
+                      "sourceSha256":  "8e8e5f00a91402967b3e593c616fbcaf1a414c654dc63ea28181cacaa72855bf",
+                      "bytes":  130770
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-039-a.png",
+                      "sourceSha256":  "09da2520fdf8c78f4cbb13b1fe18c70d89e3477e0bb5729a49bf00cf86ce7e63",
+                      "bytes":  123742
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-040-a.png",
+                      "sourceSha256":  "fd27ae6c4668d30fc57308932b190ede38ad8a8835099098a90c1febb194ce98",
+                      "bytes":  142728
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-041-a.png",
+                      "sourceSha256":  "71c1312ecb2896296dd73b1c282422f012fcb05e743b00eae3a7f09463a113b2",
+                      "bytes":  138404
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-042-a.png",
+                      "sourceSha256":  "3121c97e11bcc38fc8612fae1f42b9e08c147eb0fe25e6e9409673abf82b3b01",
+                      "bytes":  137900
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-043-a.png",
+                      "sourceSha256":  "c857f46d21ffa3b038fd6ac7b8d507bb60fe8935fcf467a3c65771eb7753da3e",
+                      "bytes":  117286
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-044-a.png",
+                      "sourceSha256":  "bcb3f491b91195bc96e2a966565ba6975210e900b76d914d2d778d890400a700",
+                      "bytes":  134974
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-045-a.png",
+                      "sourceSha256":  "55f1d847b294363d5a7604bf9934d935d7802f4b3322dccc42a0b258560b3f4f",
+                      "bytes":  137026
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-046-a.png",
+                      "sourceSha256":  "d9b4d87b873c84639608921fd5e2060d6b4bead7663706626136ab0f0c82c27f",
+                      "bytes":  145429
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-047-a.png",
+                      "sourceSha256":  "7eb41cba0b05968ce384fc8f120b2fac428d3c98fdf9722fff1a6623f8d55941",
+                      "bytes":  125553
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-048-a.png",
+                      "sourceSha256":  "f58a6192e70ed499003974198894ccec746b25e0c70dd064d5cb4e6973aee662",
+                      "bytes":  136020
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-049-a.png",
+                      "sourceSha256":  "78957a4290861a72c1b9ff0d99cc0b2750c456988b117f859666b477ebfd6e22",
+                      "bytes":  129800
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-050-a.png",
+                      "sourceSha256":  "5625852c4ffb9015b4dc63dd4ecddf49679a0ea019fca2dada06f8ded4b93efc",
+                      "bytes":  142578
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-051-a.png",
+                      "sourceSha256":  "2d98f7a0012f3cdf6a75736135858593a41e0bdba9ff7f7a7542ac9efa23b392",
+                      "bytes":  133311
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-052-a.png",
+                      "sourceSha256":  "344c41bdeb2e1092602910382f261fb625289d130c0539c2f8292ea7be0fae91",
+                      "bytes":  144451
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-053-a.png",
+                      "sourceSha256":  "b90ccb0563f13b2fdb46fbf53291aad1c1c58843eaf2e001515537c2e0e105ce",
+                      "bytes":  121750
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-054-a.png",
+                      "sourceSha256":  "c45ab69df9367a3d091941c27a097751fc3fbcfcac3231dc1ef77f827a794654",
+                      "bytes":  140994
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-055-a.png",
+                      "sourceSha256":  "bdd7d09939897c42d83178ba8cb382d159f41fa538fea37f63be0851d66e40cc",
+                      "bytes":  142468
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-056-a.png",
+                      "sourceSha256":  "e25a9dbdc00e202eb77ff3936635b13cfcce2b55541765e3688f8913e42f23e3",
+                      "bytes":  141347
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-057-a.png",
+                      "sourceSha256":  "c6adf8c55ef255a58d6feed41a0c01a21ab56594df6f6beab21f24fbbdde0c21",
+                      "bytes":  126201
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-058-a.png",
+                      "sourceSha256":  "c3c257be99669b329943344ac5d003e0671b79dd837ce0893dbf086c7a24fe8b",
+                      "bytes":  129907
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-059-a.png",
+                      "sourceSha256":  "6b020aad8b7e5a1dd64362aa516cd64957b14037f6a97031de97e88a58dbe892",
+                      "bytes":  130103
+                  },
+                  {
+                      "path":  "assets/scenes/hidden-060-a.png",
+                      "sourceSha256":  "9197b8b4f13a1f3c445d1630f827141ecfa2c9bb3b1c87cb7c423a426f941093",
+                      "bytes":  147819
+                  },
+                  {
+                      "path":  "config/production.example.json",
+                      "sourceSha256":  "ad95ec96abc4406ab91b488ed2675137e8e7e7770d75d4bcf2323b3cfc1820fa",
+                      "bytes":  108
+                  },
+                  {
+                      "path":  "config/qa.json",
+                      "sourceSha256":  "3e2900ec75aba3bf7bfa2374a7c34f0b921529731e20ec069f881e9d95de0832",
+                      "bytes":  97
+                  },
+                  {
+                      "path":  "config/unsigned-production.json",
+                      "sourceSha256":  "8043ed6b30ce23dec497e248c3989dce30d5f412ae1f89bb5b02ef1d98dc38be",
+                      "bytes":  121
+                  },
+                  {
+                      "path":  "lib/app/app.dart",
+                      "sourceSha256":  "c80128781cf322c00bca350736c10bd1cfd937c03409f32dc2ce458e222e297d",
+                      "bytes":  5905
+                  },
+                  {
+                      "path":  "lib/app/app_services.dart",
+                      "sourceSha256":  "3b8d6635839a4f745935025a579f6bac48c765266e6d5ec5baa46225105448d8",
+                      "bytes":  5376
+                  },
+                  {
+                      "path":  "lib/app/router.dart",
+                      "sourceSha256":  "e2d8f8c4814f377fa2686085a65b4f9caa019550f5cb0676077617c2938614c7",
+                      "bytes":  2695
+                  },
+                  {
+                      "path":  "lib/app/theme.dart",
+                      "sourceSha256":  "7fd04ea7806d4c42e215d01847ee0f2e8a4c8e51866286c4a093fc9abc8ab9fa",
+                      "bytes":  7303
+                  },
+                  {
+                      "path":  "lib/core/art/brand_art.dart",
+                      "sourceSha256":  "f78cfc25afe62ece0a6f32fa8822db1bf1bb4c72e74ca0b530cf700ebd29f180",
+                      "bytes":  5652
+                  },
+                  {
+                      "path":  "lib/core/art/object_art.dart",
+                      "sourceSha256":  "a3256b66fc2d924ab0b0a714ccd27463f0d5e6af7d93fede6a5d193a1bcabc25",
+                      "bytes":  29190
+                  },
+                  {
+                      "path":  "lib/core/art/scene_art.dart",
+                      "sourceSha256":  "5b96f75ffd52f9045e9d0b190926cdff0b644b0804d8c8c5f9052d0ff94a9eb4",
+                      "bytes":  15370
+                  },
+                  {
+                      "path":  "lib/core/config/app_config.dart",
+                      "sourceSha256":  "648657b9c9b29f567b7cf0d0f13ca6026436ca7e3fff962952b69ad937255684",
+                      "bytes":  895
+                  },
+                  {
+                      "path":  "lib/core/content/content_repository.dart",
+                      "sourceSha256":  "8ae5dfbeda0a2c627eecc1d0f454f9ecada0c0945460dd87cd48a67a49152c2d",
+                      "bytes":  4970
+                  },
+                  {
+                      "path":  "lib/core/content/pack_format.dart",
+                      "sourceSha256":  "1a248c6b86ca49f58349b730fb4d8ee2f9c998d1bbca61503513744065a7149e",
+                      "bytes":  3892
+                  },
+                  {
+                      "path":  "lib/core/content/puzzle_generator.dart",
+                      "sourceSha256":  "97d4c2b26b2f6926c65a95cc16541b73098392de8df684dcb8203a3a9a7fdac8",
+                      "bytes":  11162
+                  },
+                  {
+                      "path":  "lib/core/content/puzzle_validator.dart",
+                      "sourceSha256":  "7e471a5cbbe0ff3e85dff05483a533f718a38ca20a660bacecc5b0e6f6dfd9fe",
+                      "bytes":  11141
+                  },
+                  {
+                      "path":  "lib/core/domain/daily_challenge.dart",
+                      "sourceSha256":  "c8ad9649a055e4e3b32a7f8a9b1d4b9fff63738ec534134d6399a4c69b00c0df",
+                      "bytes":  3577
+                  },
+                  {
+                      "path":  "lib/core/domain/game_engine.dart",
+                      "sourceSha256":  "3b70a0386e8db8f134fd37fbcd43e2501b5ee505eacb9a5f4030648a883913f1",
+                      "bytes":  10331
+                  },
+                  {
+                      "path":  "lib/core/domain/progress.dart",
+                      "sourceSha256":  "c6dddb7dd65c3d998733017cc0fc5b896ed4bbd4454360b2742647826137dd0f",
+                      "bytes":  4743
+                  },
+                  {
+                      "path":  "lib/core/domain/puzzle.dart",
+                      "sourceSha256":  "c1850df10f1a67947a672ac325897297371c9c333250b7ebee21bbba6c3b959a",
+                      "bytes":  12652
+                  },
+                  {
+                      "path":  "lib/core/services/audio_service.dart",
+                      "sourceSha256":  "58def46ae73c5175c6693fcb6143516f4c20109d796147d59d469c3603151d79",
+                      "bytes":  2957
+                  },
+                  {
+                      "path":  "lib/core/services/game_clock.dart",
+                      "sourceSha256":  "14cd46b5991950ad5e8603aaa32d3f325d940b6671359168c7c86727083c9b52",
+                      "bytes":  680
+                  },
+                  {
+                      "path":  "lib/core/storage/connection.dart",
+                      "sourceSha256":  "caa382777eebd736fb69c53c6caeafb80f811e53af56cd0c73659df75fc0e0b1",
+                      "bytes":  88
+                  },
+                  {
+                      "path":  "lib/core/storage/connection_native.dart",
+                      "sourceSha256":  "2040a5bcff139532583d95e772bd6d7ae24c097d23d51da9e2a0d3c5be386403",
+                      "bytes":  733
+                  },
+                  {
+                      "path":  "lib/core/storage/connection_web.dart",
+                      "sourceSha256":  "b54c528f42cbf36fcca035ebceac45a9c6f27c44f96c493206709b9004287761",
+                      "bytes":  969
+                  },
+                  {
+                      "path":  "lib/core/storage/database.dart",
+                      "sourceSha256":  "ff94036d5457ce9ab3d453079d4be6842338e3bcd8ee5585b4a916d4749d2d0a",
+                      "bytes":  1444
+                  },
+                  {
+                      "path":  "lib/core/storage/database.g.dart",
+                      "sourceSha256":  "f6ea5f630a09cf9ffa6ba1c2fde718316b6acbd5e44aa256ac9802e4bd3f198b",
+                      "bytes":  54978
+                  },
+                  {
+                      "path":  "lib/core/storage/progress_repository.dart",
+                      "sourceSha256":  "b48e3159963e3aca8da6df5fe3ab6fa8df3f1825e67712e97f0a7e7f72b7259e",
+                      "bytes":  12147
+                  },
+                  {
+                      "path":  "lib/core/storage/settings_repository.dart",
+                      "sourceSha256":  "86ab674a43aee1eb1027c0739f1a181fb9f976fcb7c5a742a1d3d4c7c6b445bb",
+                      "bytes":  3455
+                  },
+                  {
+                      "path":  "lib/features/daily/daily_screen.dart",
+                      "sourceSha256":  "a865beac49542d86b7f125f1cf887ec405ba292841a0157fef63dd401d4a3a2f",
+                      "bytes":  15278
+                  },
+                  {
+                      "path":  "lib/features/game/game_screen.dart",
+                      "sourceSha256":  "ecbcae5ed79ced5af8c59be684a3b7a84697bafb18e142092309940a0afa414c",
+                      "bytes":  48946
+                  },
+                  {
+                      "path":  "lib/features/home/home_screen.dart",
+                      "sourceSha256":  "b122a5cbadaa10ae14ed8e34e51b5ba74de62851424741a1d3773dfdcb02c665",
+                      "bytes":  17379
+                  },
+                  {
+                      "path":  "lib/features/levels/levels_screen.dart",
+                      "sourceSha256":  "bc65d5a7be5ca726d3243fe11cd9dce8b3a0eb447d32415388a08b2c7c8a0ae2",
+                      "bytes":  11137
+                  },
+                  {
+                      "path":  "lib/features/progress/progress_screen.dart",
+                      "sourceSha256":  "ccd2c8d7f3f4dd896ae8f8ea97c14a5960fe2a388e83e12b5e7b52dad73ea9ec",
+                      "bytes":  13736
+                  },
+                  {
+                      "path":  "lib/features/settings/about_screen.dart",
+                      "sourceSha256":  "7905b66379bf1d8a51542271299f6a7ec433b4b62921393c6ab090f14f2e65c2",
+                      "bytes":  4096
+                  },
+                  {
+                      "path":  "lib/features/settings/developer_details.dart",
+                      "sourceSha256":  "5e6a1d8b2c21996445901f03f25aa6d56d92a464a130e999a0dda6bc02f8c0f9",
+                      "bytes":  1636
+                  },
+                  {
+                      "path":  "lib/features/settings/packs_screen.dart",
+                      "sourceSha256":  "315eed1d023a50c03d919ee46e48d467c76fc63742c89a88f0edbfdfb3dc930d",
+                      "bytes":  11353
+                  },
+                  {
+                      "path":  "lib/features/settings/privacy_screen.dart",
+                      "sourceSha256":  "6bfa14d1d33b16de5a7eb2723e5ee7c8314957aa08ba449176c889306b916a6b",
+                      "bytes":  7600
+                  },
+                  {
+                      "path":  "lib/features/settings/settings_screen.dart",
+                      "sourceSha256":  "e8d460402e48024f97f0465e2f33f774f7fdfd44db3d114cbea5c4faadfe450e",
+                      "bytes":  11833
+                  },
+                  {
+                      "path":  "lib/main.dart",
+                      "sourceSha256":  "7c55ad91a94b3046206f98c12b8ca929632b738a4950c9222a9148bce1b00017",
+                      "bytes":  481
+                  },
+                  {
+                      "path":  "lib/ui/widgets/app_shell.dart",
+                      "sourceSha256":  "a749506dd4ca4a47ad1a9c1b512f52c2145967dc898decabf5633ec8aaae48ea",
+                      "bytes":  9336
+                  },
+                  {
+                      "path":  "lib/ui/widgets/common.dart",
+                      "sourceSha256":  "b9e277544f5493441e61e53d914fb961364fd855e74271b4f79fc98989cad4e2",
+                      "bytes":  9742
+                  },
+                  {
+                      "path":  "lib/ui/widgets/scene_board.dart",
+                      "sourceSha256":  "9be02b58c2279ca43fddb1fcf325a21643476a0430c867950c89a3b3be00463f",
+                      "bytes":  12410
+                  },
+                  {
+                      "path":  "lib/ui/widgets/tile_board.dart",
+                      "sourceSha256":  "3792b8a237203ba7da660b44aaa3bc6e8d1285b1827f9e767c9891ca8442533d",
+                      "bytes":  5112
+                  },
+                  {
+                      "path":  "pubspec.lock",
+                      "sourceSha256":  "e3afee0021f5df18adea404fe695fb095c567947949ee7e1ae60d94e1b1c5835",
+                      "bytes":  32335
+                  },
+                  {
+                      "path":  "pubspec.yaml",
+                      "sourceSha256":  "c83c1cee7b162e0723850185a0b8e5765e86cca3f490e70376fe3f373d0a583a",
+                      "bytes":  1639
+                  },
+                  {
+                      "path":  "test/content/catalog_test.dart",
+                      "sourceSha256":  "9d96346ff2dd2d38108ae11f66dfc9487d98e43257d4c2f87b767ec48daa7883",
+                      "bytes":  5040
+                  },
+                  {
+                      "path":  "test/content/content_repository_test.dart",
+                      "sourceSha256":  "080732cc07205157e9db450162cc4b3c8e6b1193a7e80927bf82d2699e175456",
+                      "bytes":  14529
+                  },
+                  {
+                      "path":  "test/content/pack_format_test.dart",
+                      "sourceSha256":  "69552f7ab6133a91954f4160cc318b3e61c050455f340e7641cb8c482f923737",
+                      "bytes":  4168
+                  },
+                  {
+                      "path":  "test/domain/daily_challenge_test.dart",
+                      "sourceSha256":  "75c1eccf1477117e3fd5d656165de6261c2a6a79993133ae15d2fb2109102bb9",
+                      "bytes":  4324
+                  },
+                  {
+                      "path":  "test/domain/determinism_test.dart",
+                      "sourceSha256":  "706099c978e0d964298dde9553506c2884c2c3f908408e2beb22f2ca5c253af6",
+                      "bytes":  2453
+                  },
+                  {
+                      "path":  "test/domain/game_engine_test.dart",
+                      "sourceSha256":  "32e6312aeea998087827af78f43fdeb7c9e891a3d4aca00b13a0e659e3f43a83",
+                      "bytes":  10832
+                  },
+                  {
+                      "path":  "test/domain/saved_state_test.dart",
+                      "sourceSha256":  "0c2140e8cf1e60d2af867f5dc3f21ed3d4c3afff6ee8a5c95ecc180d479a1bf3",
+                      "bytes":  5614
+                  },
+                  {
+                      "path":  "test/platform/android_configuration_test.dart",
+                      "sourceSha256":  "9796a392ef2e033752b3c4d79ba0539c08673e5b2cb7ecd94adb72a4afef5037",
+                      "bytes":  8146
+                  },
+                  {
+                      "path":  "test/storage/progress_repository_test.dart",
+                      "sourceSha256":  "d034abdefbd021c2ba42adc53918ec7a9b068ec0bc86a2c48b4789aa0f0023cb",
+                      "bytes":  19289
+                  },
+                  {
+                      "path":  "test/storage/settings_repository_test.dart",
+                      "sourceSha256":  "051a47011574ed2217638f0e8728cc0e145c3d7e755765eabc126d073fd0adaf",
+                      "bytes":  3992
+                  },
+                  {
+                      "path":  "test/support/app_harness.dart",
+                      "sourceSha256":  "8732cb2a9edae2b3715b86d79ffbf8ceab7e0756f10eead46d6fac9a5e52977b",
+                      "bytes":  9192
+                  },
+                  {
+                      "path":  "test/support/puzzles.dart",
+                      "sourceSha256":  "98db5535c385740c0f48aa2000b679f99c205ee106d1a32ab46c2a02fc28468d",
+                      "bytes":  1821
+                  },
+                  {
+                      "path":  "test/support/write_gate.dart",
+                      "sourceSha256":  "36e432f422f1a223200e4b07f8cb6ffd844f9facd8703429191261a832487253",
+                      "bytes":  999
+                  },
+                  {
+                      "path":  "test/widgets/board_accessibility_test.dart",
+                      "sourceSha256":  "49a209ae98edc5f042be71db9c217b086da5796bda189548c910bf67375bc4c2",
+                      "bytes":  8044
+                  },
+                  {
+                      "path":  "tool/build_catalog.dart",
+                      "sourceSha256":  "3e5a13d372fa8a30f6068fbf3f4d7d1609dcdb63e753084cd9a85b59716a9f4a",
+                      "bytes":  1823
+                  },
+                  {
+                      "path":  "tool/pack_schema.dart",
+                      "sourceSha256":  "4c617e14981f321f00f3999405587cdd950a1d805e3ac73a43b2e921639c0dcf",
+                      "bytes":  5649
+                  },
+                  {
+                      "path":  "tool/pack_tool.dart",
+                      "sourceSha256":  "e2fe0b800ac5daf05a9ae201948ea148a6e7b0607e3e00d0c2758377ba4e0145",
+                      "bytes":  4846
+                  },
+                  {
+                      "path":  "tool/serve_preview.py",
+                      "sourceSha256":  "2d168eee8ed66376d2c9e18dcd35c5178f6d592518f3c5db5eb8f58d1fc0e6c9",
+                      "bytes":  1718
+                  },
+                  {
+                      "path":  "tool/test_android_artifacts.py",
+                      "sourceSha256":  "c5dd35859ce7a56f563c004d5cccffd47e22ec6fb9f2a3de31ef4876a1154a32",
+                      "bytes":  19659
+                  },
+                  {
+                      "path":  "tool/verify_android_artifacts.py",
+                      "sourceSha256":  "e27c7eb0e797ca0fa3c86d0e94ee5bb26310bd55e10b6b0731cfc5b3cf9c658f",
+                      "bytes":  32171
+                  },
+                  {
+                      "path":  "web/drift_worker.dart",
+                      "sourceSha256":  "16a172503e2c7e7b6b3229427c59ae8f8c428cfccd2ae3a783a6f8d6f9dae662",
+                      "bytes":  84
+                  },
+                  {
+                      "path":  "web/drift_worker.js",
+                      "sourceSha256":  "a54b81412d4c4ab56653bb9e4c02912b0820bb37e2bba00722ddef4d78083d4a",
+                      "bytes":  361829
+                  },
+                  {
+                      "path":  "web/favicon.png",
+                      "sourceSha256":  "4e852da637fd243aba10c3ce60e5a883ce2ded84c89258130dc024d17f17ec65",
+                      "bytes":  398
+                  },
+                  {
+                      "path":  "web/icons/Icon-192.png",
+                      "sourceSha256":  "26d5cc7c5af41e8dea4d394bfa47968ebc1e0b92a843906f1959f9941028c834",
+                      "bytes":  5790
+                  },
+                  {
+                      "path":  "web/icons/Icon-512.png",
+                      "sourceSha256":  "076de6e40da5459fc427d004a1cf82c8ef97de482a4a8627b218827aa5e55220",
+                      "bytes":  16239
+                  },
+                  {
+                      "path":  "web/icons/Icon-maskable-192.png",
+                      "sourceSha256":  "26d5cc7c5af41e8dea4d394bfa47968ebc1e0b92a843906f1959f9941028c834",
+                      "bytes":  5790
+                  },
+                  {
+                      "path":  "web/icons/Icon-maskable-512.png",
+                      "sourceSha256":  "076de6e40da5459fc427d004a1cf82c8ef97de482a4a8627b218827aa5e55220",
+                      "bytes":  16239
+                  },
+                  {
+                      "path":  "web/index.html",
+                      "sourceSha256":  "035df8b7f1f88e74744d820761f0192458558dd5180a34314b6abe364a35221f",
+                      "bytes":  3403
+                  },
+                  {
+                      "path":  "web/manifest.json",
+                      "sourceSha256":  "ea1f2ffa38863737a9a5e665de0393f4e90c6c0f2acf9b37e64b2adaee43f516",
+                      "bytes":  969
+                  },
+                  {
+                      "path":  "web/splash/img/dark-1x.png",
+                      "sourceSha256":  "2f4ec539144e20c274a3bcacc14c50e1c44eef03c02f6b418fa69b826457aea0",
+                      "bytes":  2803
+                  },
+                  {
+                      "path":  "web/splash/img/dark-2x.png",
+                      "sourceSha256":  "0ad5a9230d16b8412166f0a26d7d1f02bb25e8fcd37d9ae4b32f426c35542034",
+                      "bytes":  5235
+                  },
+                  {
+                      "path":  "web/splash/img/dark-3x.png",
+                      "sourceSha256":  "67b0edde5cb0c24f65b910a2da4bfc8d139d914ad0e70ad2cff278930ba7475a",
+                      "bytes":  7869
+                  },
+                  {
+                      "path":  "web/splash/img/dark-4x.png",
+                      "sourceSha256":  "ddf9c2bb1c1bacda0a334b5859ca3439adebfc50f51296479f57f544cb9e21f9",
+                      "bytes":  9856
+                  },
+                  {
+                      "path":  "web/splash/img/light-1x.png",
+                      "sourceSha256":  "2f4ec539144e20c274a3bcacc14c50e1c44eef03c02f6b418fa69b826457aea0",
+                      "bytes":  2803
+                  },
+                  {
+                      "path":  "web/splash/img/light-2x.png",
+                      "sourceSha256":  "0ad5a9230d16b8412166f0a26d7d1f02bb25e8fcd37d9ae4b32f426c35542034",
+                      "bytes":  5235
+                  },
+                  {
+                      "path":  "web/splash/img/light-3x.png",
+                      "sourceSha256":  "67b0edde5cb0c24f65b910a2da4bfc8d139d914ad0e70ad2cff278930ba7475a",
+                      "bytes":  7869
+                  },
+                  {
+                      "path":  "web/splash/img/light-4x.png",
+                      "sourceSha256":  "ddf9c2bb1c1bacda0a334b5859ca3439adebfc50f51296479f57f544cb9e21f9",
+                      "bytes":  9856
+                  },
+                  {
+                      "path":  "web/sqlite3.wasm",
+                      "sourceSha256":  "efd308be92a34f3aa15f289a37f213b0230fd80888a1364326ee29579d892d37",
+                      "bytes":  758619
+                  }
+              ]
+}

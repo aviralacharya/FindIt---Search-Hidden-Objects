@@ -1,0 +1,63 @@
+{
+  "createdAt": "2026-11-06T09:21:00.740662Z",
+  "scope": "Actual app widgets and all 11 shared legal sections; offline test-owned database/preferences. No installation, browser saves or live hosting.",
+  "policySourceSha256": "6b61119007ed91ababf52c0f2441c34725875440e7ec099c77cdb13f3d9abb9b",
+  "policyHtmlSha256": "765dcc9c03ac0b7da4eaa9a7ae7ff6c045a0c37ae773b407b3106cc6a67e4167",
+  "legalTextMatchesSource": true,
+  "captures": [
+    {
+      "file": "verification/privacy-policy/screenshots/phone-top.png",
+      "sha256": "82db49a29770cacebf23af4951d2387ca1baac163c4786028dc0a8bd14abadfa",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/phone-security.png",
+      "sha256": "af5b2db3383dec0fa08f67b2f519a0b405aa083b0db59738a10a18509ffa5ca0",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/phone-contact.png",
+      "sha256": "47eea45aff9835a6fbce872508a018fc1fc85a97518dd01a82e6bdd73842f09a",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/phone-large-text-top.png",
+      "sha256": "49d8c3ff1410ca91eee587ed3158a6051fd335b0f6d17438fb3384a807fd992b",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/phone-large-text-security.png",
+      "sha256": "c607443da43382faeaf00ee497f7887dda5f017f843d9261f1f67c6cde96639c",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/phone-large-text-contact.png",
+      "sha256": "fb1d7fe750153f225d4741471d23e7205314d8a2401822da94c6e1cb7c4ce44a",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/wide-top.png",
+      "sha256": "ebca43724011da9d14f8025da9c74b0526b9355dd515f05ee3bd265d9699be08",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/wide-security.png",
+      "sha256": "4448097a2be352f6e5ba934b5209ac49704c70d138fcedbb316021dd269a19bd",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/privacy-policy/screenshots/wide-contact.png",
+      "sha256": "532d1ecd0f0792cd19d02c00cf33b0a20c21eee090546607a1efa672719c2cb7",
+      "width": 2880,
+      "height": 1920
+    }
+  ]
+}
