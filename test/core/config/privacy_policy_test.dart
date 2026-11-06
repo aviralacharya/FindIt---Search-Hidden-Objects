@@ -19,7 +19,7 @@ void main() {
       expect(document.sections, hasLength(11));
       expect(
         document.revisionLabel,
-        'Last updated: 6 November 2026 · Policy version 1.0',
+        'Last updated: 6 November 2026 · Policy version 1.0.0',
       );
       final source = _source();
       final sections = source['sections'] as List;
@@ -31,6 +31,55 @@ void main() {
       }
     },
   );
+
+  test('policy explains every release permission and its purpose', () {
+    final document = PrivacyPolicyDocument.fromJson(_source());
+    final section = document.sections.firstWhere(
+      (section) => section.id == 'permissions_backups',
+    );
+    final text = [...section.paragraphs, ...section.bullets].join('\n');
+    for (final permission in [
+      'android.permission.INTERNET',
+      'android.permission.VIBRATE',
+      'abiral.mobile.findithiddenobjects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION',
+    ]) {
+      expect(text, contains(permission));
+    }
+    expect(text, contains('normal permissions'));
+    expect(text, contains('signature-protected'));
+    expect(text, contains('does not record audio'));
+    expect(text, contains('disabled in the Android configuration'));
+  });
+
+  test('policy separates local gameplay, clipboard actions, and hosting', () {
+    final document = PrivacyPolicyDocument.fromJson(_source());
+    String textFor(String id) {
+      final section = document.sections.firstWhere(
+        (section) => section.id == id,
+      );
+      return [...section.paragraphs, ...section.bullets].join('\n');
+    }
+
+    expect(textFor('local_data'), contains('completion dates'));
+    expect(textFor('local_data'), contains('Local puzzle/session identifiers'));
+    expect(textFor('local_data'), contains('unused compatibility fields'));
+    expect(textFor('collection_sharing'), contains('Copy developer email'));
+    expect(textFor('collection_sharing'), contains('Android clipboard'));
+    expect(
+      textFor('collection_sharing'),
+      contains('does not automatically read'),
+    );
+    expect(textFor('network_services'), contains('using its local date'));
+    expect(
+      textFor('network_services'),
+      contains('download form is unavailable'),
+    );
+    expect(textFor('network_services'), contains('hosted on GitHub Pages'));
+    expect(textFor('network_services'), contains('IP address'));
+    expect(textFor('network_services'), contains('does not contact GitHub'));
+    expect(textFor('choices_deletion'), contains('logical deletion'));
+    expect(textFor('choices_deletion'), contains('does not delete emails'));
+  });
 
   test(
     'policy identity, dates, section IDs and required topics fail closed',

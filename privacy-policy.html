@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Privacy policy for FindIt - Search Hidden Objects: offline puzzles, local saves, no accounts, and no advertising.">
   <meta name="color-scheme" content="light">
-  <meta name="findit-privacy-policy-source-sha256" content="6b61119007ed91ababf52c0f2441c34725875440e7ec099c77cdb13f3d9abb9b">
+  <meta name="findit-privacy-policy-source-sha256" content="b730571b652a325e7bd59f346395cdab96eaee5a03118e38038964c9b28ae1ca">
   <title>Privacy Policy · FindIt - Search Hidden Objects</title>
   <style>
     :root { color-scheme: light; --ink: #183c34; --muted: #4f625b; --forest: #176750; --cream: #fbf7ee; }
@@ -38,7 +38,7 @@
       <p class="eyebrow">Your discoveries belong to you</p>
       <h1>Privacy Policy</h1>
       <p class="app-name">FindIt - Search Hidden Objects</p>
-      <p class="date">Last updated: <time datetime="2026-11-06">6 November 2026</time> · Policy version 1.0</p>
+      <p class="date">Last updated: <time datetime="2026-11-06">6 November 2026</time> · Policy version 1.0.0</p>
     </header>
 
     <div class="summary">
@@ -53,11 +53,13 @@
 
     <section aria-labelledby="local_data">
       <h2 id="local_data">2. Data stored on your device</h2>
-      <p>The app stores the following information locally so you can continue playing. Progress is stored in the app’s local SQLite database and settings are stored locally. This information is used only for gameplay and your chosen settings; the app does not upload your saves or scores. There is no account-based recovery, cloud sync, or developer-hosted save service.</p>
+      <p>The app stores the following information locally so you can continue playing. Progress is stored in the app’s local SQLite database. Settings and a flag recording whether you have started playing are stored in app preferences. This information is used only for gameplay, reliable saving, and your chosen settings; the app does not upload your saves or scores. There is no account-based recovery, cloud sync, or developer-hosted save service.</p>
+      <p>The settings format also preserves unused compatibility fields for age group and advertising. This app does not ask for or determine your age, use those fields to profile you, or enable advertising. Fresh installations use the unknown age-group value and advertising remains disabled.</p>
       <ul>
-        <li>Level progress, completed puzzles, scores, stars, and personal bests.</li>
-        <li>Earned coin balances and transactions. Coins are game rewards, not money or purchases.</li>
-        <li>Hints, found objects, the current puzzle, and daily-challenge history.</li>
+        <li>Level progress, completed puzzles, scores, stars, personal bests, elapsed play time, accuracy, combos, play counts, and completion dates.</li>
+        <li>Earned coin balances and transactions, including their amounts, reasons, and timestamps. Coins are game rewards, not money or purchases.</li>
+        <li>Hints and reveal stages, found objects, the current puzzle, and daily-challenge dates, completion history, and bonus status.</li>
+        <li>Local puzzle/session identifiers and completion receipts used to resume play and prevent duplicate rewards. These are gameplay records, not advertising IDs or device identifiers.</li>
         <li>Sound, music, vibration, volume, and relaxed or timed gameplay settings.</li>
         <li>Locally installed puzzle content, if any.</li>
       </ul>
@@ -68,20 +70,27 @@
       <p>The app contains no advertising, advertising-consent, analytics, or third-party crash-reporting SDK. It does not use an advertising ID, App Set ID, or persistent device identifier for tracking. It does not sell personal information or share gameplay data with advertisers or other companies. It does not ask for your name, date of birth, email address, location, or an account to play. There are no subscriptions or in-app purchases.</p>
       <p>If you choose to email the developer for support or a privacy request, your email provider and the developer receive the information you send, including your email address, message, and any attachments you choose to include. It is used to respond to your request, investigate an issue you report, and handle necessary legal obligations, not for advertising. Please do not include passwords, payment details, a child’s personal information, or unnecessary personal information.</p>
       <p>The developer’s support inbox uses Google/Gmail, which processes email as a service provider. Support information is not sold or shared for advertising; it is handled by the developer and the email services needed to deliver, store, and respond to your message. Information may be disclosed only when necessary to comply with a valid legal requirement. External providers’ own privacy policies also apply.</p>
+      <p>When you tap Copy developer email, the app writes the published developer email address to the Android clipboard. It does not automatically read clipboard contents, copy gameplay records, open an email service, or send a message. If you deliberately select and copy text, Android handles the copied text through its clipboard. Clipboard contents are outside the app’s private game storage and are governed by Android and any apps you choose to paste into.</p>
     </section>
 
     <section aria-labelledby="network_services">
       <h2 id="network_services">4. Network requests and external services</h2>
-      <p>All 60 included hidden-object levels are bundled with the app. No remote puzzle-pack server is configured in this release. The included game does not need a network connection, and the app does not send gameplay telemetry to the developer.</p>
-      <p>The app retains optional puzzle-pack support for possible future releases. If a future release enables downloads, its policy and store disclosures must explain the server and its data handling before distribution. A download server would receive a normal network request and could see your IP address. Puzzle packs are validated puzzle descriptions, not executable code.</p>
-      <p>When you view the public privacy policy in a browser, the website operator may receive normal request information such as your IP address and browser headers. If the public policy is hosted on GitHub Pages, GitHub’s hosting practices apply. The policy HTML itself has no scripts, analytics, advertising, tracking pixels, external fonts, cookies set by its HTML, or external links. The same complete policy is available offline inside the app.</p>
-      <p>Google Play, Android, your browser, and your email provider may process information under their own settings and privacy policies. Their platform services are separate from the app’s local game storage.</p>
+      <p>All 60 included hidden-object levels, artwork, fonts, and audio are bundled with the app. Daily Challenges are generated on your device using its local date; they are not fetched from a server. No remote puzzle-pack server is configured in this release, and its download form is unavailable. Starting the app, playing the included game, and reading the in-app privacy policy do not require network requests. The app does not send gameplay telemetry to the developer.</p>
+      <p>The app retains optional puzzle-pack support for possible future releases. If a future release enables downloads, its policy and store disclosures must explain the server and its data handling before distribution. A download would require your confirmation before contacting the configured HTTPS publisher. The server would receive normal request information, including your IP address, request headers, and the requested pack address. Puzzle packs are validated puzzle descriptions, not executable code or remote image trackers.</p>
+      <p>The public privacy policy is hosted on GitHub Pages. When you open that page in a browser, GitHub and its hosting infrastructure may process your IP address, browser/request headers, the requested page, and request timestamps to deliver and protect the website under GitHub’s own privacy practices. This is separate from offline gameplay. The policy HTML itself adds no scripts, analytics, advertising, tracking pixels, external fonts, cookies, or external links. The same complete policy is available offline inside the app, and opening the in-app policy does not contact GitHub.</p>
+      <p>Google Play, Android, your browser, and your email provider may process information under their own settings and privacy policies. Their platform services are separate from the app’s local game storage. External website and email providers may process information in countries other than yours; their storage locations, retention, and privacy controls are governed by those providers, not by the game.</p>
     </section>
 
     <section aria-labelledby="permissions_backups">
       <h2 id="permissions_backups">5. Android permissions and backups</h2>
-      <p>The app declares Internet permission for its optional content capabilities and vibration permission for optional haptic feedback. Declaring Internet permission does not mean that your game saves are transmitted. Android libraries also declare a package-specific, signature-protected permission used for internal receiver safety; it does not grant access to your personal data.</p>
-      <p>The app does not request camera, microphone, contacts, location, personal-file, advertising-ID, or Android AdServices permissions. Cloud backup and Android device-transfer backup of its game data are disabled in the Android configuration.</p>
+      <p>The Android release declares the permissions listed below. Internet and vibration are Android normal permissions and do not require a dangerous-permission approval dialog. The app-specific receiver permission is signature-protected. These declarations do not give the developer access to your local game saves.</p>
+      <p>The app does not request camera, microphone, contacts, location, photos/personal-file access, notification, advertising-ID, or Android AdServices permissions. Music and sound effects play bundled audio; the app does not record audio. Its private local database and preferences do not require permission to browse your personal files.</p>
+      <p>Android cloud backup and device-transfer backup of the app’s game data and preferences are disabled in the Android configuration. The developer does not provide a cloud backup or recovery service. The Android text-processing intent query only supports system text-selection actions; it is not a permission to collect your installed-app list or transmit selected text automatically.</p>
+      <ul>
+        <li>android.permission.INTERNET: retained for optional HTTPS puzzle-pack capabilities. No pack publisher is configured and no gameplay data is sent in this release.</li>
+        <li>android.permission.VIBRATE: used for optional haptic feedback when you find an object; you can turn vibration off in Settings.</li>
+        <li>abiral.mobile.findithiddenobjects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: added by Android libraries to protect internal broadcast receivers. It is signature-protected and does not grant access to personal data.</li>
+      </ul>
     </section>
 
     <section aria-labelledby="security">
@@ -92,7 +101,7 @@
 
     <section aria-labelledby="retention">
       <h2 id="retention">7. How long data is kept</h2>
-      <p>Local gameplay records remain on your device until you reset progress, clear the app’s storage, or uninstall the app. Reset progress keeps your settings and installed packs; those remain until you clear all app data or uninstall. The developer has no remote copy of these local saves.</p>
+      <p>Local gameplay records remain on your device until you reset progress, clear the app’s storage, or uninstall the app. Reset progress keeps your settings, the local started-playing flag, compatibility preferences, and installed packs; those remain until you clear all app data or uninstall. A fresh starting coin balance and today’s new Daily Challenge selection are created after a reset. The developer has no remote copy of these local saves.</p>
       <p>Support correspondence is kept only for as long as necessary to respond to your request, resolve the issue, and meet applicable legal obligations. You may request its deletion using the contact below. If information must be retained for a legal obligation, only the necessary information is retained for that purpose and for the required period.</p>
     </section>
 
@@ -101,9 +110,9 @@
       <p>Because the app does not create accounts or upload gameplay records, there is no app account to delete and the developer does not hold a copy of your local saves to recover or delete remotely. Privacy setup or consent to tracking is not required to play this offline, ad-free release.</p>
       <ul>
         <li>Change sound, music, vibration, volume, and gameplay pace in Settings.</li>
-        <li>Use Settings, then Reset progress, to delete saved gameplay history, hints, daily history, and earned coins after confirmation. You restart with the initial game coins. Sound settings and installed packs are kept.</li>
-        <li>To remove all local app data, use Android’s app-storage clearing option or uninstall the app. Local progress cannot be recovered through the developer.</li>
-        <li>Contact the developer to request access, correction, or deletion of information you sent in support correspondence, subject to applicable law and any necessary legal retention. Depending on your location, you may also have the right to complain to your local data-protection authority.</li>
+        <li>Use Settings, then Reset progress, to delete saved gameplay history, hints, daily history, completion receipts, and earned coins after confirmation. You restart with the initial game coins. Settings, compatibility preferences, the started-playing flag, and installed packs are kept. This is a logical deletion of gameplay records, not a separate forensic secure-erasure feature.</li>
+        <li>To remove all local app data, use Android’s app-storage clearing option or uninstall the app. Local progress cannot be recovered through the developer. Removing app data does not delete emails you already sent or text you copied to the system clipboard; manage those through your email service and Android.</li>
+        <li>Contact the developer to request access, a copy, correction, or deletion of information you sent in support correspondence, subject to applicable law and any necessary legal retention. Depending on your location, you may also have rights to restrict or object to processing and to complain to your local data-protection authority.</li>
       </ul>
     </section>
 

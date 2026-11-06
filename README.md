@@ -4,6 +4,8 @@
 
 *Little things. Wonderful places. Look closer.*
 
+[Privacy policy](https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy)
+
 FindIt is a Flutter hidden-object game with colorful illustrated scenes, offline puzzles, and saved progress. Players explore detailed locations, find items, and earn rewards at their own pace. The app requires no account and includes no advertising, analytics, or in-app purchases.
 
 Android is the distribution target. A web preview is available for development and gameplay verification.
@@ -122,11 +124,15 @@ python tool/build_signed_aab.py --dialog
 
 Passwords must never appear in commands, source, logs, signing properties, or saved configuration. The helper passes credentials through child-process environments, discards raw credential-bearing subprocess output, and does not install, upload, or publish the app. Additional interactive/environment modes are described by `python tool/build_signed_aab.py --help`.
 
-**A final signed production AAB has not yet been generated.** A verified live policy URL, fresh private credential entry, secure-backup confirmation, and publisher review remain required. Automated inspection does not replace real-device QA or Play Console review.
+**A final signed production AAB has not yet been generated.** Before building, verify that the canonical policy URL below serves the current policy revision. Fresh private credential entry, secure-backup confirmation, and publisher review remain required. Automated inspection does not replace real-device QA or Play Console review.
 
 ## Privacy policy
 
 `assets/legal/privacy-policy.json` is the sole editable policy source. The app loads it offline; `privacy-policy.html` is generated from the same complete content. Both policy presentations are link-free, with the developer email shown as plain text.
+
+**Canonical public policy:** https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy
+
+Policy **1.0.0**, updated **6 November 2026**, explains local gameplay records and save metadata, permissions, user-triggered clipboard actions, support emails, GitHub Pages hosting, retention/deletion, backups, security limits, children's privacy, and privacy requests. The app and policy remain at **1.0.0** because no release has been published. The website URL is a release input; opening the bundled in-app policy does not contact GitHub.
 
 After an approved policy change:
 
@@ -135,23 +141,35 @@ python tool/generate_privacy_policy.py --write
 python tool/generate_privacy_policy.py --check --output verification/privacy-policy-parity.json
 ```
 
-Follow the [GitHub Pages hosting guide](release/PRIVACY-POLICY-HOSTING.md) to publish the generated HTML. Use the actual rendered HTTPS page URL in release configuration and Play Console, not in the policy's content. Hosting only the policy file does not require publishing the Flutter source.
+Follow the [GitHub Pages hosting guide](release/PRIVACY-POLICY-HOSTING.md) to deploy policy revisions and verify the complete live HTML. Use the canonical rendered HTTPS URL above in release configuration and Play Console, not a GitHub source/blob URL and not a URL embedded in the policy's legal text. Hosting the policy does not require publishing a playable Flutter web app. GitHub Pages project URLs do not automatically redirect after a repository rename; use the single-hyphen repository name `FindIt-Search-Hidden-Objects`.
 
 Final configuration is defined by `config/production.example.json`: `APP_ENV=production`, `BUILD_STAGE=final`, an empty `PACK_INDEX_URL`, and the verified `PRIVACY_POLICY_URL`. The actual `config/production.json` is ignored by Git. Placeholder, private, or non-HTTPS policy URLs are rejected.
 
-Gameplay data remains in local storage, with no account-based recovery or cloud sync. Android configuration disables cloud/device-transfer backup of game data. Internet permission supports optional content capabilities; no remote pack server is configured for this release. Vibration permission supports optional haptic feedback.
+Gameplay data remains in the app's private SQLite database and preferences, with no account-based recovery or cloud sync. Local records include scores, progress, coin transactions, timestamps, saved puzzle/session identifiers, hints, and Daily Challenge history. Unused age-group/advertising compatibility fields are preserved in settings but are not used to ask for age, profile players, or enable ads. Daily Challenges use the device's local date; artwork, fonts, audio, and included puzzles are bundled.
+
+The release permissions are:
+
+- `android.permission.INTERNET`: retained for optional HTTPS puzzle-pack capabilities. `PACK_INDEX_URL` is empty, the download form is unavailable, and the included game sends no gameplay data.
+- `android.permission.VIBRATE`: optional haptic feedback, controlled in Settings.
+- `abiral.mobile.findithiddenobjects.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`: Android-library internal receiver protection; signature-protected, not personal-data access.
+
+Internet/vibration are normal Android permissions, not dangerous runtime-permission prompts. No camera, microphone, contacts, location, personal-file, notification, advertising-ID, or AdServices permissions are requested. Audio playback does not record audio. Android configuration disables cloud/device-transfer backup of app data and preferences.
+
+The **Copy developer email** action writes the published support address to the system clipboard only when selected; it does not automatically read clipboard contents or send email. Deliberately copied text is handled by Android. **Reset progress** removes gameplay history and coins but keeps settings, compatibility preferences, the started-playing flag, and installed packs. Clear app storage or uninstall to remove all app-local records; support emails and system clipboard text are managed separately.
 
 ## Release checklist
 
 Before Google Play publication:
 
 1. Approve package ownership, developer/contact details, asset distribution rights, policy commitments, and applicable legal obligations.
-2. Publish and verify the complete HTTPS privacy policy, and confirm the existing upload key's secure backup.
+2. Verify the canonical HTTPS privacy policy serves the current complete revision, and confirm the existing upload key's secure backup.
 3. Build and inspect the signed production AAB using final configuration and its matching R8 evidence.
 4. Complete Android-device checks for gameplay, lifecycle/resume, audio, haptics, accessibility, large text, launcher/splash, storage/backup behavior, and 16 KB runtime compatibility.
 5. Complete the Play Console listing, content rating, target-audience and Data safety declarations, app signing setup, and applicable testing/review requirements.
 
 QA APKs, unsigned candidates, widget tests, and static packaging checks are not proof of complete store readiness. Upload and publication are separate release actions. The [Android validation record](release/local/2026-11-06/README.md) documents available artifacts and current verification coverage.
+
+The retained Android candidates and older widget captures are pre-update validation snapshots, not published releases. This policy/documentation update does not rebuild those binaries or rebaseline their inspection reports/checksums. The app and current policy are still **1.0.0**. New Android builds must bundle the current wording and be inspected again. Current JSON/HTML parity is recorded in `verification/privacy-policy-parity.json`.
 
 ## Repository security
 

@@ -5,6 +5,7 @@ import hashlib
 from html.parser import HTMLParser
 import json
 import unittest
+from xml.etree import ElementTree
 
 from generate_privacy_policy import HTML, POLICY, ROOT, URL_PATTERN, check_html, render_html, validate_policy
 
@@ -113,6 +114,50 @@ class PrivacyPolicyParityTests(unittest.TestCase):
         rendered = render_html(value, "0" * 64)
         self.assertNotIn('<script>alert("test")</script>', rendered)
         self.assertIn("&lt;script&gt;", rendered)
+
+    def test_policy_names_the_actual_android_permissions_and_explains_them(self):
+        sections = {section["id"]: section for section in self.policy["sections"]}
+        permissions = sections["permissions_backups"]
+        text = "\n".join(permissions["paragraphs"] + permissions["bullets"])
+        manifest = ElementTree.parse(ROOT / "android/app/src/main/AndroidManifest.xml")
+        attribute = "{http://schemas.android.com/apk/res/android}name"
+        requested = {entry.attrib[attribute] for entry in manifest.findall("uses-permission")}
+        self.assertEqual(requested, {"android.permission.INTERNET", "android.permission.VIBRATE"})
+        for permission in requested:
+            self.assertIn(permission, text)
+        self.assertIn(self.policy["androidPackage"] + ".DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION", text)
+        self.assertIn("normal permissions", text)
+        self.assertIn("signature-protected", text)
+        self.assertIn("does not record audio", text)
+
+    def test_policy_discloses_local_metadata_and_user_triggered_clipboard_use(self):
+        sections = {section["id"]: section for section in self.policy["sections"]}
+        local = "\n".join(sections["local_data"]["paragraphs"] + sections["local_data"]["bullets"])
+        sharing = "\n".join(sections["collection_sharing"]["paragraphs"])
+        self.assertIn("completion dates", local)
+        self.assertIn("Local puzzle/session identifiers", local)
+        self.assertIn("unused compatibility fields", local)
+        self.assertIn("Copy developer email", sharing)
+        self.assertIn("Android clipboard", sharing)
+        self.assertIn("does not automatically read clipboard contents", sharing)
+        self.assertIn("Clipboard.setData", (ROOT / "lib/features/settings/developer_details.dart").read_text(encoding="utf-8"))
+
+    def test_policy_distinguishes_offline_gameplay_from_github_pages_requests(self):
+        section = next(section for section in self.policy["sections"] if section["id"] == "network_services")
+        text = "\n".join(section["paragraphs"])
+        for disclosure in ("using its local date", "download form is unavailable", "hosted on GitHub Pages", "IP address", "request timestamps", "does not contact GitHub"):
+            self.assertIn(disclosure, text)
+
+    def test_policy_reset_disclosure_matches_retained_preferences_and_packs(self):
+        sections = {section["id"]: section for section in self.policy["sections"]}
+        text = "\n".join(sections["retention"]["paragraphs"] + sections["choices_deletion"]["bullets"])
+        for disclosure in ("started-playing flag", "compatibility preferences", "installed packs", "completion receipts", "logical deletion", "does not delete emails"):
+            self.assertIn(disclosure, text)
+        repository = (ROOT / "lib/core/storage/progress_repository.dart").read_text(encoding="utf-8")
+        self.assertIn("t.key.like('pack:%').not()", repository)
+        services = (ROOT / "lib/app/app_services.dart").read_text(encoding="utf-8")
+        self.assertIn("await progress.resetProgress();", services)
+        self.assertIn("$storageNamespace-has-played", services)
 
 
 if __name__ == "__main__":

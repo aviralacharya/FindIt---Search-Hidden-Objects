@@ -1,6 +1,12 @@
-# Publish the privacy policy on GitHub Pages
+# Maintain the privacy policy on GitHub Pages
 
-The ready-to-host, self-contained page is **`privacy-policy.html` in the project root**. It uses no URLs, hyperlinks, scripts, cookies, trackers, external fonts, or image dependencies. The required developer email is plain text. You may copy only that file into a public GitHub Pages repository; the Flutter app does not need to be publicly hosted.
+The self-contained page is **`privacy-policy.html` in the project root**. It uses no URLs, hyperlinks, scripts, cookies, trackers, external fonts, or image dependencies. The required developer email is plain text. GitHub's hosting infrastructure can still process ordinary website requests as disclosed in the policy; a tracker-free HTML file does not mean the host receives no request data.
+
+- **Repository:** https://github.com/aviralacharya/FindIt-Search-Hidden-Objects
+- **Canonical public policy:** https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy
+- **Pages source:** `main` branch, repository root `/`, with HTTPS enforced.
+
+The canonical path is `privacy-policy` without a file extension; GitHub Pages serves the generated `privacy-policy.html` at that path. Hosting the policy does not require deploying the playable Flutter web preview.
 
 ## One policy source
 
@@ -21,19 +27,27 @@ Both renderers deliberately reject links and URL text. Provider names and their 
 - Keep `PACK_INDEX_URL` empty, with no ads, analytics, purchases, or remote pack server for this release. If those practices change, update the canonical policy and store disclosures, then regenerate the HTML.
 - Update the policy date when approving a later revision.
 
-## Hosting
+## Deploying a policy revision
 
-1. Copy `privacy-policy.html` into the root of your selected GitHub Pages publishing directory. You may instead rename the copy to `index.html` in a dedicated policy repository.
-2. Enable Pages for that directory in the selected repository. Use a repository/domain you own; no repository, commit, push, or deployment has been made by this preparation.
-3. Open the resulting **actual HTTPS page URL** in a signed-out/incognito browser. It must load the full policy without login, download prompts, geography restrictions, or authentication.
-4. Use the rendered Pages URL, **not** a `github.com/.../blob/...` source page or a raw-file download URL.
-5. Send the live URL back for the final build, and enter exactly that same URL in Play Console.
+1. Update only `assets/legal/privacy-policy.json`, including its policy revision/date when appropriate. Regenerate `privacy-policy.html` and run the parity check above.
+2. Review the Git diff and stage only approved public files. Commit and push the shared policy source, generated HTML, and related documentation/tests to `main`. Never publish signing material or local production configuration.
+3. Confirm **Settings → Pages** still publishes `main` from `/` with HTTPS enforced. Wait for the Pages deployment of that commit to succeed.
+4. Open the **canonical HTTPS URL above** in a signed-out/incognito browser. It must return the full rendered policy without login, download prompts, geography restrictions, or authentication, and its HTML must match the current generated file.
+5. Use that exact extensionless URL in final release configuration and Play Console, **not** a `github.com/.../blob/...` source page, raw-file download, or the previous triple-hyphen Pages path.
+
+### Repository-name migration
+
+The previous repository name was `FindIt---Search-Hidden-Objects`. The canonical name is now `FindIt-Search-Hidden-Objects`. GitHub redirects ordinary repository Git operations after a rename, but **GitHub Pages project URLs are not automatically redirected**. Update existing policy references and verify the new page before using it in a release. Keep local Git remotes on the canonical repository:
+
+```sh
+git remote set-url origin https://github.com/aviralacharya/FindIt-Search-Hidden-Objects.git
+```
 
 ## Final build configuration
 
-Copy `config/production.example.json` to the ignored local `config/production.json`. Set `PRIVACY_POLICY_URL` to the verified live URL; preserve `APP_ENV=production`, `BUILD_STAGE=final`, and the empty `PACK_INDEX_URL`.
+Copy `config/production.example.json` to the ignored local `config/production.json` if no conflicting final configuration exists. After verifying the live page, set `PRIVACY_POLICY_URL` to `https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy`; preserve `APP_ENV=production`, `BUILD_STAGE=final`, and the empty `PACK_INDEX_URL`. No signing passwords belong in either configuration file.
 
-The final signed AAB intentionally cannot be built with an empty, placeholder, local, or non-HTTPS policy URL. Hosting the policy later means the AAB must be built **after** the actual URL is available. Do not weaken this gate or publish an unsigned/QA candidate.
+The final signed AAB intentionally cannot be built with an empty, placeholder, local, or non-HTTPS policy URL. Build it **after** the canonical URL serves the current wording. The app and policy remain **1.0.0** because nothing has been released. Existing APK candidates and older captures are pre-update validation snapshots, so they must not be presented as freshly rebuilt or reinspected. Do not weaken release gates or publish an unsigned/QA candidate.
 
 Alternatively, run `python tool/build_signed_aab.py --dialog` from this project's root after hosting. It verifies the complete live HTML, asks for the existing dedicated key's password through native masked input, and creates the ignored final configuration only if absent. Different existing configuration is not overwritten. It reuses the key, builds and strictly inspects the local AAB, and retains matching public evidence; it never creates another key, saves a password, uploads, or publishes. Confirm the secure key backup and publisher review in the dialog. Android/device QA and Play Console/legal checks remain required before publication.
 
