@@ -1,52 +1,56 @@
-# FindIt - Search Hidden Objects — local handoff
+# FindIt - Search Hidden Objects — Android validation record
 
-**6 November 2026 · version 1.0.0+1 · current local candidates, not a store release**
+**Version `1.0.0+1` · 6 November 2026 · release validation, not a published release**
 
-The independent app is implemented in `E:\Google Apps\FindIt - Search Hidden Objects`. Hidden-object searching is the only offered puzzle mode. It includes 60 offline levels, three enhanced colorful illustrated scenes, pan/zoom controls, a pinned checklist, durable two-stage hints, relaxed/timed searching, earned coins, sequential unlocking, and a three-scene Daily Challenge.
+FindIt provides 60 offline hidden-object levels in a colorful illustrated style, with pan/zoom controls, a pinned checklist, saved two-stage hints, relaxed or timed searching, earned coins, progression, and a three-scene Daily Challenge.
 
-## Current Android outputs
+This record describes the available Android candidates and their automated validation. Artifact paths below are relative to this directory; verification references are relative to the project root.
 
-- **QA APK:** `revisions/policy-branding/qa/FindIt-Hidden-Objects-1.0.0-QA.apk`, package `abiral.mobile.findithiddenobjects.qa`, launcher **FindIt Hidden QA**, version `1.0.0-qa` / code `1`. Its development signature and strict current-source inspection passed. It has not been installed on a phone.
-- **Unsigned production APK:** `revisions/policy-branding/production-unsigned/FindIt-Hidden-Objects-1.0.0-UNSIGNED.apk`, package `abiral.mobile.findithiddenobjects`, launcher **FindIt Hidden**, version `1.0.0` / code `1`. The explicit APK-only unsigned build and strict inspection passed; no signing fallback is used.
-- Both include the supplied magnifying-glass/star/leaf branding, complete shared offline policy, and latest responsive-layout changes. Each has a separate `inspection.json`, `r8/` directory and `SHA256SUMS.txt` beside it. Current build/inspection logs are `verification/build-qa-policy-branding.txt`, `verification/build-production-unsigned-policy-branding.txt`, `verification/android-qa-policy-branding.json`, and `verification/android-production-unsigned-policy-branding.json`.
-- The older APKs directly under `qa/` and `production-unsigned/`, with their own reports/R8 evidence, remain unchanged as **historical candidates from before the latest branding, policy and layout changes**. They are not pending builds and were not compared against current source assets.
+## Android artifacts
 
-Each candidate must retain its own R8 evidence and inspection report. Neither a development-signed QA APK nor an unsigned production candidate is suitable for Play publication.
+### QA APK
 
-**No final signed production AAB has been built.** The actual hosted HTTPS policy URL, fresh private entry of the existing key's password, secure-backup confirmation and publisher review are still required.
+- File: `revisions/policy-branding/qa/FindIt-Hidden-Objects-1.0.0-QA.apk`.
+- Package: `abiral.mobile.findithiddenobjects.qa`.
+- Launcher: **FindIt Hidden QA**.
+- Version: `1.0.0-qa`; version code: `1`.
+- Development-signed; strict artifact inspection passed. Not suitable for Google Play publication.
 
-## Current passed validation
+### Unsigned production APK
 
-- **513 Flutter tests**, including hidden-only routes/catalog boundaries, unsupported-save safety, transactional hint/save failures and races, real-pointer gameplay, Daily Challenge rewards, the shared offline privacy policy, and seven responsive-layout profiles (including `320×568` with 2× text): `verification/flutter-tests-policy-branding.txt`.
-- **Flutter analysis:** no issues found: `verification/analyze-policy-branding.txt`. Formatting checked 72 Dart files with no changes: `verification/format-policy-branding.txt`.
-- **80 Python tooling tests:** strict APK/AAB, real JDK signature, first-push ignore, privacy parity, preservation, and private-input/workflow regressions passed: `verification/python-tests-policy-branding.txt`. Synthetic signature fixtures are not runnable production releases and never use the production key.
-- **Shared policy:** 11 complete sections, no URLs/hyperlinks, and plain-text developer email. Current HTML/source parity is in `verification/privacy-policy-parity.json`; nine current phone, large-text and wide actual-widget captures are in `verification/privacy-policy/captures.json`.
-- **Prepared branding:** source provenance, launcher/adaptive/themed safe-zone checks and 52 generated assets are recorded under `verification/branding/`; the opaque `512×512` Play icon is under `release/play-store/graphics/`.
-- **Both current APK inspections:** exact package/label, hidden-only 60-level catalog, source-asset/policy bytes, all 15 compiled launcher PNG variants and adaptive/themed layers, compiled backup/transfer exclusions, expected QA signature or genuinely unsigned production state, restricted permissions, absent advertising/test-plugin references, and native ELF/ZIP alignment passed. Each APK contains 15 native libraries across `armeabi-v7a`, `arm64-v8a`, and `x86_64`; applicable 64-bit 16 KB packaging checks passed.
-- **Existing-key preflight:** `python tool/build_signed_aab.py --check-only` passed for the existing dedicated key path, public certificate pin and policy parity. It read no password, did not open the keystore, and did not build an AAB.
+- File: `revisions/policy-branding/production-unsigned/FindIt-Hidden-Objects-1.0.0-UNSIGNED.apk`.
+- Package: `abiral.mobile.findithiddenobjects`.
+- Launcher: **FindIt Hidden**.
+- Version: `1.0.0`; version code: `1`.
+- Genuinely unsigned; strict artifact inspection passed. It cannot be installed normally or published as a release.
 
-## Historical gameplay evidence
+Both include the magnifying-glass/star/leaf branding, shared offline policy, and responsive layouts. Each artifact is retained with its own `inspection.json`, six R8 evidence files, and `SHA256SUMS.txt`. See the [candidate documentation](revisions/policy-branding/README.md) and retain each artifact's matching evidence.
 
-The 18 actual-widget gameplay captures in `verification/screenshots/captures.json` and the nine complete isolated release-web captures in `verification/web-preview/runs/2026-11-06T05-37-57-988Z/report.json` predate the latest branding/policy/layout revision. That web run verified paid/free hints, manual finds, completion rewards and unlocking across reloads, with no recorded app exceptions, console warnings/errors, failed page requests, or external requests. All 27 historical capture hashes/dimensions were checked in `verification/capture-checksums-final.json`. These remain historical evidence, not a claim of a latest-revision web or Android-device smoke test.
+Inspection reports: `verification/android-qa-policy-branding.json` and `verification/android-production-unsigned-policy-branding.json`.
 
-The loopback-only preview may be started at `http://127.0.0.1:8771/` with `tool/serve_preview.py --port 8771`; current availability was not rechecked. The isolated browser command is `node tool/verify_web_preview.mjs http://127.0.0.1:8771/`. It uses a fresh test-only Chrome profile, not ordinary browser saves. See the project-root `README.md` for current build, hosting and inspector commands.
+**No final signed production AAB is available.** Final generation requires the actual hosted HTTPS policy URL, fresh private entry of the existing upload key's password, secure-backup confirmation, and publisher review.
 
-## Original project protection
+## Automated validation
 
-The original project at `E:\Google Apps\Find It` is outside the new app's build, signing, storage, and output workflow. Its independent Ads Preview was not copied or used.
+- **513 Flutter tests passed:** hidden-only routes/catalog boundaries, saved-state safety, transactional hint/save failures and races, pointer-driven gameplay, Daily Challenge rewards, privacy presentation, and seven responsive-layout profiles, including `320×568` with 2× text. Evidence: `verification/flutter-tests-policy-branding.txt`.
+- **Flutter analysis passed with no issues.** Formatting checked 72 Dart files with no changes. Evidence: `verification/analyze-policy-branding.txt` and `verification/format-policy-branding.txt`.
+- **80 Python tooling tests passed:** artifact and release-gate validation, real JDK signature verification, repository exclusions, privacy parity, and private-build workflow checks. Evidence: `verification/python-tests-policy-branding.txt`. Signature fixtures use disposable test keys, not the production key.
+- **Privacy parity passed:** 11 complete sections, no URLs/hyperlinks, and plain-text developer email. Evidence: `verification/privacy-policy-parity.json`; nine phone, large-text, and wide actual-widget captures are indexed in `verification/privacy-policy/captures.json`.
+- **Branding preparation passed:** 52 generated assets, source provenance, and adaptive/themed safe-zone checks are recorded under `verification/branding/`. The opaque `512×512` Play icon is `release/play-store/graphics/icon-512.png`.
+- **Both APK inspections passed:** package/label, 60-level hidden-only catalog, source-asset and policy bytes, all 15 compiled launcher PNG variants and adaptive/themed layers, backup/transfer XML, expected signature state, restricted permissions, absent advertising/test-plugin references, and native ELF/ZIP alignment. Each APK contains 15 native libraries across `armeabi-v7a`, `arm64-v8a`, and `x86_64`; applicable 64-bit 16 KB packaging checks passed.
+- **Existing-key preflight passed:** key presence, public certificate pin, and generated-policy parity. The check read no password, did not open the keystore, and did not build an AAB.
 
-The current preservation report, `verification/source-preservation-policy-branding.json`, matches **227/227** recorded original source hashes and **both original final APK checksums**. This assurance covers those recorded files/APKs, not an unrecorded whole-folder baseline. `tool/verify_source_reuse.py` is read-only with respect to the original project.
+The Flutter validation toolchain was Flutter **3.47.9**, Dart **3.13.7**, Android build tools **36.0.0**, and NDK **28.2.13676358**. Flutter version metadata is recorded in `verification/flutter-version.json`.
 
-## Limits and release gates
+## Publication prerequisites
 
-- No phone installation/update/reset, ordinary-browser storage reset, advertising, upload, or publication was performed. All work is local; the assistant has not initialized, staged, committed or pushed a repository.
-- Static APK inspection and headless/widget checks are **not** real Android runtime, audio, accessibility, physical-device, or 16 KB runtime QA.
-- The toolchain emitted a Cupertino font-tree-shaking diagnostic. No Cupertino icon usage was found in the app; reviewed web/widget screens rendered their Material icons. Android runtime/icon checks remain part of device QA.
-- The user confirmed a **brand-new Play listing** and authorized the existing dedicated upload key, alias `findit-hidden-upload`. Never recreate it or reuse the original app's key. The public certificate pin is documented in the root `README.md` and `verification/signing/`; the private key stays in ignored `.local-signing/`.
-- Publish `privacy-policy.html` through GitHub Pages and supply its actual rendered HTTPS URL. Keep the policy pages themselves link-free. Then run `python tool/build_signed_aab.py --dialog` for fresh masked password entry, backup/publisher confirmations, live HTML validation, signed AAB build and strict inspection. It never saves a password or raw credential-bearing subprocess output; it never installs, uploads or publishes. The requested signed build is authorized, but its required inputs are not yet available. Upload/publication still require separate authorization.
-- Before publication, complete real-device/audio/accessibility/backup/storage/16 KB runtime QA and approve the package ownership, asset rights, developer/contact identity, privacy commitments, legal obligations and Play Console declarations. A signed/inspected AAB alone would not establish complete store readiness.
-- For the first GitHub push, `.gitignore` excludes APK/AAB/APKS files at any depth, private keys/backups/signing properties, environment files and final configuration. The known public upload certificate and `privacy-policy.html` remain publishable. Review the staged file list before committing; never publish private signing material.
-- Flutter tests, captures, analysis, and builds were run sequentially to avoid native-file and generated-registration conflicts. The unused `integration_test` development plugin was removed; no generated Android registration code was maintained by hand.
-- Initial failing build/smoke logs and the initial Home-only browser check remain historical. They are not evidence that the latest complete gameplay check or successful QA candidate failed.
+1. Approve package ownership, developer/contact details, asset distribution rights, policy commitments, and applicable legal obligations.
+2. Publish the generated `privacy-policy.html` using the [GitHub Pages hosting guide](../../PRIVACY-POLICY-HOSTING.md). Verify the actual rendered HTTPS URL; keep the policy content link-free.
+3. Confirm the existing dedicated upload key's secure backup. Never recreate or replace it, save its password in configuration, or publish private signing material.
+4. Run `python tool/build_signed_aab.py --dialog` from the project root for masked private entry, live-policy verification, signed AAB generation, and strict inspection. The helper retains matching R8 evidence and checksums and does not install, upload, or publish.
+5. Complete real Android-device QA for gameplay/resume, audio, haptics, accessibility, launcher/splash, storage/backup behavior, and 16 KB runtime compatibility. These checks remain outstanding; static inspection and widget tests do not replace them.
+6. Complete Play Console listing, app signing setup, content rating, target-audience and Data safety declarations, and applicable testing/review requirements before upload and publication.
 
-Validated toolchain: Flutter **3.47.9**, Dart **3.13.7**, Android build-tools **36.0.0**, NDK **28.2.13676358**, and Chrome **157.0.8103.38**. Full Flutter version metadata is in `verification/flutter-version.json`.
+Keep `.gitignore` in place and review staged files before committing. Android binaries, private keys/backups, signing properties, environment files, and final configuration are excluded. The known public upload certificate and generated policy page are publishable; the private keystore is not.
+
+See the [project README](../../../README.md) for setup, validation, build profiles, privacy maintenance, and repository-security instructions.

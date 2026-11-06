@@ -1,13 +1,33 @@
-# Current branding/policy local candidates
+# FindIt - Search Hidden Objects — Android candidates
 
-**6 November 2026 · version 1.0.0+1 · not a Play release**
+**Version `1.0.0+1` · 6 November 2026 · not for Google Play publication**
 
-- `qa/FindIt-Hidden-Objects-1.0.0-QA.apk`: separate QA package, development-signed, launcher **FindIt Hidden QA**.
-- `production-unsigned/FindIt-Hidden-Objects-1.0.0-UNSIGNED.apk`: production package, genuinely unsigned, launcher **FindIt Hidden**. It cannot be installed normally or uploaded as a store release.
-- Each directory contains the APK's matching strict inspection, six R8 evidence files, and `SHA256SUMS.txt`. The top-level checksum list covers this revision only. Android binaries remain excluded from Git.
+Paths in this document are relative to this directory unless stated otherwise.
 
-Both APKs include the supplied green magnifying-glass/star/leaf icon, the current 11-section link-free offline policy, 60 hidden-only levels, and the latest layout fixes. Static inspection passed for bundled source assets, all 15 launcher PNG variants and adaptive/themed layers, backup/transfer XML, identity, permissions, signature state, absent advertising/test-plugin references, and applicable 64-bit 16 KB packaging alignment. This is not real-device/runtime QA.
+## Artifacts
 
-The earlier APKs outside `revisions/` are preserved with their older matching evidence; they predate these branding/policy/layout changes. See `release/local/2026-11-06/README.md` from the project root for current test and preservation evidence.
+- **QA:** `qa/FindIt-Hidden-Objects-1.0.0-QA.apk`, package `abiral.mobile.findithiddenobjects.qa`, launcher **FindIt Hidden QA**, version `1.0.0-qa` / code `1`. Uses a development certificate; not a production release.
+- **Unsigned production:** `production-unsigned/FindIt-Hidden-Objects-1.0.0-UNSIGNED.apk`, package `abiral.mobile.findithiddenobjects`, launcher **FindIt Hidden**, version `1.0.0` / code `1`. Genuinely unsigned; cannot be installed normally or uploaded as a release.
 
-**There is no final signed production AAB yet.** Publish the root `privacy-policy.html` through GitHub Pages, supply its actual rendered HTTPS URL, confirm the secure key backup and publisher review, and use `python tool/build_signed_aab.py --dialog` for fresh masked entry of the **existing** key's password. Never recreate or publish the private key. Device QA and Play Console/legal review remain required; no upload or publication has been performed.
+Each artifact directory contains its matching `inspection.json`, six R8 evidence files, and `SHA256SUMS.txt`. The [directory checksum manifest](SHA256SUMS.txt) covers both artifacts, their retained evidence, and this README. Keep evidence paired with its artifact. Android binaries are excluded from Git.
+
+## Verified packaging
+
+Both APKs contain 60 offline hidden-object levels, the green magnifying-glass/star/leaf branding, the complete 11-section offline privacy policy, and responsive gameplay layouts.
+
+Strict static inspections passed for:
+
+- Package identity, launcher label, and expected signature state.
+- Hidden-only catalog and byte-for-byte bundled asset/policy parity.
+- All 15 launcher PNG variants and adaptive/themed icon layers.
+- Compiled backup/transfer rules and restricted permissions.
+- Absence of advertising and test-plugin references.
+- Applicable 64-bit 16 KB native ELF/ZIP packaging alignment.
+
+These results establish packaging validation, not real-device, accessibility, audio, or 16 KB runtime QA. See the [Android validation record](../../README.md) for automated-test evidence and outstanding checks.
+
+## Final release
+
+**No final signed production AAB is available.** Publish the generated project-root `privacy-policy.html`, verify its actual public HTTPS URL, and confirm secure key backup and publisher approval. Then run `python tool/build_signed_aab.py --dialog` from the project root for masked entry of the existing upload key's password, live-policy verification, signed generation, and strict inspection.
+
+Never recreate or replace the dedicated key, save signing passwords, or publish private signing material. Device QA and Play Console/legal review remain required; the build workflow does not install, upload, or publish the app.

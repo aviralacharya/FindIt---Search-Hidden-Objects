@@ -1,189 +1,211 @@
 # FindIt - Search Hidden Objects
 
-An independent Flutter hidden-object game with colorful illustrated scenes, local progress, and no advertising or purchases. This project lives at `E:\Google Apps\FindIt - Search Hidden Objects`; it is not an update to the original app at `E:\Google Apps\Find It`.
+<img src="assets/branding/app_icon.png" alt="FindIt magnifying-glass, star, and leaf app icon" width="96" height="96" />
 
-## What is included
+*Little things. Wonderful places. Look closer.*
 
-- **60 offline hidden-object levels:** three enhanced Home, Garden, and Café compositions followed by 57 classic FindIt hidden scenes.
-- **Scene-first searching:** pan, pinch or use zoom buttons, reset the view, and keep the object checklist pinned outside the scene.
-- **Two-stage hints:** spend 20 earned coins to highlight a broad search area; revealing that same object's exact position is free and does not count another hint. Both stages are saved. Neither automatically finds an object—you still tap it.
-- **Relaxed play by default:** Settings can enable timed searching for new sessions. Leaving or backgrounding pauses and saves the current search.
-- Sequential level unlocking, scores, stars, a local coin wallet, and a three-scene Daily Challenge with an idempotent completion bonus.
-- Reused audio, fonts, art utilities, transactional storage, pinned dependencies, and Android scaffolding. Generic puzzle models and regression tests remain internal; other puzzle modes are not offered by this app.
-- The supplied green magnifying-glass/star/leaf icon is prepared for the launcher, adaptive/themed icons, splash, web, and Play listing. Source provenance and safe-zone evidence are under `verification/branding/`.
-- One complete, offline privacy policy: the app reads `assets/legal/privacy-policy.json`, and `privacy-policy.html` is generated from that same source. Neither policy page contains URLs or hyperlinks; the contact email stays plain text.
+FindIt is a Flutter hidden-object game with colorful illustrated scenes, offline puzzles, and saved progress. Players explore detailed locations, find items, and earn rewards at their own pace. The app requires no account and includes no advertising, analytics, or in-app purchases.
 
-## Separation from the original app
+Android is the distribution target. A web preview is available for development and gameplay verification.
 
-- Production Android ID: `abiral.mobile.findithiddenobjects`.
-- QA Android ID: `abiral.mobile.findithiddenobjects.qa`; development ID: `abiral.mobile.findithiddenobjects.dev`.
-- Storage namespace: `findit_hidden_objects`. Android uses its own app sandbox and `findit_hidden_objects.sqlite`; web uses `findit_hidden_objects_v1` plus independently prefixed settings keys.
-- The Dart package stays named `findit` only to preserve reusable imports; it does not determine the installed Android identity.
-- Signing variables use **`FINDIT_HIDDEN_`**, not the original app's variables. No private signing credentials, original releases, Git history, or Ads Preview project were copied.
-- Local build outputs and verification reports stay in this project. No installation, update, device reset, ordinary-browser storage reset, live ads, upload, or publication is part of this handoff.
+## Features
 
-`verification/source-reuse.json` records the 227 reused files, their original hashes, and copying exclusions. `tool/verify_source_reuse.py` rechecks those original files and the original final APKs against their existing checksum list, without writing to the original folder. Its assurance is limited to those recorded files and APKs—not an unrecorded whole-folder baseline.
+- **60 bundled levels:** featured Home, Garden, and Café scenes, plus 57 additional hidden-object levels. All included puzzles work offline.
+- **Interactive searching:** pan, pinch to zoom, use zoom controls, and reset the scene view while the object checklist stays pinned outside the artwork.
+- **Two-stage hints:** spend 20 earned coins to highlight a broad area, then reveal that same object's exact position for free. Both stages are saved; the second stage adds no hint count. Players must still tap the object to find it.
+- **Relaxed or timed play:** relaxed searching is the default; Settings can enable timed searching for new sessions.
+- **Progression and rewards:** sequential unlocking, scores, stars, personal bests, an earned-coin wallet, and a three-scene Daily Challenge with one completion bonus per day.
+- **Save and resume:** gameplay pauses and saves when a search is left or the app is backgrounded, with transactional progress and hint updates.
+- **Player controls:** configurable sound, music, volume, and vibration, with responsive phone, landscape, wide-screen, and large-text layouts.
+- **Offline privacy information:** the complete policy is bundled in the app and maintained from the same source as the public policy page.
 
-## Toolchain and local development
+## Application identity
 
-Requirements: Flutter 3.47+ / Dart 3.13+, JDK 17, Android SDK 36, NDK `28.2.13676358`, and Python 3.11+ for the inspectors. Dependencies are pinned in `pubspec.lock`.
+- **Version:** `1.0.0+1` — Android version name `1.0.0`, version code `1`.
+- **Production package:** `abiral.mobile.findithiddenobjects`; launcher name **FindIt Hidden**.
+- **QA package:** `abiral.mobile.findithiddenobjects.qa`; launcher name **FindIt Hidden QA**.
+- **Development package:** `abiral.mobile.findithiddenobjects.dev`; launcher name **FindIt Hidden Dev**.
+- **Dart package:** `findit`.
+- **Storage namespace:** `findit_hidden_objects`.
+- **Android support:** Android 7.0 / API 24 and above; target SDK 36.
 
-The unused `integration_test` development plugin was removed from this independent project: its native registration broke release compilation on this toolchain. The actual widget/domain/storage suite uses `flutter_test`; no generated Android registration file is maintained by hand.
+## Requirements
 
-The local validation toolchain is Flutter **3.47.9** with Dart **3.13.7**; its full version metadata is recorded in `verification/flutter-version.json`.
+- Flutter **3.47+** with Dart **3.13+**, below Dart 4.0.
+- JDK **17**, Android SDK platform/build tools **36**, and Android NDK **`28.2.13676358`**.
+- Python **3.11+** for policy generation, artifact inspection, and release tooling. The desktop signing dialog also requires Tkinter.
+- Optional: Node.js **22+** and Chrome for the isolated web smoke test.
 
-Run commands from **this project's root**, never the original folder:
+Make the required command-line tools available on `PATH`. Dependencies are recorded in `pubspec.yaml` and locked in `pubspec.lock`. All commands below run from the project root and use project-relative paths.
 
-```powershell
+## Getting started
+
+Check the Flutter installation and resolve dependencies:
+
+```sh
+flutter doctor
 flutter pub get
+```
+
+Run the Android development flavor on a selected development target:
+
+```sh
+flutter run --no-pub --flavor dev
+```
+
+Use `dev` or `qa` for testing. The `prod` Android identity is release-only and rejects debug/profile builds.
+
+## Quality checks
+
+```sh
 flutter analyze --no-pub
+dart format --output=none --set-exit-if-changed lib test tool
 flutter test --no-pub --reporter expanded
 python -m unittest discover -s tool -p "test_*.py"
-python tool/verify_source_reuse.py
+python tool/generate_privacy_policy.py --check
 ```
 
-On this workstation, the working Flutter executable is `C:\Users\Lenovo\AppData\Local\Temp\opencode\flutter-sdk\bin\flutter.bat`. PowerShell can invoke it with `& 'full path'`. The checked-in examples do not contain publisher secrets; `android/local.properties` is local SDK configuration and must not be committed.
+The suites cover content validation, hidden-object gameplay, saved-state safety, transactional persistence, hints, progression, Daily Challenge rewards, responsive layouts, privacy parity, release gates, and artifact verification. Signature regressions use disposable test keys, not the production upload key.
 
-Prepend this SDK's `bin` and `bin\cache\dart-sdk\bin` directories to the process `PATH` before Flutter commands on this workstation; otherwise the inherited `E:\Flutter` path can break native-asset subprocesses. Do not change the original app's SDK configuration.
+Run Flutter tests, capture tasks, analysis, and builds sequentially in the same working copy to avoid generated-file and native-asset contention.
 
-Run Flutter tests, captures, analysis, and builds **one at a time** on this workstation; overlapping commands can lock native assets or conflict while regenerating plugin registration.
+For isolated widget captures:
 
-If a `dart run` utility encounters the workstation's inherited `E:\Flutter` path/native-asset error, invoke the SDK's Dart executable directly after `flutter pub get`:
-
-```powershell
-& 'C:\Users\Lenovo\AppData\Local\Temp\opencode\flutter-sdk\bin\cache\dart-sdk\bin\dart.exe' tool/build_catalog.dart
-& 'C:\Users\Lenovo\AppData\Local\Temp\opencode\flutter-sdk\bin\cache\dart-sdk\bin\dart.exe' tool/pack_tool.dart validate config/packs/example-v1.json
-```
-
-### Isolated screen review
-
-```powershell
+```sh
 flutter test --no-pub tool/capture_hidden_app_test.dart
+flutter test --no-pub tool/capture_privacy_policy_test.dart
 ```
 
-This captures real app widgets under `verification/screenshots/` using test-owned SQLite and mocked preferences, not installed or browser saves. It covers phone, wide, landscape, large text, hints, resume, and completion. It is separate from the normal `test/` suite. Artwork can be regenerated with `flutter test --no-pub tool/export_hidden_art_test.dart`; review target visibility before accepting regenerated assets.
+These tasks use test-owned storage. Gameplay captures are written to `verification/screenshots/`; policy captures and parity metadata are written to `verification/privacy-policy/`.
 
-The separate privacy-screen review is `flutter test --no-pub tool/capture_privacy_policy_test.dart`. It records nine phone, large-text, and wide captures plus source/HTML hashes under `verification/privacy-policy/`.
+## Android build profiles
 
-### Shared privacy policy
+### QA APK
 
-Edit only `assets/legal/privacy-policy.json`, then run:
-
-```powershell
-python tool/generate_privacy_policy.py --write
-python tool/generate_privacy_policy.py --check --output verification/privacy-policy-parity.json
-```
-
-Publish the generated HTML through GitHub Pages using `release/PRIVACY-POLICY-HOSTING.md`. The **actual live HTTPS URL** belongs only in release configuration and Play Console, not in the policy's text. No URL has been invented or configured for the final build.
-
-## Local build profiles
-
-### QA APK (development certificate, separate package)
-
-```powershell
+```sh
 flutter build apk --release --no-pub --flavor qa --dart-define-from-file=config/qa.json
 ```
 
-Expected output: `build/app/outputs/flutter-apk/app-qa-release.apk`. This is a local testing build, **not** a production/store release. Its matching R8 evidence is under `build/app/outputs/mapping/qaRelease/`.
+- APK: `build/app/outputs/flutter-apk/app-qa-release.apk`.
+- R8 evidence: `build/app/outputs/mapping/qaRelease/`.
+- Uses the QA package and a development certificate. **Not suitable for Google Play publication.**
 
-### Unsigned production APK candidate (inspection only)
+### Unsigned production APK
 
-Both explicit candidate gates are required; there is no debug-signing fallback:
+This profile is for packaging inspection only. Both the Gradle property and the `unsigned-candidate` configuration are required:
 
-```powershell
+```sh
 flutter build apk --release --no-pub --flavor prod --android-project-arg=unsignedProductionCandidate=true --dart-define-from-file=config/unsigned-production.json
 ```
 
-Pass the property directly through Flutter's `--android-project-arg`; the environment-only `ORG_GRADLE_PROJECT_...` attempt did not reach the gate on this workstation. The `BUILD_STAGE=unsigned-candidate` configuration is still required, and the production flavor remains genuinely unsigned.
+- APK: `build/app/outputs/flutter-apk/app-prod-release.apk`.
+- R8 evidence: `build/app/outputs/mapping/prodRelease/`.
+- Genuinely unsigned, with no development-signing fallback. It cannot be installed normally or published. Unsigned AAB builds are blocked.
 
-Expected output: `build/app/outputs/flutter-apk/app-prod-release.apk`, with matching R8 evidence in `build/app/outputs/mapping/prodRelease/`. An unsigned APK cannot be installed normally and must not be uploaded as a store release. Unsigned AAB builds are deliberately blocked.
+`tool/verify_android_artifacts.py` provides the `qa-candidate`, `production-candidate`, and `signed-production-aab` inspection profiles. Supply each artifact's matching R8 mapping; QA inspection also requires its independently verified development-certificate fingerprint. See `python tool/verify_android_artifacts.py --help` for usage.
 
-The artifact inspector checks the exact package, current launcher label, hidden-only catalog, signature expectations, permissions, absent advertising classes/components, source assets/policy parity, prepared launcher pixels and backup rules, and 16 KB native ELF/ZIP alignment. Use each APK's own R8 mapping; do not reuse the other flavor's or the original app's mapping:
+### Signed production AAB
 
-```powershell
-$qaCertificateSha256 = 'b08451266f6a68fa07cc2cf4da0112d0c755b77a671a46b2c7980bc8b920b594'
-python tool/verify_android_artifacts.py --profile qa-candidate --expected-certificate-sha256 $qaCertificateSha256 --r8-mapping build/app/outputs/mapping/qaRelease/mapping.txt --output verification/android-qa.json build/app/outputs/flutter-apk/app-qa-release.apk
-python tool/verify_android_artifacts.py --profile production-candidate --r8-mapping build/app/outputs/mapping/prodRelease/mapping.txt --output verification/android-production-unsigned.json build/app/outputs/flutter-apk/app-prod-release.apk
-```
+Use the existing dedicated upload key. Production validation pins its public certificate and rejects development keys. **Do not recreate or replace the upload key.** Keep a secure backup, with the password stored separately.
 
-The QA certificate above is this workstation's development certificate, independently checked with `keytool`; public certificate details are in `verification/qa-development-certificate.txt`. On another workstation, independently verify and pin its intended development certificate before inspecting an APK. Never use a development certificate for a signed production release.
+After publishing the policy and approving the release inputs, use the private build workflow:
 
-Static packaging checks are **not** Android runtime, audio, accessibility, Play Console, or real 16 KB device QA.
-
-### Web preview
-
-```powershell
-flutter build web --release --no-pub --no-web-resources-cdn --dart-define-from-file=config/qa.json
-python tool/serve_preview.py --port 8771
-```
-
-Open `http://127.0.0.1:8771/` in an isolated review browser. Use a distinct origin/port from the original app's preview and never clear unrelated browser data. The server binds only to loopback and sends cross-origin isolation headers required by durable Drift web storage. Keep `sqlite3.wasm` and `drift_worker.js` beside `index.html`; do not open the app as `file://`. This local server is not public hosting. Audio may require the first user interaction in a browser.
-
-With the preview server running, Node 22+ and Chrome can run the isolated gameplay smoke test without external packages:
-
-```powershell
-node tool/verify_web_preview.mjs http://127.0.0.1:8771/
-```
-
-It creates a fresh test-only Chrome profile, checks paid/free hints and manual finds across full Home-page reloads, verifies completion rewards and unlocking, and captures wide/phone screens. It closes only its own Chrome instance and does not clear any storage. Set `FINDIT_HIDDEN_CHROME` to an alternate Chrome executable if needed. Results stay in timestamped `verification/web-preview/runs/` folders; `verification/web-preview/report.json` contains the latest result. Historical failures and the initial Home-only smoke evidence are not final gameplay-validation evidence.
-
-## Optional content authoring
-
-`config/packs/example-v1.json` contains three unique hidden-object expansion scenes for levels 61–63, alongside its checksum and `pack-v1.schema.json`. It is a publisher example, not automatically installed content. The app has no configured remote pack index and works without one.
-
-```powershell
-dart run tool/pack_tool.dart example
-dart run tool/pack_tool.dart schema
-dart run tool/pack_tool.dart validate config/packs/example-v1.json
-```
-
-Publisher tools and repository installation accept hidden-object scenes only. No remote artwork, executable payloads, or daily IDs are permitted. The internal generic `PackFormat` decoder remains reusable; the app boundary enforces the hidden-only restriction.
-
-## Store-release gates (not completed by a local candidate build)
-
-1. Confirm ownership of the new package and that the reused artwork, fonts, audio, and developer/contact details are appropriate for this independent app. Provenance is in `assets/legal/`.
-2. Host the generated, truthful public HTTPS privacy policy for **FindIt - Search Hidden Objects**. Verify that the live HTML matches the canonical policy. Fill `PRIVACY_POLICY_URL` in the ignored local `config/production.json`; keep `APP_ENV=production`, `BUILD_STAGE=final`, and `PACK_INDEX_URL` empty for this release.
-3. The user confirmed this is a **new Play listing** and authorized the dedicated key already created at `.local-signing/findit-hidden-objects-upload.p12`, alias `findit-hidden-upload`. **Do not recreate it or use the original app's key.** Back it up securely, with its password stored separately in a password manager. Supply credentials only through private masked input/process-local `FINDIT_HIDDEN_STORE_FILE`, `FINDIT_HIDDEN_STORE_PASSWORD`, `FINDIT_HIDDEN_KEY_ALIAS`, and `FINDIT_HIDDEN_KEY_PASSWORD`. Never put an actual password in a command, source, log, `key.properties`, or other saved configuration. Remove the unsigned-candidate flag. Gradle pins the actual certificate to `e4d765e9c1676c9acfa95560b78177754e35fafc77dcb990dbf2e7ac2c999114`.
-4. Complete real Android/device QA, accessibility and audio checks, backup/storage behavior, and 16 KB runtime QA, then prepare the separate Play listing and policy declarations.
-5. The user has requested a signed AAB, but the live policy URL and fresh private password entry are still required. Once those inputs and release approvals are ready, build with `flutter build appbundle --release --no-pub --flavor prod --dart-define-from-file=config/production.json`. Inspect it before handoff using its own R8 mapping. **Uploading or publishing requires separate authorization.**
-
-#### Private, repeatable final build
-
-The safer local command is:
-
-```powershell
+```sh
 python tool/build_signed_aab.py --check-only
 python tool/build_signed_aab.py --dialog
 ```
 
-`--check-only` checks local paths, the public certificate pin and shared-policy parity. It does **not** read a password or open the keystore. `--dialog` asks for the actual rendered HTTPS policy URL, the **existing** key's password through native masked input, and explicit backup/publisher-review confirmations. It verifies the live HTML against the complete generated policy, verifies the existing keystore's public certificate, creates `config/production.json` only if absent (never overwrites different existing inputs), builds the signed production AAB, and runs the strict inspector below. Successful output is retained with its own R8 files and checksums in a new timestamped `release/local/<date>/revisions/signed-<time>/` directory.
+- `--check-only` checks the expected key's presence, public certificate pin, and generated-policy parity. It does not read a password, open the keystore, fetch the hosted policy, or build an AAB.
+- `--dialog` requests the actual public HTTPS policy URL, masked entry of the existing key's password, and explicit secure-backup and publisher-review confirmations.
+- The build verifies the complete live policy HTML and the actual upload certificate, creates `config/production.json` only if absent, rejects conflicting configuration, builds the signed AAB, and strictly inspects it.
+- Successful output is retained with matching R8 files, inspection evidence, and checksums under a timestamped directory in `release/local/`. The build output is `build/app/outputs/bundle/prodRelease/app-prod-release.aab`.
 
-Raw output from credential-bearing subprocesses is deliberately discarded, rather than risking a password in a log. Only fixed build status and public hosting/inspection evidence are saved. Credentials are held in process/child memory, never saved in configuration or command arguments. Reusable Gradle daemons are disabled for this workflow. For approved automation, `--from-environment --policy-url $policyPageUrl --confirm-backup --confirm-publisher-review` reads process-local signing passwords; clear them from the originating terminal when finished. Never type an actual password into a command or chat.
+Passwords must never appear in commands, source, logs, signing properties, or saved configuration. The helper passes credentials through child-process environments, discards raw credential-bearing subprocess output, and does not install, upload, or publish the app. Additional interactive/environment modes are described by `python tool/build_signed_aab.py --help`.
 
-This helper **never creates or replaces a key**. Do not rerun the earlier key-creation setup to recreate `.local-signing/findit-hidden-objects-upload.p12`. Run Flutter commands one at a time; a signed-build lock prevents concurrent invocations of this helper. Real-device QA and Play Console/legal review still remain separate prerequisites to publication, even after a successful signed build.
+**A final signed production AAB has not yet been generated.** A verified live policy URL, fresh private credential entry, secure-backup confirmation, and publisher review remain required. Automated inspection does not replace real-device QA or Play Console review.
 
-```powershell
-python tool/verify_android_artifacts.py --profile signed-production-aab --production-config config/production.json --r8-mapping build/app/outputs/mapping/prodRelease/mapping.txt --output verification/android-signed-production.json build/app/outputs/bundle/prodRelease/app-prod-release.aab
+## Privacy policy
+
+`assets/legal/privacy-policy.json` is the sole editable policy source. The app loads it offline; `privacy-policy.html` is generated from the same complete content. Both policy presentations are link-free, with the developer email shown as plain text.
+
+After an approved policy change:
+
+```sh
+python tool/generate_privacy_policy.py --write
+python tool/generate_privacy_policy.py --check --output verification/privacy-policy-parity.json
 ```
 
-This profile checks the compiled bundle manifest and final inputs, embedded/external R8 mapping equality, source assets and policy, launcher/backup resources, native alignment and Flutter symbol metadata, and a real JDK verification of **every signed payload** against the dedicated upload-certificate pin. Regression tests use disposable synthetic bundles and test-only keys, never the production key. Separate workflow regressions confirm password-safe failure handling, existing-key reuse, live-policy parity, and non-overwriting retention. Passing those tests is not a claim that a final signed production AAB has already been built or that live hosting/device/Play checks are complete.
+Follow the [GitHub Pages hosting guide](release/PRIVACY-POLICY-HOSTING.md) to publish the generated HTML. Use the actual rendered HTTPS page URL in release configuration and Play Console, not in the policy's content. Hosting only the policy file does not require publishing the Flutter source.
 
-### Safe GitHub publication
+Final configuration is defined by `config/production.example.json`: `APP_ENV=production`, `BUILD_STAGE=final`, an empty `PACK_INDEX_URL`, and the verified `PRIVACY_POLICY_URL`. The actual `config/production.json` is ignored by Git. Placeholder, private, or non-HTTPS policy URLs are rejected.
 
-`privacy-policy.html` and its canonical source `assets/legal/privacy-policy.json` are intentionally publishable. `.gitignore` excludes AAB/APK/APKS outputs at any depth, the private `.local-signing/` directory, common private-key formats and backups, signing-properties files, environment files, and `config/production.json`.
+Gameplay data remains in local storage, with no account-based recovery or cloud sync. Android configuration disables cloud/device-transfer backup of game data. Internet permission supports optional content capabilities; no remote pack server is configured for this release. Vibration permission supports optional haptic feedback.
 
-The single allowlisted PEM, `verification/signing/production-upload-certificate.pem`, contains only the **public certificate**, never a private key or password. Release inspection requires it. All other PEM files are ignored.
+## Release checklist
 
-Before committing, review `git status --short` and `git diff --cached --name-only`. Ignore rules do not remove files that Git already tracks. If a private key or password was previously committed or published, stop and address the exposure; merely adding an ignore rule is not enough. Never copy private signing material into the GitHub Pages repository. Validate the exclusions with `python -m unittest discover -s tool -p test_gitignore.py`.
+Before Google Play publication:
 
-For this project's **first push**, keep `.gitignore` in place before `git add .`; then review the staged file list. The assistant has not initialized, staged, committed, or pushed a repository. Only hosting the policy file is necessary for Pages—you do not need to make the entire Flutter source public.
+1. Approve package ownership, developer/contact details, asset distribution rights, policy commitments, and applicable legal obligations.
+2. Publish and verify the complete HTTPS privacy policy, and confirm the existing upload key's secure backup.
+3. Build and inspect the signed production AAB using final configuration and its matching R8 evidence.
+4. Complete Android-device checks for gameplay, lifecycle/resume, audio, haptics, accessibility, large text, launcher/splash, storage/backup behavior, and 16 KB runtime compatibility.
+5. Complete the Play Console listing, content rating, target-audience and Data safety declarations, app signing setup, and applicable testing/review requirements.
 
-## Code map
+QA APKs, unsigned candidates, widget tests, and static packaging checks are not proof of complete store readiness. Upload and publication are separate release actions. The [Android validation record](release/local/2026-11-06/README.md) documents available artifacts and current verification coverage.
 
-- `lib/core/content/`: hidden-only catalog and install boundary, authored scenes, reusable generators/validators.
-- `lib/core/domain/`: game engine, saved-state validation, progression, and Daily Challenge rules.
-- `lib/core/storage/`: isolated database/settings and transactional wallet/session writes.
-- `lib/features/` and `lib/ui/widgets/`: routes, pages, illustrated scene viewport, pinned checklist, and responsive controls.
-- `test/`: content, rules, platform guards, storage isolation, real-pointer gameplay, failure/race, and responsive-layout regressions.
-- `tool/`: catalog/art generators, isolated screen exporter, pack authoring, preview server, and read-only/static inspectors.
-- `verification/`: logs and evidence for this project. Earlier failing logs remain historical; use the final dated handoff and final logs for completed validation claims.
+## Repository security
+
+Keep `.gitignore` in place before staging files. It excludes Android binaries, private signing keys and backups, signing-properties files, environment files, SDK-local configuration, and final production configuration.
+
+The allowlisted `verification/signing/production-upload-certificate.pem` is a **public certificate**, not a private key. `android/key.properties.example` contains placeholders only. Never put real passwords in that example or publish private signing material with the policy.
+
+Before committing, review `git status --short` and `git diff --cached --name-only`. Ignore rules do not remove already tracked secrets; any exposure must be addressed separately. Check the exclusions with:
+
+```sh
+python -m unittest discover -s tool -p "test_gitignore.py"
+```
+
+## Web development preview
+
+```sh
+flutter build web --release --no-pub --no-web-resources-cdn --dart-define-from-file=config/qa.json
+python tool/serve_preview.py --port 8771
+```
+
+Open `http://127.0.0.1:8771/` in a dedicated test browser profile. The loopback-only server supplies cross-origin isolation headers for durable Drift storage; it is not a public hosting service. Keep `sqlite3.wasm` and `drift_worker.js` beside `index.html`, and serve the app over HTTP rather than opening a file directly. Browser audio may require user interaction.
+
+With the server running, execute the isolated smoke test:
+
+```sh
+node tool/verify_web_preview.mjs http://127.0.0.1:8771/
+```
+
+The test creates its own Chrome profile, checks hints, manual finds, resume, completion rewards, and unlocking across reloads, and records results under `verification/web-preview/runs/`. It does not clear unrelated browser storage.
+
+## Content tooling
+
+Optional puzzle packs accept hidden-object scenes only. `config/packs/example-v1.json` illustrates three expansion levels; it is not installed automatically. Packs cannot contain executable payloads, remote artwork, or Daily Challenge IDs.
+
+```sh
+dart run tool/pack_tool.dart validate config/packs/example-v1.json
+```
+
+Scene export and branding utilities are in `tool/`. Review target visibility and launcher/splash presentation whenever generated artwork changes.
+
+## Project structure
+
+- `lib/app/`: application setup and navigation.
+- `lib/core/`: configuration, artwork, content validation, game rules, progression, and persistence.
+- `lib/features/` and `lib/ui/`: gameplay, Home, Levels, Daily Challenge, Progress, Settings, and shared widgets.
+- `assets/`: bundled levels, scenes, branding, audio, fonts, and legal notices.
+- `android/`: Android identities, platform resources, signing checks, and release gates.
+- `config/`: QA/inspection inputs, the final-config template, and optional pack examples.
+- `test/` and `tool/`: automated tests, capture tasks, generators, policy tooling, and release inspectors.
+- `release/` and `verification/`: listing assets, release documentation, checksums, and validation evidence. Android binaries remain excluded from Git.
+
+## Licensing and contact
+
+Third-party license notices and asset provenance are maintained in `assets/legal/`; in-app notices are available through **Settings → About → Open-source licenses**. A repository-wide distribution license is not currently specified. Confirm the applicable rights before redistributing code, artwork, audio, or branding.
+
+- **Developer:** Abiral Acharya.
+- **Support and privacy contact:** `abiralacharya80@gmail.com`.
