@@ -4,6 +4,7 @@ import copy
 import hashlib
 from html.parser import HTMLParser
 import json
+import re
 import unittest
 from xml.etree import ElementTree
 
@@ -77,6 +78,13 @@ class PrivacyPolicyParityTests(unittest.TestCase):
         self.assertIn(("p", "Email: abiralacharya80@gmail.com."), parser.blocks)
         self.assertIn(("html", {"lang": "en"}), parser.tags)
         self.assertIn(("meta", {"name": "viewport", "content": "width=device-width, initial-scale=1"}), parser.tags)
+
+    def test_public_bullets_wrap_long_android_permission_names(self):
+        html = HTML.read_text(encoding="utf-8")
+        self.assertIn("DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION", html)
+        rule = re.search(r"\bli\s*\{([^}]*)\}", html)
+        self.assertIsNotNone(rule)
+        self.assertIn("overflow-wrap: anywhere;", rule[1])
 
     def test_missing_disclosures_duplicate_sections_or_wrong_identity_fail(self):
         for mutation in ("identity", "schema", "duplicate", "missing-security", "bad-date"):

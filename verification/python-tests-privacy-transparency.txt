@@ -39,6 +39,7 @@ test_policy_distinguishes_offline_gameplay_from_github_pages_requests (test_priv
 test_policy_has_no_urls_links_scripts_external_assets_or_password_fields (test_privacy_policy.PrivacyPolicyParityTests.test_policy_has_no_urls_links_scripts_external_assets_or_password_fields) ... ok
 test_policy_names_the_actual_android_permissions_and_explains_them (test_privacy_policy.PrivacyPolicyParityTests.test_policy_names_the_actual_android_permissions_and_explains_them) ... ok
 test_policy_reset_disclosure_matches_retained_preferences_and_packs (test_privacy_policy.PrivacyPolicyParityTests.test_policy_reset_disclosure_matches_retained_preferences_and_packs) ... ok
+test_public_bullets_wrap_long_android_permission_names (test_privacy_policy.PrivacyPolicyParityTests.test_public_bullets_wrap_long_android_permission_names) ... ok
 test_credential_subprocess_failure_does_not_echo_output (test_release_inputs.PrivateReleaseInputTests.test_credential_subprocess_failure_does_not_echo_output) ... ok
 test_existing_key_and_certificate_records_cannot_be_overwritten (test_release_inputs.PrivateReleaseInputTests.test_existing_key_and_certificate_records_cannot_be_overwritten) ... ok
 test_import_does_not_overwrite_an_unfamiliar_source (test_release_inputs.PrivateReleaseInputTests.test_import_does_not_overwrite_an_unfamiliar_source) ... ok
@@ -84,6 +85,6 @@ test_missing_artifact_and_list_fail (test_source_reuse.OriginalReleaseChecksTest
 test_unsafe_or_malformed_entries_are_rejected (test_source_reuse.OriginalReleaseChecksTest.test_unsafe_or_malformed_entries_are_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 84 tests in 48.332s
+Ran 85 tests in 40.818s
 
 OK

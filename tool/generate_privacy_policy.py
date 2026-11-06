@@ -39,7 +39,7 @@ STYLE = """    :root { color-scheme: light; --ink: #183c34; --muted: #4f625b; --
     h2 { margin: 0 0 8px; font-size: 23px; line-height: 1.4; letter-spacing: -.015em; }
     p { margin: 0 0 16px; }
     ul { margin: 0 0 16px; padding-left: 24px; }
-    li { margin: 5px 0; }
+    li { margin: 5px 0; overflow-wrap: anywhere; }
     .contact { padding: 24px; margin-top: 20px; background: #fffdf7; border: 1px solid #e2e2d6; border-radius: 20px; }
     footer { border-top: 1px solid #dddfd2; margin-top: 36px; padding-top: 20px; overflow-wrap: anywhere; }
     @media (max-width: 480px) { main { padding: 36px 20px 40px; } .summary, .contact { padding: 20px; } }
