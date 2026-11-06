@@ -8,6 +8,8 @@ The self-contained page is **`privacy-policy.html` in the project root**. It use
 
 The canonical path is `privacy-policy` without a file extension; GitHub Pages serves the generated `privacy-policy.html` at that path. Hosting the policy does not require deploying the playable Flutter web preview.
 
+Python helpers and tests are intentionally local-only and excluded from GitHub. The helper commands below apply to the developer's existing local workspace, not a fresh repository clone.
+
 ## One policy source
 
 **Edit only `assets/legal/privacy-policy.json`.** The app loads that asset offline, and the HTML generator uses exactly the same headings, paragraphs, bullets, identity, contact information, and revision date. Do not edit the HTML or write a second policy in Dart.
@@ -47,8 +49,21 @@ git remote set-url origin https://github.com/aviralacharya/FindIt-Search-Hidden-
 
 Copy `config/production.example.json` to the ignored local `config/production.json` if no conflicting final configuration exists. After verifying the live page, set `PRIVACY_POLICY_URL` to `https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy`; preserve `APP_ENV=production`, `BUILD_STAGE=final`, and the empty `PACK_INDEX_URL`. No signing passwords belong in either configuration file.
 
-The final signed AAB intentionally cannot be built with an empty, placeholder, local, or non-HTTPS policy URL. Build it **after** the canonical URL serves the current wording. The app and policy remain **1.0.0** because nothing has been released. Existing APK candidates and older captures are pre-update validation snapshots, so they must not be presented as freshly rebuilt or reinspected. Do not weaken release gates or publish an unsigned/QA candidate.
+Final signed APK/AAB builds intentionally reject an empty, placeholder, local, or non-HTTPS policy URL. Build **after** the canonical URL serves the current wording. The app and policy remain **1.0.0** because nothing has been released. Existing APK candidates and older captures are pre-update validation snapshots, so they must not be presented as freshly rebuilt or reinspected. Do not weaken release gates or publish an unsigned/QA candidate.
 
-Alternatively, run `python tool/build_signed_aab.py --dialog` from this project's root after hosting. It verifies the complete live HTML, asks for the existing dedicated key's password through native masked input, and creates the ignored final configuration only if absent. Different existing configuration is not overwritten. It reuses the key, builds and strictly inspects the local AAB, and retains matching public evidence; it never creates another key, saves a password, uploads, or publishes. Confirm the secure key backup and publisher review in the dialog. Android/device QA and Play Console/legal checks remain required before publication.
+## APK-only build
+
+To prepare a signed production APK **without building an AAB**, use:
+
+```powershell
+python tool/build_signed_apk.py --check-only
+python tool/build_signed_apk.py --dialog --policy-url https://aviralacharya.github.io/FindIt-Search-Hidden-Objects/privacy-policy
+```
+
+The masked dialog requires the existing key's password and explicit backup/publisher-review confirmations. The APK helper uses the same key, final configuration, and complete live-policy checks. It builds one APK, then verifies its production package/version, compiled release inputs, pinned v2 signature, current assets and offline policy, launcher/backup resources, ad-free packaging, and 16 KB native alignment. The APK and matching R8 evidence/checksums are retained in a new `release/local/` revision directory; older candidates are not overwritten. No AAB, installation, upload, or publication is performed. Device QA remains a separate requirement.
+
+## Future AAB build
+
+Only when an AAB is requested, run `python tool/build_signed_aab.py --dialog` from this project's root after hosting. It verifies the complete live HTML, asks for the existing dedicated key's password through native masked input, and creates the ignored final configuration only if absent. Different existing configuration is not overwritten. It reuses the key, builds and strictly inspects the local AAB, and retains matching public evidence; it never creates another key, saves a password, uploads, or publishes. Confirm the secure key backup and publisher review in the dialog. Android/device QA and Play Console/legal checks remain required before publication.
 
 Keep `.local-signing/`, keystores, signing passwords, `android/key.properties`, and private configuration out of the hosting repository. Only the public `.pem` upload certificate may be shared when a signing workflow needs it; never share the private keystore.

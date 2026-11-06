@@ -3,6 +3,9 @@
 *.apk
 *.apks
 
+# Python helpers and tests are local-only; do not publish their source.
+*.py
+
 # Private signing keys, exported private material, and key backups.
 # These patterns apply at any depth, not just inside build/.
 **/key.properties
