@@ -1,0 +1,172 @@
+{
+  "createdAtUtc": "2026-11-07T14:16:50.317784Z",
+  "scope": "Actual startup/home/settings/collection/about/license widgets and all 11 shared policy sections. Test-owned SQLite/preferences; startup held before disk access. No installation, existing saves or live hosting.",
+  "appName": "FindIt",
+  "appEnvironment": "production",
+  "buildStage": "final",
+  "productionUi": true,
+  "iconAsset": "assets/branding/app_icon.png",
+  "iconSha256": "006d322e883a8f4f5741f3e698c0535bb08b931602e6056650af2c7fbc77c6ae",
+  "policySourceSha256": "fc13d7fc70e5bc98c0217a4319768d499ef7a36d8e5e7c6b83d9cc6119247897",
+  "policyHtmlSha256": "d1c6feaa46fb313551aa3ff3511940b7fc29cae92691f30d51a1554107578caf",
+  "legalTextMatchesSource": true,
+  "appPackageIdentifiersInPolicy": false,
+  "captures": [
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-startup.png",
+      "sha256": "b1815478b0eb295342112db12e861f2157dd3de03cb23de2fd4fcc7e4c8e0ae9",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/hidden-mode-artwork.png",
+      "sha256": "6f85afb10f4f9f7528f7de9f99c7a495ce5eb584dbf1964664d9c5e4e7faaaf6",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-home.png",
+      "sha256": "36d73c3f44a5a3e6535bf14632e0f001cd7e0192dbd6f9d772aae0deff10ca39",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-settings.png",
+      "sha256": "7f05e0820f1f134929cc4247f8a535652e98a4c73938198e8897b5376fa8f2fb",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-collection.png",
+      "sha256": "49ae7e0c07e24815ea143728c975f1f0ff6dc360045f9191e06f136bb7a04e94",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-about.png",
+      "sha256": "825df04e5160d6d0b61cfb24d03731608642aec0d170a3c12b3b8bfe35e2c4fa",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-licenses.png",
+      "sha256": "547fefe6697d485db5c98eac74e238a9c5c32c27f0061f5e327562162f94cd09",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-policy-top.png",
+      "sha256": "4dbee9cd13b6d94ba76e1e180373dd12df2ebc424cf2a2b255ad353b36a14e85",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-policy-permissions_backups.png",
+      "sha256": "e2b99fc61cef83ea9bff12a0a84ad3b300e4f2ba059feeb9a9c1e733fa60c1e0",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/phone-policy-contact.png",
+      "sha256": "d08e49a3ffe8a559b8aaab9e956ec445cabcff3ad263f7e5ade8cb1a87493689",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-home.png",
+      "sha256": "3a7fed2285b7012c4d551cb18db1c87fcb3720b40a3fb29bd11f9082cafac802",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-settings.png",
+      "sha256": "4d6a9f2195fce3124f89b2f8a504f866f43355eee1d966d20dea4762fdb4ca10",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-collection.png",
+      "sha256": "1bf32e900f6cef302357f384d3c6327eaa7fed3c9aa50a08033f9e9f0d34ce79",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-about.png",
+      "sha256": "48ccc8ab263244a41fe7b0941fc984cf1f5235afe8141aeb511c7b0f1d1aa903",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-licenses.png",
+      "sha256": "759bff1e26a002d832a4b9bf2b7381cf5238483d0fbe5da0f939c47e7ae64810",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-policy-top.png",
+      "sha256": "995a37d0e77f9b2368070533d2caac934c61148c0ca13edae4c8699106e5a44c",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-policy-permissions_backups.png",
+      "sha256": "4efec5f292acf784ce8a734a3d30d903fa5835edebe05c39d72ea0f7ce78f5cd",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/small-phone-large-text-policy-contact.png",
+      "sha256": "a6b7d85a72ca583a1967bf6375ea2fa4a78e6b2ea36c4bd86907a29f6857cf26",
+      "width": 640,
+      "height": 1136
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-home.png",
+      "sha256": "f6a6b62f2906fe246dca40ef672e96ad668bd046bdb21146396abcd587dd165e",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-settings.png",
+      "sha256": "de4fc0ab442ca551c6a04ecbe95e672c53f2ed7380867f3ddb02b3e3e06d76a1",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-collection.png",
+      "sha256": "fe4c6860d144df1148af7f7a965ade63f0f2bc63485837c68b3ed16e502594e6",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-about.png",
+      "sha256": "297ec7daa56eaf49f6b20b58c1acb1a5af60204a33827f2e817ad138a8734fda",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-licenses.png",
+      "sha256": "de63de79aaa268813de5f3e174071ca2d8f22c8b8da1e29b79e8802cec700242",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-policy-top.png",
+      "sha256": "1019de5cf968f56d6fb544ce32d52806ea580b2ac89d9545f798eba27dacb77d",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-policy-permissions_backups.png",
+      "sha256": "e12985c39c32ad3ccee1ccfa8281e2c1254b9f88a8b4b40798bb6b440155cbb1",
+      "width": 2880,
+      "height": 1920
+    },
+    {
+      "file": "verification/findit-identity/leaf-logo-ui/screenshots/wide-policy-contact.png",
+      "sha256": "f8ae95d1a68ebde1e1c5bafd73a7d6ebd9e902699fb2a4dfcbdeb09eb4573b43",
+      "width": 2880,
+      "height": 1920
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # FindIt
 
-<img src="assets/branding/app_icon.png" alt="FindIt magnifying-glass, star, and leaf app icon" width="96" height="96" />
+<img src="assets/branding/app_icon.png" alt="FindIt magnifying-glass and golden-leaf app icon" width="96" height="96" />
 
 *Little things. Wonderful places. Look closer.*
 
@@ -17,6 +17,18 @@ FindIt is an offline hidden-object game for Android. Explore colorful scenes, fi
 - Earned coins, two-stage hints, scores, and stars.
 - Daily Challenges with bonus rewards.
 - Save and resume progress, with adjustable sound, music, and vibration.
+
+## Branding
+
+The original logo is preserved in `assets/branding/icon_source.png`. The app, Android launcher and splash screens, web icons, and Play Store icon are generated from that image without stretching it.
+
+To regenerate the branding assets:
+
+```sh
+flutter test --no-pub tool/prepare_branding_test.dart
+```
+
+The in-app logo retains transparency. `release/play-store/graphics/icon-512.png` is the opaque 512-pixel Play Store icon. Existing APKs must be rebuilt and reinstalled to show updated branding.
 
 ## Privacy
 

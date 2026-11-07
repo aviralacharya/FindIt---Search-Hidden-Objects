@@ -1,4 +1,4 @@
-// Run explicitly, after selecting the original PNG:
+// Run explicitly, after placing the publisher's original PNG at _sourcePath:
 // flutter test --no-pub tool/prepare_branding_test.dart
 // No packages or online image services are needed; Flutter does the raster work.
 import 'dart:collection';
@@ -15,54 +15,90 @@ import 'package:flutter_test/flutter_test.dart';
 const _cream = Color(0xFFFBF7EE);
 const _sourcePath = 'assets/branding/icon_source.png';
 
-Uint8List _backgroundFlood(
-  Uint8List pixels,
-  int width,
-  int height, {
-  required bool whiteOnly,
-}) {
+Rect _foregroundBounds(Uint8List pixels, int width, int height) {
+  var left = width;
+  var top = height;
+  var right = 0;
+  var bottom = 0;
+  for (var at = 0; at < width * height; at++) {
+    if (pixels[at * 4 + 3] == 0) continue;
+    final x = at % width;
+    final y = at ~/ width;
+    left = math.min(left, x);
+    top = math.min(top, y);
+    right = math.max(right, x + 1);
+    bottom = math.max(bottom, y + 1);
+  }
+  if (right <= left || bottom <= top) return Rect.zero;
+  return Rect.fromLTRB(
+    left.toDouble(),
+    top.toDouble(),
+    right.toDouble(),
+    bottom.toDouble(),
+  );
+}
+
+double _foregroundRadius(Uint8List pixels, int width, Rect bounds) {
+  final side = math.max(bounds.width, bounds.height);
+  var radius = 0.0;
+  for (var at = 0; at < pixels.length ~/ 4; at++) {
+    if (pixels[at * 4 + 3] == 0) continue;
+    final x = (at % width + .5 - bounds.center.dx) / side;
+    final y = (at ~/ width + .5 - bounds.center.dy) / side;
+    radius = math.max(radius, math.sqrt(x * x + y * y));
+  }
+  return radius;
+}
+
+Uint8List _monochromePixels(Uint8List pixels) {
+  // Derive the themed icon from the supplied art, not a separately drawn logo.
+  // Remove the light lens fill so the rim, handle, leaf and hills remain legible.
+  final monochrome = Uint8List(pixels.length);
+  for (var at = 0; at < pixels.length; at += 4) {
+    final luminance =
+        pixels[at] * .299 + pixels[at + 1] * .587 + pixels[at + 2] * .114;
+    final coverage = ((225 - luminance) / 20).clamp(0.0, 1.0);
+    final alpha = (pixels[at + 3] * coverage).round();
+    // ImageDescriptor.raw expects premultiplied RGBA: white channels equal alpha.
+    monochrome.fillRange(at, at + 4, alpha);
+  }
+  return monochrome;
+}
+
+Uint8List _retainLargestComponent(Uint8List pixels, int width, int height) {
+  // Thresholding can expose tiny disconnected background speckles in the PNG.
+  // Keep the connected logo, including its anti-aliased edges, for themed icons.
   final visited = Uint8List(width * height);
   final queue = ListQueue<int>();
-  bool isBackground(int at) {
-    final r = pixels[at * 4];
-    final g = pixels[at * 4 + 1];
-    final b = pixels[at * 4 + 2];
-    final a = pixels[at * 4 + 3];
-    if (a < 20) return true;
-    if (whiteOnly) {
-      return math.min(r, math.min(g, b)) >= 245 &&
-          math.max(r, math.max(g, b)) - math.min(r, math.min(g, b)) < 8;
-    }
-    // Only flood from the outer image edge. White highlights inside the closed
-    // green magnifying-glass rim are preserved, as are gold/green art pixels.
-    return r >= g - 2 && g >= b - 2 && r - b < 100 && r - g < 55;
-  }
-
+  var largest = <int>[];
   void add(int at) {
-    if (visited[at] == 0 && isBackground(at)) {
+    if (visited[at] == 0 && pixels[at * 4 + 3] != 0) {
       visited[at] = 1;
       queue.addLast(at);
     }
   }
 
-  for (var x = 0; x < width; x++) {
-    add(x);
-    add((height - 1) * width + x);
+  for (var start = 0; start < visited.length; start++) {
+    if (visited[start] != 0 || pixels[start * 4 + 3] == 0) continue;
+    final component = <int>[];
+    add(start);
+    while (queue.isNotEmpty) {
+      final at = queue.removeFirst();
+      component.add(at);
+      final x = at % width;
+      final y = at ~/ width;
+      if (x > 0) add(at - 1);
+      if (x + 1 < width) add(at + 1);
+      if (y > 0) add(at - width);
+      if (y + 1 < height) add(at + width);
+    }
+    if (component.length > largest.length) largest = component;
   }
-  for (var y = 0; y < height; y++) {
-    add(y * width);
-    add(y * width + width - 1);
+  final cleaned = Uint8List(pixels.length);
+  for (final at in largest) {
+    cleaned.setRange(at * 4, at * 4 + 4, pixels, at * 4);
   }
-  while (queue.isNotEmpty) {
-    final at = queue.removeFirst();
-    final x = at % width;
-    final y = at ~/ width;
-    if (x > 0) add(at - 1);
-    if (x + 1 < width) add(at + 1);
-    if (y > 0) add(at - width);
-    if (y + 1 < height) add(at + width);
-  }
-  return visited;
+  return cleaned;
 }
 
 Future<ui.Image> _imageFromPixels(
@@ -98,62 +134,29 @@ Future<ui.Image> _render(
   return image;
 }
 
-void _drawImage(Canvas canvas, Size size, ui.Image image, double fraction) {
-  final side = math.min(size.width, size.height) * fraction;
-  canvas.drawImageRect(
-    image,
-    Rect.fromLTWH(0, 0, image.width.toDouble(), image.height.toDouble()),
-    Rect.fromCenter(
-      center: size.center(Offset.zero),
-      width: side,
-      height: side,
-    ),
-    Paint()..filterQuality = FilterQuality.high,
+Rect _destinationRect(Size source, Size target, double fraction) {
+  final side = math.min(target.width, target.height) * fraction;
+  final scale = side / math.max(source.width, source.height);
+  return Rect.fromCenter(
+    center: target.center(Offset.zero),
+    width: source.width * scale,
+    height: source.height * scale,
   );
 }
 
-void _drawMonochrome(Canvas canvas, Size size, double fraction) {
-  // An intentionally simplified search/star/leaf silhouette for Android themed
-  // icons. Full-color launcher, splash, web and Play assets use the supplied PNG.
-  final side = math.min(size.width, size.height) * fraction;
-  canvas.save();
-  canvas.translate((size.width - side) / 2, (size.height - side) / 2);
-  canvas.scale(side);
-  final stroke = Paint()
-    ..color = Colors.white
-    ..style = PaintingStyle.stroke
-    ..strokeWidth = .08
-    ..strokeCap = StrokeCap.round;
-  canvas.drawCircle(const Offset(.435, .435), .315, stroke);
-  canvas.drawLine(
-    const Offset(.665, .67),
-    const Offset(.83, .835),
-    stroke..strokeWidth = .15,
+void _drawImage(
+  Canvas canvas,
+  Size size,
+  ui.Image image,
+  double fraction, {
+  required Rect bounds,
+}) {
+  canvas.drawImageRect(
+    image,
+    bounds,
+    _destinationRect(bounds.size, size, fraction),
+    Paint()..filterQuality = FilterQuality.high,
   );
-  final star = Path();
-  for (var i = 0; i < 10; i++) {
-    final angle = -math.pi / 2 + i * math.pi / 5;
-    final radius = i.isEven ? .175 : .082;
-    final x = .45 + math.cos(angle) * radius;
-    final y = .43 + math.sin(angle) * radius;
-    if (i == 0) {
-      star.moveTo(x, y);
-    } else {
-      star.lineTo(x, y);
-    }
-  }
-  star.close();
-  final fill = Paint()..color = Colors.white;
-  canvas.drawPath(star, fill);
-  canvas.drawPath(
-    Path()
-      ..moveTo(.23, .52)
-      ..cubicTo(.4, .51, .45, .63, .41, .7)
-      ..cubicTo(.3, .7, .25, .63, .23, .52)
-      ..close(),
-    fill,
-  );
-  canvas.restore();
 }
 
 Future<Map<String, Object>> _save(String path, ui.Image image) async {
@@ -186,103 +189,129 @@ Future<Map<String, Object>> _save(String path, ui.Image image) async {
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('background removal never floods enclosed white highlights', () {
+  test('only fully transparent margins are excluded from the artwork', () {
     const width = 7;
-    final pixels = Uint8List(width * width * 4);
-    for (var y = 0; y < width; y++) {
-      for (var x = 0; x < width; x++) {
-        final at = (y * width + x) * 4;
-        final rim =
-            x >= 1 &&
-            x <= 5 &&
-            y >= 1 &&
-            y <= 5 &&
-            (x == 1 || x == 5 || y == 1 || y == 5);
-        pixels.setRange(
-          at,
-          at + 4,
-          rim ? [10, 100, 60, 255] : [255, 255, 255, 255],
-        );
-      }
-    }
-    for (final whiteOnly in [true, false]) {
-      final mask = _backgroundFlood(pixels, width, width, whiteOnly: whiteOnly);
-      expect(mask[0], 1);
-      expect(mask[3 * width + 3], 0);
-      expect(mask[width + 1], 0);
-    }
+    const height = 6;
+    final pixels = Uint8List(width * height * 4);
+    pixels[(width + 2) * 4 + 3] = 1;
+    pixels[(3 * width + 4) * 4 + 3] = 255;
+    expect(
+      _foregroundBounds(pixels, width, height),
+      const Rect.fromLTRB(2, 1, 5, 4),
+    );
+    expect(_foregroundBounds(Uint8List(16), 2, 2), Rect.zero);
   });
+
+  test('non-square artwork is centered without changing its proportions', () {
+    final rect = _destinationRect(
+      const Size(200, 100),
+      const Size(100, 100),
+      .5,
+    );
+    expect(rect, const Rect.fromLTWH(25, 37.5, 50, 25));
+    expect(rect.size.aspectRatio, 2);
+  });
+
+  test('themed pixels retain the supplied rim and leaf, not the lens fill', () {
+    final pixels = Uint8List.fromList([
+      0,
+      0,
+      0,
+      0,
+      3,
+      81,
+      69,
+      254,
+      255,
+      188,
+      0,
+      254,
+      250,
+      234,
+      212,
+      254,
+    ]);
+    final original = Uint8List.fromList(pixels);
+    expect(_monochromePixels(pixels), [
+      0,
+      0,
+      0,
+      0,
+      254,
+      254,
+      254,
+      254,
+      254,
+      254,
+      254,
+      254,
+      0,
+      0,
+      0,
+      0,
+    ]);
+    expect(pixels, original);
+  });
+
+  test(
+    'themed masks remove disconnected speckles without changing the logo',
+    () {
+      final pixels = Uint8List(4 * 4 * 4);
+      for (final at in [5, 6]) {
+        pixels.fillRange(at * 4, at * 4 + 4, 254);
+      }
+      pixels.fillRange(15 * 4, 16 * 4, 64);
+      final original = Uint8List.fromList(pixels);
+      final cleaned = _retainLargestComponent(pixels, 4, 4);
+      expect(cleaned.sublist(5 * 4, 7 * 4), List.filled(8, 254));
+      expect(cleaned.sublist(15 * 4, 16 * 4), List.filled(4, 0));
+      expect(pixels, original);
+    },
+  );
 
   test('prepare publisher icon, Android safe zones, web and Play graphics', () async {
     final file = File(_sourcePath);
     expect(
       file.existsSync(),
       isTrue,
-      reason: 'Select the original PNG in tool/prepare_release_inputs.py --dialog first.',
+      reason: 'Place the publisher original at assets/branding/icon_source.png first.',
     );
     final original = file.readAsBytesSync();
     final codec = await ui.instantiateImageCodec(original);
     final source = (await codec.getNextFrame()).image;
     codec.dispose();
-    expect(source.width, source.height);
     expect(source.width, inInclusiveRange(512, 4096));
-    final raw = (await source.toByteData(format: ui.ImageByteFormat.rawRgba))!;
+    expect(source.height, inInclusiveRange(512, 4096));
+    final raw = (await source.toByteData(
+      format: ui.ImageByteFormat.rawStraightRgba,
+    ))!;
     final pixels = raw.buffer.asUint8List(raw.offsetInBytes, raw.lengthInBytes);
-    final outsideWhite = _backgroundFlood(
-      pixels,
-      source.width,
-      source.height,
-      whiteOnly: true,
-    );
-    final outsideCream = _backgroundFlood(
-      pixels,
-      source.width,
-      source.height,
-      whiteOnly: false,
-    );
-    final fullBleedPixels = Uint8List.fromList(pixels);
-    final cutoutPixels = Uint8List.fromList(pixels);
-    var retained = 0;
-    var radius = 0.0;
-    for (var at = 0; at < outsideWhite.length; at++) {
-      if (outsideWhite[at] == 1) {
-        fullBleedPixels.setRange(at * 4, at * 4 + 4, [251, 247, 238, 255]);
-      }
-      if (outsideCream[at] == 1) {
-        cutoutPixels.setRange(at * 4, at * 4 + 4, [0, 0, 0, 0]);
-      } else if (pixels[at * 4 + 3] >= 200) {
-        retained++;
-        final x = (at % source.width + .5) / source.width - .5;
-        final y = (at ~/ source.width + .5) / source.height - .5;
-        radius = math.max(radius, math.sqrt(x * x + y * y));
-      }
-    }
-    final retainedFraction = retained / (source.width * source.height);
+    final bounds = _foregroundBounds(pixels, source.width, source.height);
     expect(
-      retainedFraction,
-      inInclusiveRange(.12, .85),
-      reason: 'Review the supplied PNG if its background cannot be separated safely.',
+      bounds.isEmpty,
+      isFalse,
+      reason: 'The supplied PNG must contain art.',
     );
+    final radius = _foregroundRadius(pixels, source.width, bounds);
     final adaptiveFraction = math.min(.68, .29 / radius);
     expect(radius * adaptiveFraction, lessThan(33 / 108));
-    final fullBleed = await _imageFromPixels(
-      fullBleedPixels,
-      source.width,
-      source.height,
-    );
-    final cutout = await _imageFromPixels(
-      cutoutPixels,
+    final monochrome = await _imageFromPixels(
+      _retainLargestComponent(
+        _monochromePixels(pixels),
+        source.width,
+        source.height,
+      ),
       source.width,
       source.height,
     );
     final outputs = <Map<String, Object>>[];
 
-    Future<void> full(String path, int side) async {
+    Future<void> full(String path, int side, {bool opaque = true}) async {
       final image = await _render(side, side, (canvas, size) {
-        canvas.drawColor(_cream, BlendMode.src);
-        _drawImage(canvas, size, fullBleed, 1);
+        if (opaque) canvas.drawColor(_cream, BlendMode.src);
+        _drawImage(canvas, size, source, .88, bounds: bounds);
       });
-      if (side == 512) {
+      if (side == 512 && opaque) {
         final rgba = (await image.toByteData(
           format: ui.ImageByteFormat.rawRgba,
         ))!;
@@ -307,17 +336,19 @@ void main() {
     }) async {
       final image = await _render(width, height, (canvas, size) {
         if (opaque) canvas.drawColor(_cream, BlendMode.src);
-        if (mono) {
-          _drawMonochrome(canvas, size, adaptiveFraction);
-        } else {
-          _drawImage(canvas, size, cutout, adaptiveFraction);
-        }
+        _drawImage(
+          canvas,
+          size,
+          mono ? monochrome : source,
+          adaptiveFraction,
+          bounds: bounds,
+        );
       });
       outputs.add(await _save(path, image));
       image.dispose();
     }
 
-    await full('assets/branding/app_icon.png', 1024);
+    await full('assets/branding/app_icon.png', 1024, opaque: false);
     await full('assets/branding/play_store_icon.png', 512);
     await full('release/play-store/graphics/icon-512.png', 512);
     expect(outputs.last['bytes'] as int, lessThanOrEqualTo(1024 * 1024));
@@ -391,13 +422,28 @@ void main() {
           );
         }
         canvas.drawColor(_cream, BlendMode.src);
-        _drawImage(canvas, size, cutout, adaptiveFraction * 108 / 72);
+        _drawImage(
+          canvas,
+          size,
+          source,
+          adaptiveFraction * 108 / 72,
+          bounds: bounds,
+        );
       });
       outputs.add(
         await _save('verification/branding/launcher-$shape.png', image),
       );
       image.dispose();
     }
+    await padded(
+      'verification/branding/launcher-monochrome.png',
+      384,
+      384,
+      mono: true,
+    );
+    File('verification/branding/icon-source.json').writeAsStringSync(
+      '${const JsonEncoder.withIndent('  ').convert({'file': _sourcePath, 'sha256': sha256.convert(original).toString(), 'bytes': original.length, 'width': source.width, 'height': source.height, 'provenance': 'Original PNG supplied and selected by the publisher; distribution rights require publisher review.'})}\n',
+    );
     final report = {
       'createdAt': DateTime.now().toUtc().toIso8601String(),
       'generator': 'tool/prepare_branding_test.dart',
@@ -405,12 +451,18 @@ void main() {
       'sourceSha256': sha256.convert(original).toString(),
       'sourceWidth': source.width,
       'sourceHeight': source.height,
+      'foregroundBounds': {
+        'left': bounds.left,
+        'top': bounds.top,
+        'width': bounds.width,
+        'height': bounds.height,
+      },
+      'appIcon': '1024x1024 transparent PNG; original proportions preserved',
       'adaptiveForegroundFraction': adaptiveFraction,
       'adaptiveMaxRadiusDp': radius * adaptiveFraction * 108,
       'adaptiveSafeRadiusDp': 33,
-      'retainedForegroundFraction': retainedFraction,
       'playIcon': '512x512, opaque 32-bit PNG, at most 1 MiB; no added corner mask or shadow',
-      'method': 'Preserve original PNG bytes. Extend white outer corners with cream for full-bleed icons. Flood only edge-connected cream/white background for padded adaptive and splash art. Preserve enclosed lens highlights. Use a simplified magnifier/star/leaf silhouette for themed icons.',
+      'method': 'Preserve original PNG bytes and all artwork colors. Exclude only fully transparent outer margins, center with uniform scaling, and retain transparency in app/adaptive/splash art. Composite legacy, web and Play icons onto cream. Derive themed pixels from the original rim, handle, leaf and hills by removing the light lens fill and disconnected speckles; no alternate logo drawing.',
       'scope': 'Generated asset and mask checks, not Android launcher/runtime QA or a legal rights determination.',
       'outputs': outputs,
     };
@@ -422,8 +474,7 @@ void main() {
       original,
       reason: 'Never modify the publisher original.',
     );
-    cutout.dispose();
-    fullBleed.dispose();
+    monochrome.dispose();
     source.dispose();
     stdout.writeln(
       'Prepared ${outputs.length} icon/splash/web assets and launcher-mask previews.',
